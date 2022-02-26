@@ -1,0 +1,45 @@
+---
+title: <h1 class="first">Écriture numérique & Notebook</h1>
+author: <h2 class="place">Pour des pratiques reproductibles</h2>
+date: <img src="figure/logo_notebook_o.png" style="margin-top:40px;margin-bottom:10px;" width="550"/><p class="name">Timothée Giraud - Hugues Pecout</p><h2 class="place2"><i>Journées annuelles du réseau Mate-SHS, 16 mai 2022</i></h2><img src="figure/riate.png" width="115" style="float:left;margin-top:30px;"/><img src="figure/cnrs.png" width="70" style="float:center"/><img src="figure/cist-logo-bleu_sur_blanc.png" style="float:right" width="70"/>
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: FALSE
+    reveal_plugins: ["notes","zoom","menu"]
+    theme: "black"
+    highlight: "zenburn"
+    css: styles.css
+    incremental: TRUE
+    center: TRUE	
+    showNotes: FALSE
+    transition: fade
+    reveal_options:
+      help: true
+      controls: TRUE
+      progress: TRUE
+      controlsTutorial: TRUE
+      controlsLayout: "edges"
+      controlsBackArrows: "visible"
+      slideNumber: TRUE
+      hash: true
+      keyboard: true
+      overview: true
+      touch: true
+      navigationMode: "linear"
+      embedded: false
+      mouseWheel: true
+      hideInactiveCursor: true
+      hideAddressBar: true
+      previewLinks: false
+editor_options: 
+  chunk_output_type: console
+---
+
+
+# Contexte
+
+# Ecriture numérique
+
+# Notebook
+
+
