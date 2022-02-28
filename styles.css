@@ -11,9 +11,10 @@
 
 .reveal .slides .place2 { 
      text-transform : none;
-     font-size: 65%; 
-     margin-top:45px;
-     margin-bottom:50px;
+     font-size: 70%; 
+     margin-top:0px;
+     margin-bottom:0px;
+     color: #f7a41e; 
 
 }
 
@@ -32,7 +33,7 @@
 
 .reveal .slides .name { 
   font-size: 55%; 
-      color: #f7a41e; 
+  margin-top:30px;
 }
 
 .reveal .slides .first { 
