@@ -10,6 +10,70 @@
   <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  { color: #cccccc; background-color: #303030; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ffcfaf; } /* Alert */
+code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #dca3a3; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #f0dfaf; } /* ControlFlow */
+code span.ch { color: #dca3a3; } /* Char */
+code span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+code span.co { color: #7f9f7f; } /* Comment */
+code span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+code span.do { color: #7f9f7f; } /* Documentation */
+code span.dt { color: #dfdfbf; } /* DataType */
+code span.dv { color: #dcdccc; } /* DecVal */
+code span.er { color: #c3bf9f; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #c0bed1; } /* Float */
+code span.fu { color: #efef8f; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+code span.kw { color: #f0dfaf; } /* Keyword */
+code span.op { color: #f0efd0; } /* Operator */
+code span.ot { color: #efef8f; } /* Other */
+code span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+code span.sc { color: #dca3a3; } /* SpecialChar */
+code span.ss { color: #cc9393; } /* SpecialString */
+code span.st { color: #cc9393; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #cc9393; } /* VerbatimString */
+code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
 
@@ -448,7 +512,7 @@ style.innerHTML = style_script;
 document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
-    <script src="index_files/header-attrs-2.11.2/header-attrs.js"></script>
+    <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
     <link href="index_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="index_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -458,117 +522,479 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section>
     <h1 class="title"><h1 class="first">
-Notebook (calepin)<br><span style="font-size:70%;text-transform:lowercase">&amp; écriture numérique<span>
+Le notebook<br><span style="font-size:70%;text-transform:lowercase">et
+la programmation lettrée<span>
 </h1></h1>
     <h2 class="author"><h2 class="place">
-Documenter ses traitements
+Outil et méthode pour le partage et la reproductibilité
 </h2></h2>
     <h3 class="date"><img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/>
 <h2 class="place2">
 <i>Journées annuelles du réseau Mate-SHS, 17 mai 2022</i>
 </h2>
 <p class="name">
-Hugues Pecout (CIST, CNRS) - Timothée Giraud (RIATE, CNRS)</br>Sébastien Rey (IDEES, Université Rouen-Normandie)
+Hugues Pecout (CIST, CNRS) - Timothée Giraud (RIATE, CNRS)</br>Sébastien
+Rey (IDEES, Université Rouen-Normandie)
 </p>
 <img src="figure/riate.png" width="115" style="float:left;margin-top:60px;"/><img src="figure/cnrs.png" width="70" style="float:center;margin-top:30px;"/><img src="figure/cist-logo-bleu_sur_blanc.png" style="float:right;margin-top:30px;" width="70"/></h3>
 </section>
 
+<section id="qui-sommes-nous" class="slide level2">
+<h2>Qui sommes-nous ?</h2>
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
+Ingénieurs d’études CNRS en sciences de l’information géographique
+</p>
+<p><img src="figure/users.png" style="float:left;margin-top:40px;" width="380"/></p>
+<div id="rightls">
+<ul class="pucsmall22" style="margin-top:40px;">
+<ul>
+<li>Le langage R comme outil principal</li>
+<li>Production régulière de notebook R</li>
+<li>Responsables de projet Rzine</li>
+</ul>
+</ul>
+<div class="fragment">
+<p><img src="figure/users2.png" style="float:left;margin-top:10px;margin-left:60px;" width="186"/></p>
+<div id="rightseb">
+<ul class="xpucsmall" style="margin-top:50px;">
+<ul>
+<li><span style="color:#f7a41f;">Ingénieur de recherche</span></li>
+<li><span style="color:#f7a41f;">Geomatique/Informatique</span></li>
+<li><span style="color:#f7a41f;">Coord. du GT Notebook</span></li>
+<li><span style="color:#f7a41f;">Membre du projet Rzine</span></li>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+</section>
 <section>
-<section id="contexte" class="title-slide slide level1">
-<h1>Contexte</h1>
+<section id="notebook" class="title-slide slide level1">
+<h1>Notebook</h1>
 
 </section>
-<section id="ingénienieur-utilisateur-de-r" class="slide level2">
-<h2>Ingénienieur utilisateur de R</h2>
-<p>Repro/formation -&gt; Rmarkdown</p>
+<section id="notebook-1" class="slide level2">
+<h2>Notebook ?</h2>
+<p class="medpcenter" style="margin-top:40px;">
+<span style="color:#f7a41f;"><strong>Interface de programmation qui
+permet de combiner des sections en langage naturel et des sections en
+langage informatique</strong>.</span>
+</p>
+<p class="smallpcenter" style="margin-top:40px;">
+Plusieurs dénominations (et types) existent :
+</p>
+<ul class="pucsmall2" style="margin-top:10px;">
+<ul>
+<li><em>Calepin électronique</em></li>
+<li><strong><em>Notebook</em></strong> (Jupyter, Observable, Pluto)</li>
+<li><em>Rmarkdown</em></li>
+<li><em>Quarto</em>…</li>
+</ul>
+</ul>
+<p class="medpcenter" style="margin-top:40px;">
+<span style="color:#f7a41f;"><strong>Un notebook permet d’appliquer le
+paradigme de programmation lettrée, qui facilite le partage, le travail
+collaboratif et la reproductibilité</strong>.</span>
+</p>
 </section>
-<section id="notebook-def" class="slide level2">
-<h2>Notebook def ?</h2>
+<section id="notebook-2" class="slide level2">
+<h2>Notebook ?</h2>
+<p><img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/></p>
+</section>
+<section id="exemple-rmarkdown-1" class="slide level2">
+<h2>Exemple Rmarkdown 1</h2>
+<div id="codermd">
+<p class="smallpcenter">
+<span style="color:#f7a41f;">Fichier source (.rmd)<span>
+</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;Rmarkdown - Notebook R&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span> html_document</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[](header.png)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="do">## R Markdown</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This is an R Markdown document. Markdown is a simple formatting syntax <span class="cf">for</span> authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <span class="sc">&lt;</span>http<span class="sc">:</span><span class="er">//</span>rmarkdown.rstudio.com<span class="sc">&gt;</span>.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>When you click the <span class="sc">**</span>Knit<span class="sc">**</span> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this<span class="sc">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">```</span><span class="at">{r chunk1, eval=TRUE, include=TRUE, echo=TRUE}</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at"># mon code R</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">summary(cars)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">```</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="do">## Including Plots</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>You can also embed plots, <span class="cf">for</span> example<span class="sc">:</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">```</span><span class="at">{r pressure, echo=FALSE, fig.height=4, fig.width=10}</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="at">plot(x = c(1,3,7,4,6), </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">     y = c(6,2,1,3,8), </span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">     pch = 20, </span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">     cex = 3, </span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">     col= &quot;red&quot;,</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">     xlab = &quot;X&quot;, </span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">     ylab = &quot;Y&quot;)    </span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">```</span></span></code></pre></div>
+</div>
+<div id="codehtml">
+<p class="smallpcenter">
+<span style="color:#f7a41f;">Fichier en sortie (.html)<span>
+</p>
+<p><img data-src="figure/markdown.png" /></p>
+</div>
+</section>
+<section id="exemple-rmarkdown-2" class="slide level2">
+<h2>Exemple Rmarkdown 2</h2>
+<div id="codermd">
+<p><br> <br></p>
+<p class="medpcenter">
+<a
+href="https://gitlab.huma-num.fr/rCarto/santelocal"><span style="color:#f7a41f;">Code
+source (Rmd &amp; data)<span></a>
+</p>
+</div>
+<div id="codehtml">
+<p><br> <br></p>
+<p class="medpcenter">
+<a
+href="https://rcarto.gitpages.huma-num.fr/santelocal/"><span style="color:#f7a41f;">Fichier
+en sortie (.html)<span></a>
+</p>
+</div>
+</section></section>
+<section>
+<section id="historique" class="title-slide slide level1">
+<h1>Historique</h1>
+
+</section>
+<section id="du-calepin-au-notebook" class="slide level2">
+<h2>DU calepin au notebook</h2>
+</section>
+<section id="programmation-lettrée" class="slide level2">
+<h2>Programmation lettrée</h2>
+</section>
+<section id="les-notebook-aujourdhui" class="slide level2">
+<h2>Les notebook aujourd’hui</h2>
+</section></section>
+<section>
+<section id="les-usages" class="title-slide slide level1">
+<h1>Les usages</h1>
+<section>
+<center>
+<video autoplay="true" loop="true" muted="true" width="640">
+<source src="https://s3.amazonaws.com/orm-atlas-media/atlas-jupyter/edit-with-atlas.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+</center>
+</section>
+</section>
+<section id="programamtion-lettré" class="slide level2">
+<h2>Programamtion lettré ?</h2>
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+</video>
+<p>Notebook != reproductibilité Notebook != programmation lettré</p>
+<p>Notebook != reproductibilité Notebook != programmation lettré</p>
+<p>Usage est multiple :</p>
+<ul>
+<li class="fragment">Exploration et analyse des données</li>
+<li class="fragment">Travail collaboratif</li>
+<li class="fragment">Support de cours (CM/TD)</li>
+<li class="fragment">Partage de méthode</li>
+</ul>
 <aside class="notes">
-<p>En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C’est un exemple de programmation lettrée.</p>
-L’usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1.
+<p>En programmation informatique, un notebook, aussi fréquemment appelé
+calepin électronique, voire simplement calepinnote 1,note 2,note 3 est
+une interface de programmation interactive (en) permettant de combiner
+des sections en langage naturel et des sections en langage informatique.
+Les notebooks sont notamment utilisés en science des données pour
+explorer et analyser des données. Les notebooks peuvent ensuite être
+enregistrés sous forme de document. C’est un exemple de programmation
+lettrée.</p>
+L’usage des notebooks en science permet de faciliter le partage et la
+reproductibilité des résultats1.
 </aside>
 </section>
-<section id="notebook-def-1" class="slide level2">
+<section id="notebook-def" class="slide level2">
 <h2>Notebook def ?</h2>
 <p><img src="figure/notebook.png" style="margin-top:40px;" width="750"/></p>
 </section>
 <section id="programmation-lettré" class="slide level2">
 <h2>Programmation lettré</h2>
 <aside class="notes">
-<p>La programmation lettrée (ou programmation littéraire) est une approche de la programmation préconisée par Donald Knuth qui se veut différente du paradigme de programmation structurée des années 19701.</p>
-<p>Le paradigme de la programmation lettrée, tel qu’il a été conçu par Knuth, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée. Les programmes lettrés sont écrits, dans un langage naturel, comme une exposition ininterrompue de la logique, à la manière d’un essai, dans lequel sont incluses des macros qui masquent les abstractions et la complexité.</p>
-<p>La programmation lettrée propose des outils pour obtenir, à partir d’un fichier source, deux représentations : l’une utilisée par un compilateur ou un exécutable, le code « emmêlé », et l’autre lue comme une documentation formatée, qui est dite « tissée » à partir de la source lettrée. Alors que les premiers outils de programmation lettrée étaient spécifiques à chaque langage de programmation, la deuxième génération a produit des utilitaires indépendants des langages et existant hors de ceux-ci. Un programme lettré est une explication de la logique du programme en langage naturel, comme l’anglais, entremêlée de fragments de code source traditionnel (éventuellement de macros). Les macros, dans un fichier source lettré, se présentent comme des titres ou des phrases en langue naturelle, qui décrivent les abstractions créées au moment de résoudre le problème et cachent le morceau de code ou la macro bas-niveau[Quoi ?]. Ces macros sont similaires aux algorithmes en pseudo-code souvent utilisés dans l’enseignement des sciences informatiques. Ces phrases explicatives deviennent de nouveaux opérateurs, créés à la volée par le programmeur, formant un méta-langage au-dessus du langage de programmation compréhensible par l’ordinateur.[pas clair]</p>
-<p>Un préprocesseur analyse les hiérarchies arbitraires, ou les « toiles interconnectées de macros »[Quoi ?], pour produire un code source compilable. La commande qui fait cela s’appelle (tangle, emmêler) et la commande associée qui produit la documentation s’appelle (weave, tisser). Le préprocesseur permet aussi d’extraire des macros et d’ajouter du contenu à une macro déjà définie à n’importe quel endroit du texte, permettant ainsi de s’affranchir du besoin de garder à l’esprit les restrictions imposées par les langages de programmation traditionnels et d’éviter d’interrompre le flux de pensée.</p>
-<p>Selon Knuth, la programmation lettrée permet d’écrire des programmes de grande qualité1, car elle force le programmeur à exposer clairement sa pensée cachée derrière le code, rendant les mauvaises décisions de conception plus évidentes. Knuth affirme aussi que la programmation lettrée fournit un système de documentation de premier ordre, qui n’est pas un ajout au code, mais en fait naturellement partie dans un processus d’exposition de la pensée, durant la création du programme1. La documentation, partie intégrante de la programmation lettrée, permet à l’auteur de reprendre le fil de son cheminement intellectuel là où il l’avait arrêté, même longtemps après, de même qu’elle permet aux autres programmeurs de comprendre la structure profonde du programme.</p>
-<p>La programmation lettrée s’affranchit donc de la documentation traditionnelle, dans laquelle un programmeur présente le code source selon une organisation issue des contraintes du compilateur ou doit en déchiffrer l’intention grâce au code et aux commentaires qui y sont associés. Le méta-langage de la programmation lettrée facilite la pensée, en donnant une vue d’ensemble du code et en augmentant le nombre de concepts que l’esprit peut intégrer. Knuth affirme que la programmation lettrée accroît la qualité du code produit1.</p>
-Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l’édition scientifique.
+<p>La programmation lettrée (ou programmation littéraire) est une
+approche de la programmation préconisée par Donald Knuth qui se veut
+différente du paradigme de programmation structurée des années
+19701.</p>
+<p>Le paradigme de la programmation lettrée, tel qu’il a été conçu par
+Knuth, s’éloigne dans son écriture de l’ordonnancement imposé par
+l’ordinateur, et à la place autorise les développeurs à utiliser un
+ordre imposé par la logique et le fil de leur pensée. Les programmes
+lettrés sont écrits, dans un langage naturel, comme une exposition
+ininterrompue de la logique, à la manière d’un essai, dans lequel sont
+incluses des macros qui masquent les abstractions et la complexité.</p>
+<p>La programmation lettrée propose des outils pour obtenir, à partir
+d’un fichier source, deux représentations : l’une utilisée par un
+compilateur ou un exécutable, le code « emmêlé », et l’autre lue comme
+une documentation formatée, qui est dite « tissée » à partir de la
+source lettrée. Alors que les premiers outils de programmation lettrée
+étaient spécifiques à chaque langage de programmation, la deuxième
+génération a produit des utilitaires indépendants des langages et
+existant hors de ceux-ci. Un programme lettré est une explication de la
+logique du programme en langage naturel, comme l’anglais, entremêlée de
+fragments de code source traditionnel (éventuellement de macros). Les
+macros, dans un fichier source lettré, se présentent comme des titres ou
+des phrases en langue naturelle, qui décrivent les abstractions créées
+au moment de résoudre le problème et cachent le morceau de code ou la
+macro bas-niveau[Quoi ?]. Ces macros sont similaires aux algorithmes en
+pseudo-code souvent utilisés dans l’enseignement des sciences
+informatiques. Ces phrases explicatives deviennent de nouveaux
+opérateurs, créés à la volée par le programmeur, formant un méta-langage
+au-dessus du langage de programmation compréhensible par
+l’ordinateur.[pas clair]</p>
+<p>Un préprocesseur analyse les hiérarchies arbitraires, ou les « toiles
+interconnectées de macros »[Quoi ?], pour produire un code source
+compilable. La commande qui fait cela s’appelle (tangle, emmêler) et la
+commande associée qui produit la documentation s’appelle (weave,
+tisser). Le préprocesseur permet aussi d’extraire des macros et
+d’ajouter du contenu à une macro déjà définie à n’importe quel endroit
+du texte, permettant ainsi de s’affranchir du besoin de garder à
+l’esprit les restrictions imposées par les langages de programmation
+traditionnels et d’éviter d’interrompre le flux de pensée.</p>
+<p>Selon Knuth, la programmation lettrée permet d’écrire des programmes
+de grande qualité1, car elle force le programmeur à exposer clairement
+sa pensée cachée derrière le code, rendant les mauvaises décisions de
+conception plus évidentes. Knuth affirme aussi que la programmation
+lettrée fournit un système de documentation de premier ordre, qui n’est
+pas un ajout au code, mais en fait naturellement partie dans un
+processus d’exposition de la pensée, durant la création du programme1.
+La documentation, partie intégrante de la programmation lettrée, permet
+à l’auteur de reprendre le fil de son cheminement intellectuel là où il
+l’avait arrêté, même longtemps après, de même qu’elle permet aux autres
+programmeurs de comprendre la structure profonde du programme.</p>
+<p>La programmation lettrée s’affranchit donc de la documentation
+traditionnelle, dans laquelle un programmeur présente le code source
+selon une organisation issue des contraintes du compilateur ou doit en
+déchiffrer l’intention grâce au code et aux commentaires qui y sont
+associés. Le méta-langage de la programmation lettrée facilite la
+pensée, en donnant une vue d’ensemble du code et en augmentant le nombre
+de concepts que l’esprit peut intégrer. Knuth affirme que la
+programmation lettrée accroît la qualité du code produit1.</p>
+Knuth a appliqué la programmation lettrée à grande échelle à sa
+présentation de TeX, logiciel très utilisé dans le domaine de l’édition
+scientifique.
 </aside>
 </section>
 <section id="resumé" class="slide level2">
 <h2>Resumé</h2>
 <aside class="notes">
 <p>Notebook != reproductibilité Notebook != programmation lettré</p>
-mais le notebbok de répondre au paradigme de permet la prog lettré et de la repro
+mais le notebbok de répondre au paradigme de permet la prog lettré et de
+la repro
 </aside>
 </section>
-<section id="historique" class="slide level2">
+<section id="historique-1" class="slide level2">
 <h2>Historique ?</h2>
 <aside class="notes">
-<p>Historiquement, une des premières mises en œuvre d’un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.</p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Les origines d’IPython / Jupyter</td>
-</tr>
-<tr class="even">
-<td>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il diffère d’IPython, il peut être intéressant de lire d’abord un peu plus sur la façon dont ces deux outils s’inscrivent dans l’histoire et l’avenir des ordinateurs portables. Les débuts des ordinateurs portables : MATLAB, Mathematica et Maple</td>
-</tr>
-<tr class="odd">
-<td>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé par Jack Little, Steve Bangert et Cleve Moler.</td>
-</tr>
-<tr class="even">
-<td>Allons à la fin des années 1980, en 1987 pour être exact. Theodore Gray a commencé à travailler sur ce qui allait devenir l’interface graphique du bloc-notes Mathematica et un an plus tard, elle était rendue publique. L’interface graphique permettait la création et l’édition interactives de documents de bloc-notes contenant du code de programme joliment imprimé, du texte formaté et tout un tas de fonctionnalités telles que des mathématiques tapées, des graphiques, des composants d’interface graphique, des tableaux et des sons. Les fonctionnalités standard de traitement de texte étaient présentes, comme la vérification orthographique multilingue en temps réel. Vous pouviez produire les documents dans un environnement de diaporama pour les présentations.</td>
-</tr>
-<tr class="odd">
-<td>Lorsque l’on examine la structure de ces carnets, on remarque tout de suite qu’ils reposent sur une hiérarchie de cellules qui permet de décrire les grandes lignes et de diviser les documents en sections, ce que l’on retrouve aujourd’hui dans les carnets Jupyter.</td>
-</tr>
-<tr class="even">
-<td>Toujours à la fin des années 1980, en 1989, Maple a introduit sa première interface graphique de type carnet de notes. Elle était incluse dans la version 4.3 pour le Macintosh. Des versions de la nouvelle interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de notes ont inspiré et jeté les bases pour que d’autres développent ce que l’on appellera plus tard des “carnets de notes de science des données”.</td>
-</tr>
-</tbody>
-</table>
-<p>Début des années 1990, le développement d’une architecture de type client-serveur, aussi inspirée du système de fenêtrage X-window apparue entre-temps sous Unix, pour organiser le logiciel Mathematica en un frontal de présentation des résultats et un noyau qui réalise les calculs, permet à la société Wolfram Research de proposer une approche du travail en calcul scientifique intégrée, du développement même de la formulation mathématique à la rédaction finale et présentation des résultats notamment sous forme graphique : la concrétisation sous forme de document à l’écran et de fichier de sauvegarde est les notebooks Mathematica. Ces fichiers sont ensuite consultables via une version du seul frontal comme lecteur, mis à disposition par « Wolfram Research ». L’idée et la concrétisation de ce développement, furent de Theodore Gray (en)4.</p>
-<p>En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre4.</p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>L’essor des carnets de notes pour la science des données</td>
-</tr>
-<tr class="even">
-<td>De nombreux notebooks informatiques ont été créés après les notebooks de Maple et Mathematica. Cette section, cependant, se concentrera sur les notebooks qui ont contribué à l’essor des notebooks de science des données. Vous verrez que certains de ces notebooks sont toujours très populaires parmi les data scientists en herbe et plus aguerris. Carnet Sage</td>
-</tr>
-<tr class="odd">
-<td>Le bloc-notes Sage, en tant que système basé sur un navigateur, a d’abord été publié au milieu des années 2000, puis en 2007, une nouvelle version plus puissante, dotée de comptes d’utilisateur et permettant de rendre les documents publics, est sortie. Elle ressemblait à la conception de l’interface utilisateur de Google Docs puisque la mise en page du carnet Sage était basée sur celle des carnets Google.</td>
-</tr>
-<tr class="even">
-<td>Les créateurs des carnets Sage ont confirmé qu’ils étaient de fervents utilisateurs des carnets Mathematica et des feuilles de travail Maple. D’autres motivations ou facteurs importants pour le développement des carnets Sage sont les suivants : premièrement, les développeurs ont eu des contacts étroits avec l’équipe responsable d’IPython, notamment parce que la version de Sage basée sur le terminal utilisait IPython. Deuxièmement, il y a eu “une tentative ratée” de deux étudiants de fournir une interface graphique pour IPython, et troisièmement, la montée en puissance des applications web “AJAX” (pseudo-acronyme de “Asynchronous JavaScript And XML”), qui n’obligent pas les utilisateurs à rafraîchir la page entière à chaque fois qu’ils font quelque chose.</td>
-</tr>
-<tr class="odd">
-<td>C’est le cas, par exemple, lorsque vous remplissez un formulaire sur un site web : sans AJAX, vous serez redirigé vers une nouvelle page, avec de nouvelles informations provenant du serveur, lorsque vous appuyez sur le bouton d’envoi. Avec AJAX, JavaScript va faire la demande au serveur, obtenir les résultats et mettre à jour l’écran. Vous n’avez pas besoin de rafraîchir la page, et vous n’êtes pas non plus redirigé.</td>
-</tr>
-<tr class="even">
-<td>D’autres applications AJAX que vous connaissez peut-être sont, par exemple, Gmail, Google Maps, Facebook, Twitter,… Comme vous pouvez le voir, presque tout est en AJAX.</td>
-</tr>
-</tbody>
-</table>
-En 2014, le projet IPython notebook est devenu Jupyter et permet de programmer dans pratiquement n’importe quel langage de programmation4.
+<p>Historiquement, une des premières mises en œuvre d’un livre
+électronique dont les exemples de calculs et les graphiques sont
+recalculables à la volée, interactivement dit-on désormais, via les
+sources des programmes présents de façon sous-jacente, accessibles et
+modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en),
+conscient de cet enjeu de reproductibilité des calculs numériques
+complexes2, écrit et sort la première version de son ouvrage
+Fundamentals of Geophysical Data Processing3, livre devenu un grand
+classique en géophysique et en traitement du signal.</p>
+<p>Les origines d’IPython / Jupyter</p>
+<p>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il
+diffère d’IPython, il peut être intéressant de lire d’abord un peu plus
+sur la façon dont ces deux outils s’inscrivent dans l’histoire et
+l’avenir des ordinateurs portables. Les débuts des ordinateurs portables
+: MATLAB, Mathematica et Maple</p>
+<p>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé
+par Jack Little, Steve Bangert et Cleve Moler.</p>
+<p>Allons à la fin des années 1980, en 1987 pour être exact. Theodore
+Gray a commencé à travailler sur ce qui allait devenir l’interface
+graphique du bloc-notes Mathematica et un an plus tard, elle était
+rendue publique. L’interface graphique permettait la création et
+l’édition interactives de documents de bloc-notes contenant du code de
+programme joliment imprimé, du texte formaté et tout un tas de
+fonctionnalités telles que des mathématiques tapées, des graphiques, des
+composants d’interface graphique, des tableaux et des sons. Les
+fonctionnalités standard de traitement de texte étaient présentes, comme
+la vérification orthographique multilingue en temps réel. Vous pouviez
+produire les documents dans un environnement de diaporama pour les
+présentations.</p>
+<p>Lorsque l’on examine la structure de ces carnets, on remarque tout de
+suite qu’ils reposent sur une hiérarchie de cellules qui permet de
+décrire les grandes lignes et de diviser les documents en sections, ce
+que l’on retrouve aujourd’hui dans les carnets Jupyter.</p>
+<p>Toujours à la fin des années 1980, en 1989, Maple a introduit sa
+première interface graphique de type carnet de notes. Elle était incluse
+dans la version 4.3 pour le Macintosh. Des versions de la nouvelle
+interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de
+notes ont inspiré et jeté les bases pour que d’autres développent ce que
+l’on appellera plus tard des “carnets de notes de science des
+données”.</p>
+<p>Début des années 1990, le développement d’une architecture de type
+client-serveur, aussi inspirée du système de fenêtrage X-window apparue
+entre-temps sous Unix, pour organiser le logiciel Mathematica en un
+frontal de présentation des résultats et un noyau qui réalise les
+calculs, permet à la société Wolfram Research de proposer une approche
+du travail en calcul scientifique intégrée, du développement même de la
+formulation mathématique à la rédaction finale et présentation des
+résultats notamment sous forme graphique : la concrétisation sous forme
+de document à l’écran et de fichier de sauvegarde est les notebooks
+Mathematica. Ces fichiers sont ensuite consultables via une version du
+seul frontal comme lecteur, mis à disposition par « Wolfram Research ».
+L’idée et la concrétisation de ce développement, furent de Theodore Gray
+(en)4.</p>
+<p>En 2001, Fernando Pérez a repris le concept de notebook pour
+développer IPython. À la différence de Mathematica, qui est un logiciel
+propriétaire, IPython permet de programmer de manière interactive en
+Python, un langage de programmation libre4.</p>
+<p>L’essor des carnets de notes pour la science des données</p>
+<p>De nombreux notebooks informatiques ont été créés après les notebooks
+de Maple et Mathematica. Cette section, cependant, se concentrera sur
+les notebooks qui ont contribué à l’essor des notebooks de science des
+données. Vous verrez que certains de ces notebooks sont toujours très
+populaires parmi les data scientists en herbe et plus aguerris. Carnet
+Sage</p>
+<p>Le bloc-notes Sage, en tant que système basé sur un navigateur, a
+d’abord été publié au milieu des années 2000, puis en 2007, une nouvelle
+version plus puissante, dotée de comptes d’utilisateur et permettant de
+rendre les documents publics, est sortie. Elle ressemblait à la
+conception de l’interface utilisateur de Google Docs puisque la mise en
+page du carnet Sage était basée sur celle des carnets Google.</p>
+<p>Les créateurs des carnets Sage ont confirmé qu’ils étaient de
+fervents utilisateurs des carnets Mathematica et des feuilles de travail
+Maple. D’autres motivations ou facteurs importants pour le développement
+des carnets Sage sont les suivants : premièrement, les développeurs ont
+eu des contacts étroits avec l’équipe responsable d’IPython, notamment
+parce que la version de Sage basée sur le terminal utilisait IPython.
+Deuxièmement, il y a eu “une tentative ratée” de deux étudiants de
+fournir une interface graphique pour IPython, et troisièmement, la
+montée en puissance des applications web “AJAX” (pseudo-acronyme de
+“Asynchronous JavaScript And XML”), qui n’obligent pas les utilisateurs
+à rafraîchir la page entière à chaque fois qu’ils font quelque
+chose.</p>
+<p>C’est le cas, par exemple, lorsque vous remplissez un formulaire sur
+un site web : sans AJAX, vous serez redirigé vers une nouvelle page,
+avec de nouvelles informations provenant du serveur, lorsque vous
+appuyez sur le bouton d’envoi. Avec AJAX, JavaScript va faire la demande
+au serveur, obtenir les résultats et mettre à jour l’écran. Vous n’avez
+pas besoin de rafraîchir la page, et vous n’êtes pas non plus
+redirigé.</p>
+<p>D’autres applications AJAX que vous connaissez peut-être sont, par
+exemple, Gmail, Google Maps, Facebook, Twitter,… Comme vous pouvez le
+voir, presque tout est en AJAX.</p>
+<p>IPython et Jupyter Notebook</p>
+<p>Fin 2001, environ vingt ans après que Guido van Rossum ait commencé à
+travailler sur Python au National Research Institute for Mathematics and
+Computer Science aux Pays-Bas, Fernando Pérez a commencé à développer
+IPython. Le projet a été fortement influencé par les notebooks
+Mathematica et les feuilles de travail Maple, tout comme le notebook
+Sage et de nombreux autres projets qui ont suivi.</p>
+<p>En 2005, il y a eu une première tentative de construction d’un
+système de notebook avec Wx, une boîte à outils de widgets et une
+bibliothèque d’outils pour créer des interfaces utilisateur graphiques
+(GUI) pour des applications multiplateformes. Deux étudiants du Google
+Summer of Code ont travaillé sur le prototype sous la direction de
+Robert Kern et Fernando Pérez. Par la suite, Robert a approfondi le
+problème. Il s’agissait moins d’un prototype de système de notebook que
+d’un nettoyage du code de base d’IPython dans le but de faciliter
+l’écriture d’une interface graphique wxPython pour le shell IPython. Ce
+sont également ces nettoyages qui ont permis de créer un système de
+notebook propre et certains d’entre eux ont été fusionnés à IPython au
+fur et à mesure que l’effort en faveur du notebook, finalement couronné
+de succès, était en cours.</p>
+<p>Le deuxième prototype d’IPython a été construit durant l’été 2006 par
+Min Ragan-Kelley et conseillé par Brian Granger. Il était basé sur le
+Web et disposait d’une base de données SQL, mais les travaux ont été
+interrompus car sa mise en œuvre s’est avérée trop complexe avec les
+technologies Web de l’époque.</p>
+<p>Le troisième prototype du carnet IPython est apparu en octobre 2010
+et a été réalisé par un tiers lors d’un hack de quelques jours. Enfin,
+au printemps-été 2011, Brian Granger travaillait à plein temps sur le
+prototype du web notebook, sur la base du travail qu’il avait effectué
+en 2010, où il avait créé l’architecture du noyau IPython et la
+spécification des messages avec Fernando Pérez et PyZMQ avec Min Ragan
+Kelley.</p>
+<p>PyZMQ est une bibliothèque qui fournit des liaisons Python pour
+ZeroMQ ; cette bibliothèque était nécessaire pour les fonctions de
+calcul parallèle d’IPython, la console qt et le notebook.</p>
+<p>PyZMQ et les websockets sont les principales technologies qui ont
+rendu le notebook possible. À l’automne de la même année, d’autres
+contributeurs (tels que Matthias Bussonnier, Min et Fernando) y ont
+également contribué. Le 21 décembre 2011, il a été publié en tant que
+première version du IPython Notebook (0.12).</p>
+<p>Au cours des années suivantes, l’équipe a reçu des prix, tels que
+l’Advancement of Free Software pour Fernando Pérez le 23 mars 2013 et le
+Jolt Productivity Award, ainsi que des financements de la Alfred P.
+Sloan Foundations, entre autres.</p>
+<p>Enfin, en 2014, le projet Jupyter a démarré comme un projet dérivé
+d’IPython.</p>
+<p>La dernière version d’IPython avant la scission contenait un shell
+interactif, le serveur de notebook, la console Qt, etc. dans un seul
+dépôt. Le projet était vaste, avec des composants qui devenaient de plus
+en plus des projets distincts qui se trouvaient appartenir au même
+projet.</p>
+<p>Mais notez que la taille du projet n’était pas la seule raison pour
+laquelle le projet Jupyter a été lancé : de 2011 à 2014, le notebook
+IPython a commencé à fonctionner avec d’autres langages de
+programmation. Le premier à arriver était Julia, puis plus tard R. Le
+fait qu’IPython notebook, qui impliquait que le notebook était
+uniquement basé sur Python, travaillait également avec des noyaux
+d’autres langages de programmation tels que Julia et R, a laissé les
+gens perplexes.</p>
+<p>Pourquoi le nom “IPython” si d’autres langages de programmation
+étaient également impliqués ?</p>
+<p>Le nom “Jupyter” a été inspiré par la réflexion sur les principaux
+langages ouverts pour la science (c’est-à-dire Julia, Python et R), et
+même s’il peut sembler être n’importe quel autre acronyme, cela n’a
+jamais signifié que les autres langages n’étaient pas les bienvenus. De
+plus, ce nom représentait mieux le projet sur lequel les développeurs
+travaillaient et faisait un clin d’œil aux racines scientifiques du
+projet !</p>
+<p>Après le lancement du projet Jupyter, les parties du projet IPython
+qui ne sont pas liées à un langage, comme le format du notebook, le
+protocole de messages, la console Qt, l’application web du notebook,
+etc. ont été intégrées au projet Jupyter.</p>
+<p>Dans les communautés Jupyter et IPython, ceci est appelé “The Big
+Split”.</p>
+<p>IPython n’a plus que deux rôles à remplir : être le backend Python du
+Jupyter Notebook, qui est aussi connu comme le noyau, et un shell Python
+interactif. Mais ce n’est pas tout : au sein de l’écosystème IPython,
+vous trouverez également un cadre de calcul parallèle. Vous en saurez
+plus à ce sujet un peu plus tard !</p>
+<p>Et tout comme IPython, le projet Jupyter est en fait un nom pour un
+tas de projets : les trois applications qu’il abrite sont le Notebook
+lui-même, une Console et une console Qt, mais il y a aussi des
+sous-projets tels que JupyterHub pour supporter le déploiement du
+Notebook, nbgrader à des fins éducatives, etc. Vous pouvez voir un
+aperçu de l’architecture Jupyter ici.</p>
+<p>Notez que c’est exactement l’évolution de ce projet qui explique la
+confusion que beaucoup de Pythonistes ont lorsqu’il s’agit d’IPython et
+de Jupyter : depuis que l’un est sorti de l’autre (assez récemment),
+certains ont encore des difficultés à adopter les bons noms pour les
+concepts. Mais ce qui pourrait être un facteur encore plus compliqué,
+c’est l’évolution : depuis que l’un est issu de l’autre, il y a un
+chevauchement considérable entre les fonctionnalités d’IPython et de
+Jupyter Notebook, qu’il est parfois difficile de distinguer ! La manière
+de faire la distinction entre les deux sera clarifiée dans les
+prochaines sections de cet article. Si vous souhaitez obtenir plus de
+détails sur la façon dont le développement d’IPython a été réalisé,
+consultez les comptes rendus personnels de Fernando Pérez et William
+Stein sur l’histoire de leurs notebooks.</p>
+<p>R Markdown et Jupyter Notebook ont en commun la livraison d’un flux
+de travail reproductible, le tissage du code, de la sortie et du texte
+dans un seul document, la prise en charge des widgets interactifs et la
+sortie vers de multiples formats.</p>
+<p>Pour en savoir plus sur la façon dont vous pouvez travailler avec les
+notebooks R et sur les différences exactes entre les notebooks Jupyter
+et R Markdown en termes de partage de notebooks, de gestion de projet,
+de contrôle de version et plus encore, consultez le post Jupyter et R de
+DataCamp : Notebooks with R.</p>
 </aside>
 </section>
 <section id="historique-2" class="slide level2">
@@ -577,7 +1003,8 @@ En 2014, le projet IPython notebook est devenu Jupyter et permet de programmer d
 <section id="les-différents-notebook" class="slide level2">
 <h2>Les différents notebook</h2>
 <aside class="notes">
-<p>Quelques implémentations connues, outre celle de Mathmematica, sont :</p>
+<p>Quelques implémentations connues, outre celle de Mathmematica, sont
+:</p>
 <pre><code>Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de &quot;Julia&quot;, &quot;Python&quot; et &quot;R&quot;). Très rapidement, la frontalisation par Jupyter a intégré d&#39;autres langages de programmation, et de fait potentiellement tout langage gérant une boucle &quot;REPL&quot; (en).
 Un notebook Jupyter combine des sections en langage naturel mises en forme avec la syntaxe &quot;Markdown&quot; et des sections en code Python, Julia, R ou autres langages. Ces documents peuvent être sauvegardés au format JSON avec l&#39;extension &quot;.ipynb&quot;. Ils peuvent être convertis en page web ou en &quot;présentation HTML5&quot; grâce à des utilitaires comme &quot;nbconvert&quot; ;
 L&#39;environnement de développement intégré RStudio permet aussi d&#39;utiliser des notebooks. Les notebooks RStudio sont enregistrés au format &quot;Rmarkdown&quot;5 ;
@@ -590,49 +1017,151 @@ Mathcad, logiciel propriétaire, est essentiellement un système de calcul forme
 <h3 id="rmarkdown-notebook-r">Rmarkdown (notebook R)</h3>
 <aside class="notes">
 <p>PDF, HTML ou Word.</p>
-<p>knitr : 2012 (xie Yihui) The idea was to embed code chunks (of R or other languages) in Markdown documents.</p>
-<p>Ne supporte pas que le markdown mais aussi : LaTeX, HTML, AsciiDoc, reStructuredText, and Textile</p>
+<p>knitr : 2012 (xie Yihui) The idea was to embed code chunks (of R or
+other languages) in Markdown documents.</p>
+<p>Ne supporte pas que le markdown mais aussi : LaTeX, HTML, AsciiDoc,
+reStructuredText, and Textile</p>
 <p>Mais Markdown has become the most popular document format</p>
-<p>En un mot, R Markdown s’appuie sur les épaules de knitr et de Pandoc. Le premier exécute le code informatique intégré dans Markdown, et convertit R Markdown en Markdown. Le second rend le Markdown dans le format de sortie que vous souhaitez (PDF, HTML, Word, etc.).</p>
+<p>En un mot, R Markdown s’appuie sur les épaules de knitr et de Pandoc.
+Le premier exécute le code informatique intégré dans Markdown, et
+convertit R Markdown en Markdown. Le second rend le Markdown dans le
+format de sortie que vous souhaitez (PDF, HTML, Word, etc.).</p>
 <dl>
-<dt class="fragment">rmardkown ne permet pas seulement la création de document (présentation, livre, tutoriel, article…) Mais aussi notebook interactif, application, blogs et website.</dt>
-<dd class="fragment"><p>“La richesse ne consiste pas à avoir de grands biens, mais à avoir peu de besoins.”</p>
+<dt class="fragment">rmardkown ne permet pas seulement la création de
+document (présentation, livre, tutoriel, article…) Mais aussi notebook
+interactif, application, blogs et website.</dt>
+<dd class="fragment">
+<p>“La richesse ne consiste pas à avoir de grands biens, mais à avoir
+peu de besoins.”</p>
 </dd>
 </dl>
-<p>Si vous parvenez à maîtriser votre préoccupation pour la recherche de fonctionnalités de composition, vous devriez être beaucoup plus efficace dans la rédaction du contenu et vous pouvez devenir un auteur prolifique</p>
-<p>Élément du Rmarkdown : - paragraphes - en-têtes (de section)citations en bloc - blocs de code - listes (numérotées et non numérotées) - règles horizontales - tableaux - mise en forme en ligne (mise en évidence - biffure - exposant superscripts - exposant subscripts - texte mot à mot et petites capitales) - expressions mathématiques LaTeX - équations - liens - images - notes de bas de page - citations - théorèmes - preuves et exemples.</p>
+<p>Si vous parvenez à maîtriser votre préoccupation pour la recherche de
+fonctionnalités de composition, vous devriez être beaucoup plus efficace
+dans la rédaction du contenu et vous pouvez devenir un auteur
+prolifique</p>
+<p>Élément du Rmarkdown : - paragraphes - en-têtes (de section)citations
+en bloc - blocs de code - listes (numérotées et non numérotées) - règles
+horizontales - tableaux - mise en forme en ligne (mise en évidence -
+biffure - exposant superscripts - exposant subscripts - texte mot à mot
+et petites capitales) - expressions mathématiques LaTeX - équations -
+liens - images - notes de bas de page - citations - théorèmes - preuves
+et exemples.</p>
 <p>mais a ne pas sous-estimer … css Pandoc !</p>
-<p>Les documents R Markdown sont souvent portables, dans le sens où ils peuvent être compilés dans plusieurs types de formats de sortie. Encore une fois, cela est principalement dû à la syntaxe simplifiée du langage de création, Markdown. Plus les éléments de votre document sont simples, plus le document a de chances d’être converti en différents formats. De même, si vous adaptez fortement R Markdown à un format de sortie spécifique (par exemple, LaTeX), vous risquez de perdre la portabilité, car toutes les fonctionnalités d’un format ne fonctionnent pas dans un autre format.</p>
+<p>Les documents R Markdown sont souvent portables, dans le sens où ils
+peuvent être compilés dans plusieurs types de formats de sortie. Encore
+une fois, cela est principalement dû à la syntaxe simplifiée du langage
+de création, Markdown. Plus les éléments de votre document sont simples,
+plus le document a de chances d’être converti en différents formats. De
+même, si vous adaptez fortement R Markdown à un format de sortie
+spécifique (par exemple, LaTeX), vous risquez de perdre la portabilité,
+car toutes les fonctionnalités d’un format ne fonctionnent pas dans un
+autre format.</p>
 </aside>
 <h3 id="notebook-jupyter-jupyterlab">Notebook jupyter / JupyterLab</h3>
 <aside class="notes">
-<p>En outre, Jupyter Notebook est aussi utilisé comme outil pédagogique. Selon la plateforme de dépôt de code GitHub, plus de 2,5 millions de notebooks Jupyter ont été partagés en septembre 2018.</p>
-<p>Cet outil présente l’avantage de supporter de nombreux langages. En outre, il est compatible avec les cellules Markdown permettant des écritures plus détaillées et un formatage facile.</p>
-<p>JupyterLab est la prochaine génération du Jupyter Notebook. Il vise à résoudre de nombreux problèmes d’utilisation du Notebook et élargit considérablement sa portée. JupyterLab offre un cadre général pour le calcul interactif et la science des données dans le navigateur, en utilisant Python, Julia, R ou l’un des nombreux autres langages.</p>
-<p>En plus de fournir une interface améliorée aux carnets de notes existants, JupyterLab apporte également dans la même interface un navigateur de fichiers, des consoles, des terminaux, des éditeurs de texte, des éditeurs Markdown, des éditeurs CSV, des éditeurs JSON, des cartes interactives, des widgets, etc. L’architecture est entièrement extensible et ouverte aux développeurs. En un mot, JupyterLab est un environnement de développement intégré (IDE) basé sur le Web et modifiable pour la science des données et l’informatique interactive.</p>
-<p>JupyterLab utilise exactement le même serveur de notebook et le même format de fichier que le Jupyter Notebook classique, de sorte qu’il est entièrement compatible avec les notebooks et noyaux existants. Le Notebook classique et Jupyterlab peuvent fonctionner côte à côte sur le même ordinateur. On peut facilement passer d’une interface à l’autre.</p>
-Traduit avec www.DeepL.com/Translator (version gratuite)
+<p>En outre, Jupyter Notebook est aussi utilisé comme outil pédagogique.
+Selon la plateforme de dépôt de code GitHub, plus de 2,5 millions de
+notebooks Jupyter ont été partagés en septembre 2018.</p>
+<p>Cet outil présente l’avantage de supporter de nombreux langages. En
+outre, il est compatible avec les cellules Markdown permettant des
+écritures plus détaillées et un formatage facile.</p>
+<p>JupyterLab est la prochaine génération du Jupyter Notebook. Il vise à
+résoudre de nombreux problèmes d’utilisation du Notebook et élargit
+considérablement sa portée. JupyterLab offre un cadre général pour le
+calcul interactif et la science des données dans le navigateur, en
+utilisant Python, Julia, R ou l’un des nombreux autres langages.</p>
+<p>En plus de fournir une interface améliorée aux carnets de notes
+existants, JupyterLab apporte également dans la même interface un
+navigateur de fichiers, des consoles, des terminaux, des éditeurs de
+texte, des éditeurs Markdown, des éditeurs CSV, des éditeurs JSON, des
+cartes interactives, des widgets, etc. L’architecture est entièrement
+extensible et ouverte aux développeurs. En un mot, JupyterLab est un
+environnement de développement intégré (IDE) basé sur le Web et
+modifiable pour la science des données et l’informatique
+interactive.</p>
+<p>JupyterLab utilise exactement le même serveur de notebook et le même
+format de fichier que le Jupyter Notebook classique, de sorte qu’il est
+entièrement compatible avec les notebooks et noyaux existants. Le
+Notebook classique et Jupyterlab peuvent fonctionner côte à côte sur le
+même ordinateur. On peut facilement passer d’une interface à
+l’autre.</p>
 </aside>
 <h4 id="section">—</h4>
 <aside class="notes">
-<p>Jupyter Notebook est un environnement informatique interactif basé sur le web permettant de créer des documents Jupyter notebook. Il prend en charge plusieurs langages comme Python (IPython), Julia, R, etc. et est largement utilisé pour l’analyse et la visualisation de données, ainsi que pour l’informatique interactive et exploratoire.</p>
-<p>JupyterLab est l’interface utilisateur de nouvelle génération incluant les notebooks. Elle a une structure modulaire, où vous pouvez ouvrir plusieurs notebooks ou fichiers (par exemple HTML, Text, Markdowns etc) comme des onglets dans la même fenêtre. Il offre une expérience plus proche de celle d’un IDE.</p>
-<p>Pour un débutant, je suggérerais de commencer avec Jupyter Notebook, car il se compose simplement d’un navigateur de fichiers et d’une vue d’éditeur (notebook). Il est peut-être plus facile à utiliser. Si vous voulez plus de fonctionnalités, passez à JupyterLab. JupyterLab offre beaucoup plus de fonctionnalités et une interface améliorée, qui peut être étendue grâce à des extensions : Extensions JupyterLab (GitHub)</p>
+<p>Jupyter Notebook est un environnement informatique interactif basé
+sur le web permettant de créer des documents Jupyter notebook. Il prend
+en charge plusieurs langages comme Python (IPython), Julia, R, etc. et
+est largement utilisé pour l’analyse et la visualisation de données,
+ainsi que pour l’informatique interactive et exploratoire.</p>
+<p>JupyterLab est l’interface utilisateur de nouvelle génération
+incluant les notebooks. Elle a une structure modulaire, où vous pouvez
+ouvrir plusieurs notebooks ou fichiers (par exemple HTML, Text,
+Markdowns etc) comme des onglets dans la même fenêtre. Il offre une
+expérience plus proche de celle d’un IDE.</p>
+<p>Pour un débutant, je suggérerais de commencer avec Jupyter Notebook,
+car il se compose simplement d’un navigateur de fichiers et d’une vue
+d’éditeur (notebook). Il est peut-être plus facile à utiliser. Si vous
+voulez plus de fonctionnalités, passez à JupyterLab. JupyterLab offre
+beaucoup plus de fonctionnalités et une interface améliorée, qui peut
+être étendue grâce à des extensions : Extensions JupyterLab (GitHub)</p>
 Traduit avec www.DeepL.com/Translator (version gratuite)
 </aside>
 </section>
 <section id="jupyterlab" class="slide level2">
 <h2>JupyterLab</h2>
 <aside class="notes">
-<p>Depuis 2018, l’interface utilisateur JupyterLab est disponible pour tous et prête pour un usage en production. Il s’agit d’une version plus flexible et malléable que le Jupyter Notebook classique. Les utilisateurs peuvent effectuer des glisser-déposer de cellules entre les notebooks et organiser l’espace de travail en différents ongles et sous-sections.</p>
-<p>Le code peut être exécuté directement à partir de fichiers texte et de fichiers Jupyter Notebook, et de nombreux formats de fichiers communs pour le code et les données peuvent être rendus en prévisualisations live.</p>
-<p>En outre, JupyterLab peut être personnalisé à l’aide d’extensions pour ajouter la prise en charge de nouveaux formats de fichiers. Ceci permet d’enrichir l’interface, ou d’ajouter des fonctionnalités additionnelles. Les applications sont donc étendues par rapport au Jupyter Notebook.</p>
-<p>À terme, l’ambition est de remplacer l’interface Jupyter Notebook par celle de JupyterLab. Il faudra toutefois patienter jusqu’à ce que JupyterLab soit suffisamment stable.</p>
-En conclusion, Jupyter Notebook est un formidable outil pour créer une histoire à partir des données. Au fil du temps, il est devenu un écosystème complet regroupant des interfaces alternatives comme JupyterLab et Hydrogen, des bibliothèques de visualisation interactives et une large gamme d’outils.
+<p>Depuis 2018, l’interface utilisateur JupyterLab est disponible pour
+tous et prête pour un usage en production. Il s’agit d’une version plus
+flexible et malléable que le Jupyter Notebook classique. Les
+utilisateurs peuvent effectuer des glisser-déposer de cellules entre les
+notebooks et organiser l’espace de travail en différents ongles et
+sous-sections.</p>
+<p>Le code peut être exécuté directement à partir de fichiers texte et
+de fichiers Jupyter Notebook, et de nombreux formats de fichiers communs
+pour le code et les données peuvent être rendus en prévisualisations
+live.</p>
+<p>En outre, JupyterLab peut être personnalisé à l’aide d’extensions
+pour ajouter la prise en charge de nouveaux formats de fichiers. Ceci
+permet d’enrichir l’interface, ou d’ajouter des fonctionnalités
+additionnelles. Les applications sont donc étendues par rapport au
+Jupyter Notebook.</p>
+<p>À terme, l’ambition est de remplacer l’interface Jupyter Notebook par
+celle de JupyterLab. Il faudra toutefois patienter jusqu’à ce que
+JupyterLab soit suffisamment stable.</p>
+En conclusion, Jupyter Notebook est un formidable outil pour créer une
+histoire à partir des données. Au fil du temps, il est devenu un
+écosystème complet regroupant des interfaces alternatives comme
+JupyterLab et Hydrogen, des bibliothèques de visualisation interactives
+et une large gamme d’outils.
 </aside>
 <h3 id="notebook-observable">Notebook Observable</h3>
 <h3 id="notebook-pluto">Notebook Pluto</h3>
-<h3 id="apache-zeppelin">Apache Zeppelin</h3>
+<h3 id="autre">AUTRE</h3>
+<h4 id="autres-carnets-de-notes-de-science-des-données">Autres carnets
+de notes de science des données</h4>
+<p>Bien sûr, il existe encore d’autres notebooks que vous pouvez
+envisager lorsque vous vous lancez dans la science des données. Ces
+dernières années, un grand nombre de nouvelles alternatives ont trouvé
+leur place auprès des scientifiques et des amateurs de science des
+données : pensez non seulement à Beaker Notebook, Apache Zeppelin, Spark
+Notebook, DataBricks Cloud, etc., mais aussi à d’autres outils tels que
+Rodeo IDE ou nteract qui rendent vos analyses de science des données
+interactives et reproductibles. Il convient de noter que nteract diffère
+des autres outils mentionnés ici car il utilise l’architecture Jupyter,
+notamment les protocoles et les formats.</p>
+<h4 id="lavenir-des-carnets-de-notes">L’avenir des carnets de notes</h4>
+<p>Les notebooks semblent être là pour rester. Récemment, la prochaine
+génération de Jupyter Notebook a été présentée à la communauté :
+JupyterLab. L’application Notebook comprend non seulement la prise en
+charge des Notebooks, mais aussi un gestionnaire de fichiers, un éditeur
+de texte, un émulateur de terminal, un moniteur pour l’exécution des
+processus Jupyter, un gestionnaire de cluster IPython et un pager pour
+afficher l’aide.</p>
+<p>Vous pouvez penser maintenant que ce n’est rien de nouveau ; le
+Jupyter Notebook a également toutes ces choses. JupyterLab, cependant,
+vous permet d’utiliser tous ces éléments constitutifs de l’informatique
+interactive de manière novatrice.</p>
+<p>Pour en savoir plus, cliquez ici.</p>
 </section>
 <section id="type-dutilisation" class="slide level2">
 <h2>Type d’utilisation ?</h2>
@@ -642,10 +1171,46 @@ En conclusion, Jupyter Notebook est un formidable outil pour créer une histoire
 <h1>Ecriture numérique</h1>
 
 </section>
-<h3 id="markdown">Markdown</h3>
+<section id="markdown" class="slide level2">
+<h2>Markdown</h2>
 <aside class="notes">
-However, the original version of Markdown invented by John Gruber was often found overly simple and not suitable to write highly technical documents. For example, there was no syntax for tables, footnotes, math expressions, or citations. Fortunately, John MacFarlane created a wonderful package named Pandoc (<a href="http://pandoc.org" class="uri">http://pandoc.org</a>) to convert Markdown documents (and many other types of documents) to a large variety of output formats. More importantly, the Markdown syntax was significantly enriched. Now we can write more types of elements with Markdown while still enjoying its simplicity.
-</aside></section>
+However, the original version of Markdown invented by John Gruber was
+often found overly simple and not suitable to write highly technical
+documents. For example, there was no syntax for tables, footnotes, math
+expressions, or citations. Fortunately, John MacFarlane created a
+wonderful package named Pandoc (<a href="http://pandoc.org"
+class="uri">http://pandoc.org</a>) to convert Markdown documents (and
+many other types of documents) to a large variety of output formats.
+More importantly, the Markdown syntax was significantly enriched. Now we
+can write more types of elements with Markdown while still enjoying its
+simplicity.
+</aside>
+</section>
+<section id="référence" class="slide level2">
+<h2>RÉFÉRENCE</h2>
+<p><a href="https://www.datacamp.com/blog/ipython-or-jupyter"
+class="uri">https://www.datacamp.com/blog/ipython-or-jupyter</a></p>
+</section>
+<section id="diapositives-libres-cc-by-sa-4.0" class="slide level2">
+<h2>Diapositives libres (CC BY-SA 4.0)</h2>
+<p><br></p>
+<p class="moyp">
+Diaporama :
+</p>
+<p class="moyp222">
+<a href="https://huguespecout.github.io/notebook_mateshs/#/"
+class="uri">https://huguespecout.github.io/notebook_mateshs/#/</a>
+</p>
+<p><br></p>
+<p class="moyp">
+Code source :
+</p>
+<p class="moyp222">
+<a href="https://github.com/HuguesPecout/notebook_mateshs"
+class="uri">https://github.com/HuguesPecout/notebook_mateshs</a>
+</p>
+<p><br></p>
+</section></section>
     </div>
   </div>
 
@@ -673,10 +1238,6 @@ However, the original version of Markdown invented by John Gruber was often foun
         center: true,
         // Enables touch navigation on devices with touch input
         touch: true,
-        // Loop the presentation
-        loop: false,
-        // Change the presentation direction to be RTL
-        rtl: false,
         // Turns fragments on and off globally
         fragments: true,
         // Flags if the presentation is running in an embedded mode,
@@ -698,7 +1259,7 @@ However, the original version of Markdown invented by John Gruber was often foun
         // Opens links in an iframe preview overlay
         previewLinks: false,
         // Transition style
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        transition: 'default', // none/fade/slide/convex/concave/zoom
         // Transition speed
         transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds

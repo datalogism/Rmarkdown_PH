@@ -1,6 +1,6 @@
 ---
-title: <h1 class="first">Notebook (calepin)<br><span style="font-size:70%;text-transform:lowercase">& écriture numérique<span></h1>
-author: <h2 class="place">Documenter ses traitements</h2>
+title: <h1 class="first">Le notebook<br><span style="font-size:70%;text-transform:lowercase">et la programmation lettrée<span></h1>
+author: <h2 class="place">Outil et méthode pour le partage et la reproductibilité</h2>
 date: <img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/><h2 class="place2"><i>Journées annuelles du réseau Mate-SHS, 17 mai 2022</i></h2><p class="name">Hugues Pecout (CIST, CNRS) - Timothée Giraud (RIATE, CNRS)</br>Sébastien Rey (IDEES, Université Rouen-Normandie)</p><img src="figure/riate.png" width="115" style="float:left;margin-top:60px;"/><img src="figure/cnrs.png" width="70" style="float:center;margin-top:30px;"/><img src="figure/cist-logo-bleu_sur_blanc.png" style="float:right;margin-top:30px;" width="70"/>
 output: 
   revealjs::revealjs_presentation:
@@ -12,7 +12,6 @@ output:
     incremental: TRUE
     center: TRUE	
     showNotes: FALSE
-    transition: fade
     reveal_options:
       help: true
       controls: TRUE
@@ -36,14 +35,155 @@ editor_options:
 ---
 
 
-# Contexte
+## Qui sommes-nous ? 
 
-## Ingénienieur utilisateur de R 
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs d'études CNRS en sciences de l'information géographique</p>
 
-Repro/formation -> Rmarkdown
+<img src="figure/users.png" style="float:left;margin-top:40px;" width="380"/>
 
 
-## Notebook def ?
+<div id="rightls">
+<ul class="pucsmall22" style="margin-top:40px;">
+> - Le langage R comme outil principal
+> - Production régulière de notebook R
+> - Responsables de projet Rzine
+</ul>
+
+
+<div class="fragment">
+<img src="figure/users2.png" style="float:left;margin-top:10px;margin-left:60px;" width="186"/>
+
+
+<div id="rightseb">
+<ul class="xpucsmall" style="margin-top:50px;">
+> - <span style="color:#f7a41f;">Ingénieur de recherche</span>
+> - <span style="color:#f7a41f;">Geomatique/Informatique</span>
+> - <span style="color:#f7a41f;">Coord. du GT Notebook</span>
+> - <span style="color:#f7a41f;">Membre du projet Rzine</span>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+# Notebook
+
+
+## Notebook ?
+
+<p class="medpcenter" style="margin-top:40px;"><span style="color:#f7a41f;">**Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique**.</span></p>
+
+
+<p class="smallpcenter" style="margin-top:40px;">Plusieurs dénominations (et types) existent :</p>
+
+<ul class="pucsmall2" style="margin-top:10px;">
+> - *Calepin électronique*
+> - ***Notebook*** (Jupyter, Observable, Pluto)
+> - *Rmarkdown*
+> - *Quarto*...
+</ul>
+
+<p class="medpcenter" style="margin-top:40px;"><span style="color:#f7a41f;">**Un notebook permet d'appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité**.</span></p>
+
+
+## Notebook ?
+
+<img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/>
+
+## Exemple Rmarkdown 1
+
+<div id="codermd">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.rmd)<span></p>
+
+```{r, file = 'figure/exemple.Rmd', eval=FALSE}
+```
+</div>
+
+<div id="codehtml">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Fichier en sortie (.html)<span></p>
+
+![](figure/markdown.png)
+</div>
+
+
+## Exemple Rmarkdown 2
+
+
+<div id="codermd">
+
+<br>
+<br>
+
+
+<p class="medpcenter">[<span style="color:#f7a41f;">Code source (Rmd & data)<span>](https://gitlab.huma-num.fr/rCarto/santelocal)</p>
+
+
+</div>
+
+<div id="codehtml">
+
+<br>
+<br>
+
+
+<p class="medpcenter">[<span style="color:#f7a41f;">Fichier en sortie (.html)<span>](https://rcarto.gitpages.huma-num.fr/santelocal/)</p>
+
+</div>
+
+
+
+# Historique
+
+
+## DU calepin au notebook
+
+## Programmation lettrée
+
+## Les notebook aujourd'hui
+
+
+
+# Les usages
+
+<section>
+
+<center>
+<video autoplay="true" loop="true" muted="true" width="640">
+   <source src="https://s3.amazonaws.com/orm-atlas-media/atlas-jupyter/edit-with-atlas.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+</center>
+
+
+</section>
+
+
+## Programamtion lettré ?
+
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+Notebook != reproductibilité
+Notebook != programmation lettré 
+
+Notebook != reproductibilité
+Notebook != programmation lettré 
+
+
+
+Usage est multiple :
+
+- Exploration et analyse des données
+- Travail collaboratif
+- Support de cours (CM/TD)
+- Partage de méthode
+
+
+
+
+
 
 <aside class="notes">
 En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C'est un exemple de programmation lettrée.
@@ -52,12 +192,13 @@ L'usage des notebooks en science permet de faciliter le partage et la reproducti
 </aside>
   
 ## Notebook def ?
+
 <img src="figure/notebook.png" style="margin-top:40px;" width="750"/>
 
 ## Programmation lettré
 
 
-  <aside class="notes">
+<aside class="notes">
 La programmation lettrée (ou programmation littéraire) est une approche de la programmation préconisée par Donald Knuth qui se veut différente du paradigme de programmation structurée des années 19701. 
 
 Le paradigme de la programmation lettrée, tel qu'il a été conçu par Knuth, s'éloigne dans son écriture de l'ordonnancement imposé par l'ordinateur, et à la place autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée. Les programmes lettrés sont écrits, dans un langage naturel, comme une exposition ininterrompue de la logique, à la manière d'un essai, dans lequel sont incluses des macros qui masquent les abstractions et la complexité.
@@ -76,7 +217,7 @@ Knuth a appliqué la programmation lettrée à grande échelle à sa présentati
   
 
 ## Resumé
-  <aside class="notes">
+<aside class="notes">
 Notebook != reproductibilité
 Notebook != programmation lettré 
 
@@ -89,7 +230,7 @@ mais le notebbok de répondre au paradigme de permet la prog lettré et de la re
 Historiquement, une des premières mises en œuvre d'un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.
 
 
----
+
 Les origines d'IPython / Jupyter
 
 Pour bien comprendre ce qu'est le Jupyter Notebook et en quoi il diffère d'IPython, il peut être intéressant de lire d'abord un peu plus sur la façon dont ces deux outils s'inscrivent dans l'histoire et l'avenir des ordinateurs portables.
@@ -105,7 +246,7 @@ Lorsque l'on examine la structure de ces carnets, on remarque tout de suite qu'i
 Toujours à la fin des années 1980, en 1989, Maple a introduit sa première interface graphique de type carnet de notes. Elle était incluse dans la version 4.3 pour le Macintosh. Des versions de la nouvelle interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de notes ont inspiré et jeté les bases pour que d'autres développent ce que l'on appellera plus tard des "carnets de notes de science des données".
 
 
----
+
 
 
 Début des années 1990, le développement d'une architecture de type client-serveur, aussi inspirée du système de fenêtrage X-window apparue entre-temps sous Unix, pour organiser le logiciel Mathematica en un frontal de présentation des résultats et un noyau qui réalise les calculs, permet à la société Wolfram Research de proposer une approche du travail en calcul scientifique intégrée, du développement même de la formulation mathématique à la rédaction finale et présentation des résultats notamment sous forme graphique : la concrétisation sous forme de document à l'écran et de fichier de sauvegarde est les notebooks Mathematica. Ces fichiers sont ensuite consultables via une version du seul frontal comme lecteur, mis à disposition par « Wolfram Research ». L'idée et la concrétisation de ce développement, furent de Theodore Gray (en)4.
@@ -113,7 +254,7 @@ Début des années 1990, le développement d'une architecture de type client-ser
 En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre4.
 
 
----
+
 L'essor des carnets de notes pour la science des données
 
 De nombreux notebooks informatiques ont été créés après les notebooks de Maple et Mathematica. Cette section, cependant, se concentrera sur les notebooks qui ont contribué à l'essor des notebooks de science des données. Vous verrez que certains de ces notebooks sont toujours très populaires parmi les data scientists en herbe et plus aguerris.
@@ -126,7 +267,7 @@ Les créateurs des carnets Sage ont confirmé qu'ils étaient de fervents utilis
 C'est le cas, par exemple, lorsque vous remplissez un formulaire sur un site web : sans AJAX, vous serez redirigé vers une nouvelle page, avec de nouvelles informations provenant du serveur, lorsque vous appuyez sur le bouton d'envoi. Avec AJAX, JavaScript va faire la demande au serveur, obtenir les résultats et mettre à jour l'écran. Vous n'avez pas besoin de rafraîchir la page, et vous n'êtes pas non plus redirigé.
 
 D'autres applications AJAX que vous connaissez peut-être sont, par exemple, Gmail, Google Maps, Facebook, Twitter,... Comme vous pouvez le voir, presque tout est en AJAX.
----
+
 
 IPython et Jupyter Notebook
 
@@ -305,13 +446,44 @@ Pour en savoir plus, cliquez ici.
 
 # Ecriture numérique
 
-### Markdown
+## Markdown
 
-  <aside class="notes">
+<aside class="notes">
 However, the original version of Markdown invented by John Gruber was often found overly simple and not suitable to write highly technical documents. For example, there was no syntax for tables, footnotes, math expressions, or citations. Fortunately, John MacFarlane created a wonderful package named Pandoc (http://pandoc.org) to convert Markdown documents (and many other types of documents) to a large variety of output formats. More importantly, the Markdown syntax was significantly enriched. Now we can write more types of elements with Markdown while still enjoying its simplicity.
-  </aside>
+</aside>
   
   
-### RÉFÉRENCE  
+## RÉFÉRENCE  
+
   
-  https://www.datacamp.com/blog/ipython-or-jupyter
+https://www.datacamp.com/blog/ipython-or-jupyter
+
+
+
+  
+  
+  
+  
+## Diapositives libres (CC BY-SA 4.0)
+
+
+<br>
+
+
+<p class="moyp">Diaporama :</p>
+
+<p class="moyp222">https://huguespecout.github.io/notebook_mateshs/#/</p>
+
+
+
+
+<br>
+
+<p class="moyp">Code source :</p>
+
+<p class="moyp222">https://github.com/HuguesPecout/notebook_mateshs</p>
+
+
+<br>
+
+  
