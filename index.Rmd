@@ -12,6 +12,7 @@ output:
     incremental: TRUE
     center: TRUE	
     showNotes: FALSE
+    transition: fade
     reveal_options:
       help: true
       controls: TRUE
@@ -66,8 +67,26 @@ editor_options:
 
 </div>
 
+<aside class="notes">
+Un groupe de travail inter-disciplinaire travaillant à un portail de ressources, ouvert, dédié à l'observation théorique et pratique des notebooks
+</aside>
 
-# Notebook
+# {data-background="figure/logo_notebook_o.png" data-background-size="800px"}
+
+
+<h2>**Le notebook**</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><span style="color:#4178bc;">
+<br>
+<br>
+
 
 
 ## Notebook ?
@@ -91,13 +110,55 @@ editor_options:
 
 <img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/>
 
-## Exemple Rmarkdown 1
+<p class="smallpcenter"><span style="color:#f7a41f;">La mise en forme du texte se fait à l'aide d'un langage de balisage (Markdown, html...)<span></p>
+
+
+
+## Ex : Jupyter notebook 
+
+<div id="codermd">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.ipynb)<span></p>
+
+```{python, file = 'figure/covid-19_visualisation.ipynb', eval=FALSE}
+```
+
+
+</div>
+
+<div id="codehtml">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Edition du fichier avec Jupyter<span></p>
+
+![](figure/jupyter.png)
+</div>
+
+
+## Ex : Jupyter notebook 
+
+<div id="codermd">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Exécution des cellules avec dans jupyter<span></p>
+
+![](figure/jupyter3.png)
+
+
+</div>
+
+<div id="codehtml">
+
+<p class="smallpcenter"><span style="color:#f7a41f;">Export en format html<span></p>
+
+![](figure/jupyter4.png)
+</div>
+
+## Ex : Rmarkdown
 
 <div id="codermd">
 
 <p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.rmd)<span></p>
 
-```{r, file = 'figure/exemple.Rmd', eval=FALSE}
+```{r, file = 'figure/exemple.rmd', eval=FALSE}
 ```
 </div>
 
@@ -109,99 +170,113 @@ editor_options:
 </div>
 
 
-## Exemple Rmarkdown 2
+## Ex : Rmarkdown avec Rstudio
+
+<img src="figure/markdown2.png" style="margin-top:0px;" width="800"/>
 
 
-<div id="codermd">
 
+
+<!-- ## Exemple Rmarkdown 2 -->
+<!-- <div id="codermd"> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <p class="medpcenter">[<span style="color:#f7a41f;">Code source (Rmd & data)<span>](https://gitlab.huma-num.fr/rCarto/santelocal)</p> -->
+<!-- </div> -->
+<!-- <div id="codehtml"> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <p class="medpcenter">[<span style="color:#f7a41f;">Fichier en sortie (.html)<span>](https://rcarto.gitpages.huma-num.fr/santelocal/)</p> -->
+<!-- </div> -->
+
+
+
+
+# {data-background="figure/history.jpeg" data-background-size="750px"}
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><span style="color:#4178bc;">
 <br>
 <br>
 
 
-<p class="medpcenter">[<span style="color:#f7a41f;">Code source (Rmd & data)<span>](https://gitlab.huma-num.fr/rCarto/santelocal)</p>
+
+
+## Rapide historique
+
+
+<div id="codermd2">
+
+<p class="medpcenter"><span style="color:#f7a41f;">**Ancêtres du notebook :**</span></p>
+
+<ul class="pucsmall22" style="margin-top:20px;">
+> - 1970 : Scratchpad (Axiom)
+> - 1987 : MathCad 
+> - 1988 : Mathematica 
+> - 1989 : Maple 
+> - 2011 : IPython
+</ul>
+
+<img src="figure/Wolfram-Language-on-early-Mac.png" style="margin-top:40px;" width="300"/>
 
 
 </div>
 
-<div id="codehtml">
+<div id="codehtml2">
 
-<br>
-<br>
+<p class="medpcenter"><span style="color:#f7a41f;">**1er mise en oeuvre remarqué :**</span></p>
+
+<p style="font-size:60%;">En 1976, le sismologue **Jon Claerbout** publie la première version de son ouvrage : <br>
+[*Fundamentals of Geophysical Data Processing*](http://sep.stanford.edu/data/media/public/sep/prof/toc_html/toc_html/fgdp3/fgdp_00.pdf)</p>
+
+<p style="font-size:57%;">Ce livre électronique, devenu un classique, propose des calculs et graphiques recalculables à la volée (interactif), accessibles et modifiables.</p>
 
 
-<p class="medpcenter">[<span style="color:#f7a41f;">Fichier en sortie (.html)<span>](https://rcarto.gitpages.huma-num.fr/santelocal/)</p>
+<p style="margin-top:55px;font-size:70%;"><span style="color:#f7a41f;">Au coeur du développement des notebooks, l'émergence d'un concept pensé et mise en oeuvre (1977-78) par **Donald Knuth**...</span></p> 
+
+<p style="margin-top:30px;font-size:85%;"><span style="color:#f7a41f;">**The Literate Programming (LP)**<br>*La programmation lettrée*</span></p>
+
+
 
 </div>
 
 
 
-# Historique
 
 
-## DU calepin au notebook
+<aside class="notes">
+Historiquement, une des premières mises en œuvre d'un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.
+</aside>
+
+
+
 
 ## Programmation lettrée
 
-## Les notebook aujourd'hui
+
+<p class="smallpcenter" style="margin-top:40px;"><span style="color:#f7a41f;">La **programmation lettrée** est une approche de la programmation qui se veut différente du paradigme de programmation structurée.</p>
+
+> <p style="font-size:50%;">Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. <br> Donald Knuth, [LP Website citations page](http://www.literateprogramming.com/)</p>
+
+> <p style="font-size:50%;">The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means.
+He or she strives for **a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding**, using a mixture of formal and informal methods that reinforce each other. <br> Donald Knuth, [LP Website citations page](http://www.literateprogramming.com/)</p>
 
 
-
-# Les usages
-
-<section>
-
-<center>
-<video autoplay="true" loop="true" muted="true" width="640">
-   <source src="https://s3.amazonaws.com/orm-atlas-media/atlas-jupyter/edit-with-atlas.mp4" type="video/mp4"> Your browser does not support the video tag.
-</video>
-</center>
-
-
-</section>
-
-
-## Programamtion lettré ?
-
-
-<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
-
-Notebook != reproductibilité
-Notebook != programmation lettré 
-
-Notebook != reproductibilité
-Notebook != programmation lettré 
-
-
-
-Usage est multiple :
-
-- Exploration et analyse des données
-- Travail collaboratif
-- Support de cours (CM/TD)
-- Partage de méthode
-
-
-
-
-
+<p class="smallpcenter"><span style="color:#f7a41f;">**Le paradigme de la programmation lettrée**, tel qu'il a été conçu par **Knuth**, s'éloigne dans son écriture de l'ordonnancement imposé par l'ordinateur, et à la place **autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée**.</p>
 
 <aside class="notes">
-En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C'est un exemple de programmation lettrée.
-
-L'usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1. 
-</aside>
-  
-## Notebook def ?
-
-<img src="figure/notebook.png" style="margin-top:40px;" width="750"/>
-
-## Programmation lettré
-
-
-<aside class="notes">
-La programmation lettrée (ou programmation littéraire) est une approche de la programmation préconisée par Donald Knuth qui se veut différente du paradigme de programmation structurée des années 19701. 
-
+(ou programmation littéraire) 
 Le paradigme de la programmation lettrée, tel qu'il a été conçu par Knuth, s'éloigne dans son écriture de l'ordonnancement imposé par l'ordinateur, et à la place autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée. Les programmes lettrés sont écrits, dans un langage naturel, comme une exposition ininterrompue de la logique, à la manière d'un essai, dans lequel sont incluses des macros qui masquent les abstractions et la complexité.
+
 
 La programmation lettrée propose des outils pour obtenir, à partir d'un fichier source, deux représentations : l'une utilisée par un compilateur ou un exécutable, le code « emmêlé », et l'autre lue comme une documentation formatée, qui est dite « tissée » à partir de la source lettrée. Alors que les premiers outils de programmation lettrée étaient spécifiques à chaque langage de programmation, la deuxième génération a produit des utilitaires indépendants des langages et existant hors de ceux-ci. 
 Un programme lettré est une explication de la logique du programme en langage naturel, comme l'anglais, entremêlée de fragments de code source traditionnel (éventuellement de macros). Les macros, dans un fichier source lettré, se présentent comme des titres ou des phrases en langue naturelle, qui décrivent les abstractions créées au moment de résoudre le problème et cachent le morceau de code ou la macro bas-niveau[Quoi ?]. Ces macros sont similaires aux algorithmes en pseudo-code souvent utilisés dans l'enseignement des sciences informatiques. Ces phrases explicatives deviennent de nouveaux opérateurs, créés à la volée par le programmeur, formant un méta-langage au-dessus du langage de programmation compréhensible par l'ordinateur.[pas clair]
@@ -215,19 +290,18 @@ La programmation lettrée s'affranchit donc de la documentation traditionnelle, 
 Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l'édition scientifique.
   </aside>
   
+## Attention !
 
-## Resumé
-<aside class="notes">
-Notebook != reproductibilité
-Notebook != programmation lettré 
 
-mais le notebbok de répondre au paradigme de permet la prog lettré et de la repro
-  </aside>
-  
+ 
+ <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
 
-## Historique ?
-  <aside class="notes">
-Historiquement, une des premières mises en œuvre d'un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.
+## LP & NB
+ 
+ 
+ <img src="figure/LP2.png" style="margin-top:60px;" width="800"/>
+
+## Les notebook actuel
 
 
 
@@ -314,18 +388,66 @@ Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks
 
   </aside>
   
-## historique 2
+  
+# Les usages
+
+<section>
+
+<center>
+<video autoplay="true" loop="true" muted="true" width="640">
+   <source src="https://s3.amazonaws.com/orm-atlas-media/atlas-jupyter/edit-with-atlas.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+</center>
 
 
+</section>
+
+
+## Programamtion lettré ?
+
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+Notebook != reproductibilité
+Notebook != programmation lettré 
+
+Notebook != reproductibilité
+Notebook != programmation lettré 
+
+
+
+Usage est multiple :
+
+- Exploration et analyse des données
+- Travail collaboratif
+- Support de cours (CM/TD)
+- Partage de méthode
+
+<aside class="notes">
+Notebook != reproductibilité
+Notebook != programmation lettré 
+
+mais le notebbok de répondre au paradigme de permet la prog lettré et de la repro
+  </aside>
+
+
+
+
+<aside class="notes">
+En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C'est un exemple de programmation lettrée.
+
+L'usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1. 
+</aside>
+  
 
 
 ## Les différents notebook
   <aside class="notes">
 Quelques implémentations connues, outre celle de Mathmematica, sont :
 
-    Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de "Julia", "Python" et "R"). Très rapidement, la frontalisation par Jupyter a intégré d'autres langages de programmation, et de fait potentiellement tout langage gérant une boucle "REPL" (en).
+Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de "Julia", "Python" et "R"). Très rapidement, la frontalisation par Jupyter a intégré d'autres langages de programmation, et de fait potentiellement tout langage gérant une boucle "REPL" (en).
     Un notebook Jupyter combine des sections en langage naturel mises en forme avec la syntaxe "Markdown" et des sections en code Python, Julia, R ou autres langages. Ces documents peuvent être sauvegardés au format JSON avec l'extension ".ipynb". Ils peuvent être convertis en page web ou en "présentation HTML5" grâce à des utilitaires comme "nbconvert" ;
-    L'environnement de développement intégré RStudio permet aussi d'utiliser des notebooks. Les notebooks RStudio sont enregistrés au format "Rmarkdown"5 ;
+L'environnement de développement intégré RStudio permet aussi d'utiliser des notebooks. Les notebooks RStudio sont enregistrés au format "Rmarkdown"5 ;
     Apache Zeppelin propose également une interface de type notebook afin d'analyser et mettre en forme simplement, de manière visuelle et interactive, de gros volumes de données avant de les traiter par d'autres logiciels ;
     Mathcad, logiciel propriétaire, est essentiellement un système de calcul formel doté d'une interface de type "calepin électronique".
   </aside>
