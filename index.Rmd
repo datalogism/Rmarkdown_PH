@@ -89,7 +89,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 
 
-## Notebook ?
+## Définition
 
 <p class="medpcenter" style="margin-top:40px;"><span style="color:#f7a41f;">**Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique**.</span></p>
 
@@ -106,53 +106,52 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <p class="medpcenter" style="margin-top:40px;"><span style="color:#f7a41f;">**Un notebook permet d'appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité**.</span></p>
 
 
-## Notebook ?
+## Une logique... des pratiques
 
 <img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/>
 
-<p class="smallpcenter"><span style="color:#f7a41f;">La mise en forme du texte se fait à l'aide d'un langage de balisage (Markdown, html...)<span></p>
+<p style="font-size:60%;"><span style="color:#f7a41f;">La mise en forme du texte se fait à l'aide d'un langage de balisage (Markdown, html...)<span></p>
 
+## Anatomie d'un notebook
 
+<img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/>
 
-## Ex : Jupyter notebook 
+## Le Markdown
 
 <div id="codermd">
-
-<p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.ipynb)<span></p>
-
-```{python, file = 'figure/covid-19_visualisation.ipynb', eval=FALSE}
+<p class="smallpcenter"><span style="color:#f7a41f;">Fichier Markdown (.md)<span></p>
+```{r, file = 'figure/hackmd.md', eval=FALSE}
 ```
-
-
 </div>
 
 <div id="codehtml">
-
-<p class="smallpcenter"><span style="color:#f7a41f;">Edition du fichier avec Jupyter<span></p>
-
-![](figure/jupyter.png)
+<p class="smallpcenter"><span style="color:#f7a41f;">Texte mis en forme (sortie html)<span></p>
+![](figure/hackmd.png)
 </div>
 
 
-## Ex : Jupyter notebook 
+<!-- ## Ex : Jupyter notebook  -->
+<!-- <div id="codermd"> -->
+<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.ipynb)<span></p> -->
+<!-- ```{python, file = 'figure/covid-19_visualisation.ipynb', eval=FALSE} -->
+<!-- ``` -->
+<!-- </div> -->
+<!-- <div id="codehtml"> -->
+<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Edition du fichier avec Jupyter<span></p> -->
+<!-- ![](figure/jupyter.png) -->
+<!-- </div> -->
 
-<div id="codermd">
+<!-- ## Ex : Jupyter notebook  -->
+<!-- <div id="codermd"> -->
+<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Exécution des cellules avec dans jupyter<span></p> -->
+<!-- ![](figure/jupyter3.png) -->
+<!-- </div> -->
+<!-- <div id="codehtml"> -->
+<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Export en format html<span></p> -->
+<!-- ![](figure/jupyter4.png) -->
+<!-- </div> -->
 
-<p class="smallpcenter"><span style="color:#f7a41f;">Exécution des cellules avec dans jupyter<span></p>
-
-![](figure/jupyter3.png)
-
-
-</div>
-
-<div id="codehtml">
-
-<p class="smallpcenter"><span style="color:#f7a41f;">Export en format html<span></p>
-
-![](figure/jupyter4.png)
-</div>
-
-## Ex : Rmarkdown
+## Ex : Notebook Rmarkdown
 
 <div id="codermd">
 
@@ -173,9 +172,6 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 ## Ex : Rmarkdown avec Rstudio
 
 <img src="figure/markdown2.png" style="margin-top:0px;" width="800"/>
-
-
-
 
 <!-- ## Exemple Rmarkdown 2 -->
 <!-- <div id="codermd"> -->
@@ -211,7 +207,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 
 
-## Rapide historique
+## Les prémices
 
 
 <div id="codermd2">
@@ -243,7 +239,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <p style="margin-top:55px;font-size:70%;"><span style="color:#f7a41f;">Au coeur du développement des notebooks, l'émergence d'un concept pensé et mise en oeuvre (1977-78) par **Donald Knuth**...</span></p> 
 
-<p style="margin-top:30px;font-size:85%;"><span style="color:#f7a41f;">**The Literate Programming (LP)**<br>*La programmation lettrée*</span></p>
+<p style="margin-top:30px;font-size:80%;"><span style="color:#f7a41f;">**The Literate Programming (LP)**<br>*La programmation lettrée*</span></p>
 
 
 
@@ -252,8 +248,14 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 
 
-
 <aside class="notes">
+
+
+MATLAB 1985 ???
+
+SageMath 2005 (repose sur ipython) ?
+
+Logiciel De jon clarbout ?
 Historiquement, une des premières mises en œuvre d'un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.
 </aside>
 
@@ -291,7 +293,12 @@ Knuth a appliqué la programmation lettrée à grande échelle à sa présentati
   </aside>
   
   
-## 60 notebook
+## Un format... plein de solutions
+
+
+<img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/>
+
+<p style="font-size:40%;color:grey;">S. Lau, I. Drosos, J. M. Markel and P. J. Guo, "The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry," 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020<p>
 
 ## Revolution
 
