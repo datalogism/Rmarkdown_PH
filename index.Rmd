@@ -290,16 +290,19 @@ La programmation lettrée s'affranchit donc de la documentation traditionnelle, 
 Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l'édition scientifique.
   </aside>
   
-## Attention !
+  
+## 60 notebook
+
+## Revolution
 
 
- 
- <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
+### Ipython
+### JupyteR
+### Rmarkdown
+### Quarto
 
-## LP & NB
- 
- 
- <img src="figure/LP2.png" style="margin-top:60px;" width="800"/>
+  
+
 
 ## Les notebook actuel
 
@@ -387,9 +390,57 @@ R Markdown et Jupyter Notebook ont en commun la livraison d'un flux de travail r
 Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks R et sur les différences exactes entre les notebooks Jupyter et R Markdown en termes de partage de notebooks, de gestion de projet, de contrôle de version et plus encore, consultez le post Jupyter et R de DataCamp : Notebooks with R.
 
   </aside>
+ 
+ 
+
+## Callisto
+
+pruve de concept
+ 
+## LP, Notebook & reproductibility
+
+ 
+ <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
+
+## LP, Notebook & reproductibility
+ 
+Juste markdown : stylo  de CHRIN et humanum
+
+
+
+
+
+ <img src="figure/LP2.png" style="margin-top:60px;" width="800"/>  
   
-  
-# Les usages
+# Les différents types d'usage
+
+
+AUtent de type de notebook que de pratique, et d'usage
+
+## Les usages
+
+- support de cours
+- Diaporama
+- Livre
+- Exercice
+- tutoriel
+- Annexe d'article
+- billet de blog
+- CV
+- lettre
+- article scientifique
+- rapport statistique (automatisé)
+- site web...
+
+## Exemple
+
+
+
+## Pour les quali
+
+
+
+
 
 <section>
 
