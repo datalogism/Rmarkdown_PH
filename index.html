@@ -582,10 +582,10 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <p class="medpcenter" style="margin-top:40px;font-size:75%;">
 <strong>Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique</strong>.
 </p>
-<p class="smallpcenter" style="margin-top:30px;font-size:60%;">
+<p class="smallpcenter" style="margin-top:30px;font-size:55%;">
 <span style="color:grey;"><b>De nombreuses dénominations existent :</span></b>
 </p>
-<ul class="pucsmall2" style="margin-top:0px;font-size:60%;">
+<ul class="pucsmall2" style="margin-top:0px;font-size:50%;">
 <ul>
 <li><span style="color:grey;"><em>Article exécutable</em></span></li>
 <li><span style="color:grey;"><em>Document computationnel</em></span></li>
@@ -781,7 +781,13 @@ Ce livre électronique, devenu un classique, propose des calculs et graphiques r
 <aside class="notes">
 <p>MATLAB 1985 ???</p>
 <p>SageMath 2005 (repose sur ipython) ?</p>
-Logiciel De jon clarbout ? Historiquement, une des premières mises en œuvre d’un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.
+<p>Logiciel De jon clarbout ? Historiquement, une des premières mises en œuvre d’un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.</p>
+<p>Les origines d’IPython / Jupyter</p>
+<p>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il diffère d’IPython, il peut être intéressant de lire d’abord un peu plus sur la façon dont ces deux outils s’inscrivent dans l’histoire et l’avenir des ordinateurs portables. Les débuts des ordinateurs portables : MATLAB, Mathematica et Maple</p>
+<p>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé par Jack Little, Steve Bangert et Cleve Moler.</p>
+<p>Allons à la fin des années 1980, en 1987 pour être exact. Theodore Gray a commencé à travailler sur ce qui allait devenir l’interface graphique du bloc-notes Mathematica et un an plus tard, elle était rendue publique. L’interface graphique permettait la création et l’édition interactives de documents de bloc-notes contenant du code de programme joliment imprimé, du texte formaté et tout un tas de fonctionnalités telles que des mathématiques tapées, des graphiques, des composants d’interface graphique, des tableaux et des sons. Les fonctionnalités standard de traitement de texte étaient présentes, comme la vérification orthographique multilingue en temps réel. Vous pouviez produire les documents dans un environnement de diaporama pour les présentations.</p>
+<p>Lorsque l’on examine la structure de ces carnets, on remarque tout de suite qu’ils reposent sur une hiérarchie de cellules qui permet de décrire les grandes lignes et de diviser les documents en sections, ce que l’on retrouve aujourd’hui dans les carnets Jupyter.</p>
+Toujours à la fin des années 1980, en 1989, Maple a introduit sa première interface graphique de type carnet de notes. Elle était incluse dans la version 4.3 pour le Macintosh. Des versions de la nouvelle interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de notes ont inspiré et jeté les bases pour que d’autres développent ce que l’on appellera plus tard des “carnets de notes de science des données”.
 </aside>
 </section>
 <section id="programmation-lettrée" class="slide level2">
@@ -811,22 +817,36 @@ The practitioner of literate programming can be regarded as an essayist, whose m
 Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l’édition scientifique.
 </aside>
 </section>
-<section id="revolution-open-source" class="slide level2">
-<h2>Revolution Open source</h2>
-<p>Ipython</p>
-<p>Puis jupyter</p>
-<p>puis Rstudio</p>
-<p>Puis Quarto</p>
-<p>Plusieurs langage et Open source !</p>
+<section id="le-tournant-de-lopen-source" class="slide level2">
+<h2>Le tournant de l’Open Source ?</h2>
+<p>En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre.</p>
+<p>Fin 2001, environ vingt ans après que Guido van Rossum ait commencé à travailler sur Python au National Research Institute for Mathematics and Computer Science aux Pays-Bas, Fernando Pérez a commencé à développer IPython. Le projet a été fortement influencé par les notebooks Mathematica et les feuilles de travail Maple, tout comme le notebook Sage et de nombreux autres projets qui ont suivi.</p>
+<ol type="1">
+<li class="fragment"><p>2005, tentative coonstruction interface graphique (GUI), mùais ca a surtout permis de nettoyer le code</p></li>
+<li class="fragment"><p>Le deuxième prototype d’IPython a été construit durant l’été 2006 par Min Ragan-Kelley et conseillé par Brian Granger. Il était basé sur le Web et disposait d’une base de données SQL, mais les travaux ont été interrompus car sa mise en œuvre s’est avérée trop complexe avec les technologies Web de l’époque….</p></li>
+<li class="fragment"><p>Le troisième prototype du carnet IPython est apparu en octobre 2010 et a été réalisé par un tiers lors d’un hack de quelques jours. Enfin, au printemps-été 2011, Brian Granger travaillait à plein temps sur le prototype du web notebook, sur la base du travail qu’il avait effectué en 2010, où il avait créé l’architecture du noyau IPython et la spécification des messages avec Fernando Pérez et PyZMQ avec Min Ragan Kelley.</p></li>
+</ol>
+<p>PyZMQ est une bibliothèque qui fournit des liaisons Python pour ZeroMQ ; cette bibliothèque était nécessaire pour les fonctions de calcul parallèle d’IPython, la console qt et le notebook.</p>
+<p>PyZMQ et les websockets sont les principales technologies qui ont rendu le notebook possible. À l’automne de la même année, d’autres contributeurs (tels que Matthias Bussonnier, Min et Fernando) y ont également contribué. Le 21 décembre 2011, il a été publié en tant que première version du IPython Notebook (0.12).</p>
+<p>Au cours des années suivantes, l’équipe a reçu des prix, tels que l’Advancement of Free Software pour Fernando Pérez le 23 mars 2013 et le Jolt Productivity Award, ainsi que des financements de la Alfred P. Sloan Foundations, entre autres.</p>
+</section>
+<section id="notebooks-multilangage" class="slide level2">
+<h2>Notebooks multilangage</h2>
+<p>-&gt; Jupyter</p>
+<p>-&gt; Rstudio - Rmarkdown - … - …</p>
+<pre><code>- Quarto !!</code></pre>
+<p>Meme humanum si met ! Callisto !</p>
+<!-- ## Carnet Jupypter -->
+<!-- Le projet était vaste, avec des composants qui devenaient de plus en plus des projets distincts qui se trouvaient appartenir au même projet. -->
+<!-- Mais notez que la taille du projet n'était pas la seule raison pour laquelle le projet Jupyter a été lancé : de 2011 à 2014, le notebook IPython a commencé à fonctionner avec d'autres langages de programmation. Le premier à arriver était Julia, puis plus tard R. Le fait qu'IPython notebook, qui impliquait que le notebook était uniquement basé sur Python, travaillait également avec des noyaux d'autres langages de programmation tels que Julia et R, a laissé les gens perplexes. -->
+<!-- Pourquoi le nom "IPython" si d'autres langages de programmation étaient également impliqués ? -->
+<!-- Le nom "Jupyter" a été inspiré par la réflexion sur les principaux langages ouverts pour la science (c'est-à-dire Julia, Python et R), et même s'il peut sembler être n'importe quel autre acronyme, cela n'a jamais signifié que les autres langages n'étaient pas les bienvenus. De plus, ce nom représentait mieux le projet sur lequel les développeurs travaillaient et faisait un clin d'œil aux racines scientifiques du projet ! -->
+<!-- Après le lancement du projet Jupyter, les parties du projet IPython qui ne sont pas liées à un langage, comme le format du notebook, le protocole de messages, la console Qt, l'application web du notebook, etc. ont été intégrées au projet Jupyter. -->
+<!-- Dans les communautés Jupyter et IPython, ceci est appelé "The Big Split". -->
+<!-- IPython n'a plus que deux rôles à remplir : être le backend Python du Jupyter Notebook, qui est aussi connu comme le noyau, et un shell Python interactif. Mais ce n'est pas tout : au sein de l'écosystème IPython, vous trouverez également un cadre de calcul parallèle. Vous en saurez plus à ce sujet un peu plus tard ! -->
+<!-- Et tout comme IPython, le projet Jupyter est en fait un nom pour un tas de projets : les trois applications qu'il abrite sont le Notebook lui-même, une Console et une console Qt, mais il y a aussi des sous-projets tels que JupyterHub pour supporter le déploiement du Notebook, nbgrader à des fins éducatives, etc. Vous pouvez voir un aperçu de l'architecture Jupyter ici. -->
 <aside class="notes">
-<p>Les origines d’IPython / Jupyter</p>
-<p>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il diffère d’IPython, il peut être intéressant de lire d’abord un peu plus sur la façon dont ces deux outils s’inscrivent dans l’histoire et l’avenir des ordinateurs portables. Les débuts des ordinateurs portables : MATLAB, Mathematica et Maple</p>
-<p>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé par Jack Little, Steve Bangert et Cleve Moler.</p>
-<p>Allons à la fin des années 1980, en 1987 pour être exact. Theodore Gray a commencé à travailler sur ce qui allait devenir l’interface graphique du bloc-notes Mathematica et un an plus tard, elle était rendue publique. L’interface graphique permettait la création et l’édition interactives de documents de bloc-notes contenant du code de programme joliment imprimé, du texte formaté et tout un tas de fonctionnalités telles que des mathématiques tapées, des graphiques, des composants d’interface graphique, des tableaux et des sons. Les fonctionnalités standard de traitement de texte étaient présentes, comme la vérification orthographique multilingue en temps réel. Vous pouviez produire les documents dans un environnement de diaporama pour les présentations.</p>
-<p>Lorsque l’on examine la structure de ces carnets, on remarque tout de suite qu’ils reposent sur une hiérarchie de cellules qui permet de décrire les grandes lignes et de diviser les documents en sections, ce que l’on retrouve aujourd’hui dans les carnets Jupyter.</p>
-<p>Toujours à la fin des années 1980, en 1989, Maple a introduit sa première interface graphique de type carnet de notes. Elle était incluse dans la version 4.3 pour le Macintosh. Des versions de la nouvelle interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de notes ont inspiré et jeté les bases pour que d’autres développent ce que l’on appellera plus tard des “carnets de notes de science des données”.</p>
 <p>Début des années 1990, le développement d’une architecture de type client-serveur, aussi inspirée du système de fenêtrage X-window apparue entre-temps sous Unix, pour organiser le logiciel Mathematica en un frontal de présentation des résultats et un noyau qui réalise les calculs, permet à la société Wolfram Research de proposer une approche du travail en calcul scientifique intégrée, du développement même de la formulation mathématique à la rédaction finale et présentation des résultats notamment sous forme graphique : la concrétisation sous forme de document à l’écran et de fichier de sauvegarde est les notebooks Mathematica. Ces fichiers sont ensuite consultables via une version du seul frontal comme lecteur, mis à disposition par « Wolfram Research ». L’idée et la concrétisation de ce développement, furent de Theodore Gray (en)4.</p>
-<p>En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre4.</p>
 <p>L’essor des carnets de notes pour la science des données</p>
 <p>De nombreux notebooks informatiques ont été créés après les notebooks de Maple et Mathematica. Cette section, cependant, se concentrera sur les notebooks qui ont contribué à l’essor des notebooks de science des données. Vous verrez que certains de ces notebooks sont toujours très populaires parmi les data scientists en herbe et plus aguerris. Carnet Sage</p>
 <p>Le bloc-notes Sage, en tant que système basé sur un navigateur, a d’abord été publié au milieu des années 2000, puis en 2007, une nouvelle version plus puissante, dotée de comptes d’utilisateur et permettant de rendre les documents publics, est sortie. Elle ressemblait à la conception de l’interface utilisateur de Google Docs puisque la mise en page du carnet Sage était basée sur celle des carnets Google.</p>
@@ -834,7 +854,6 @@ Knuth a appliqué la programmation lettrée à grande échelle à sa présentati
 <p>C’est le cas, par exemple, lorsque vous remplissez un formulaire sur un site web : sans AJAX, vous serez redirigé vers une nouvelle page, avec de nouvelles informations provenant du serveur, lorsque vous appuyez sur le bouton d’envoi. Avec AJAX, JavaScript va faire la demande au serveur, obtenir les résultats et mettre à jour l’écran. Vous n’avez pas besoin de rafraîchir la page, et vous n’êtes pas non plus redirigé.</p>
 <p>D’autres applications AJAX que vous connaissez peut-être sont, par exemple, Gmail, Google Maps, Facebook, Twitter,… Comme vous pouvez le voir, presque tout est en AJAX.</p>
 <p>IPython et Jupyter Notebook</p>
-<p>Fin 2001, environ vingt ans après que Guido van Rossum ait commencé à travailler sur Python au National Research Institute for Mathematics and Computer Science aux Pays-Bas, Fernando Pérez a commencé à développer IPython. Le projet a été fortement influencé par les notebooks Mathematica et les feuilles de travail Maple, tout comme le notebook Sage et de nombreux autres projets qui ont suivi.</p>
 <p>En 2005, il y a eu une première tentative de construction d’un système de notebook avec Wx, une boîte à outils de widgets et une bibliothèque d’outils pour créer des interfaces utilisateur graphiques (GUI) pour des applications multiplateformes. Deux étudiants du Google Summer of Code ont travaillé sur le prototype sous la direction de Robert Kern et Fernando Pérez. Par la suite, Robert a approfondi le problème. Il s’agissait moins d’un prototype de système de notebook que d’un nettoyage du code de base d’IPython dans le but de faciliter l’écriture d’une interface graphique wxPython pour le shell IPython. Ce sont également ces nettoyages qui ont permis de créer un système de notebook propre et certains d’entre eux ont été fusionnés à IPython au fur et à mesure que l’effort en faveur du notebook, finalement couronné de succès, était en cours.</p>
 <p>Le deuxième prototype d’IPython a été construit durant l’été 2006 par Min Ragan-Kelley et conseillé par Brian Granger. Il était basé sur le Web et disposait d’une base de données SQL, mais les travaux ont été interrompus car sa mise en œuvre s’est avérée trop complexe avec les technologies Web de l’époque.</p>
 <p>Le troisième prototype du carnet IPython est apparu en octobre 2010 et a été réalisé par un tiers lors d’un hack de quelques jours. Enfin, au printemps-été 2011, Brian Granger travaillait à plein temps sur le prototype du web notebook, sur la base du travail qu’il avait effectué en 2010, où il avait créé l’architecture du noyau IPython et la spécification des messages avec Fernando Pérez et PyZMQ avec Min Ragan Kelley.</p>
@@ -997,14 +1016,14 @@ S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computatio
 </section>
 <section id="diapositives-libres-cc-by-sa-4.0" class="slide level2">
 <h2>Diapositives libres (CC BY-SA 4.0)</h2>
-<p><br></p>
+<br>
 <p class="moyp">
 Diaporama :
 </p>
 <p class="moyp222">
 <a href="https://huguespecout.github.io/notebook_mateshs/#/" class="uri">https://huguespecout.github.io/notebook_mateshs/#/</a>
 </p>
-<p><br></p>
+<br>
 <p class="moyp">
 Code source :
 </p>
