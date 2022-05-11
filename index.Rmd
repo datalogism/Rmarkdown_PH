@@ -133,6 +133,10 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <img src="figure/notebook_3.png" style="margin-top:120px;" width="1000"/>
 
+## Stylo (CRCEN) d'Human-Num
+
+<img src="figure/stylo.png" style="margin-top:40px;" width="650"/>
+
 ## Le Markdown
 
 <div id="codermd">
