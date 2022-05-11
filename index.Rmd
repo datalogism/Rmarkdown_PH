@@ -36,7 +36,8 @@ editor_options:
 ---
 
 
-## Qui sommes-nous ? 
+
+## Bonjour !
 
 <p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs d'études CNRS en sciences de l'information géographique</p>
 
@@ -91,7 +92,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Définition
 
-<p class="medpcenter" style="margin-top:40px;font-size:75%;">**Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique**.</p>
+<p class="medpcenter" style="margin-top:40px;font-size:75%;">**Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique**</p>
 
 
 <p class="smallpcenter" style="margin-top:30px;font-size:55%;"><span style="color:grey;"><b>De nombreuses dénominations existent :</span></b></p>
@@ -113,7 +114,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </ul>
 
 
-<p class="medpcenter" style="margin-top:30px;font-size:75%;">**Un notebook permet d'appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité**.</p>
+<p class="medpcenter" style="margin-top:30px;font-size:75%;">**Un notebook permet d'appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité**</p>
 
 
 ## Une logique... des pratiques
@@ -124,7 +125,13 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Anatomie d'un notebook
 
-<img src="figure/notebook_2.png" style="margin-top:120px;" width="1000"/>
+
+<p class="smallpcenter">Simple fichier texte PLAIN<P>
+<img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/>
+
+## Notebook "quali"
+
+<img src="figure/notebook_3.png" style="margin-top:120px;" width="1000"/>
 
 ## Le Markdown
 
@@ -326,9 +333,24 @@ Knuth a appliqué la programmation lettrée à grande échelle à sa présentati
   </aside>
 
 
+  
+## Multiplication des notebooks et des plateformes
 
 
-## Le tournant de l'Open Source ?
+<img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/>
+
+<p style="font-size:40%;color:grey;">S. Lau, I. Drosos, J. M. Markel and P. J. Guo, "The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry," 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020<p>
+
+
+
+## Dernière génération {data-background=#ffffff}
+
+
+<img src="figure/nouveau_notebook.png" style="margin-top:40px;" width="800"/>
+
+
+
+<aside class="notes">
 
 En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre.
 
@@ -348,18 +370,15 @@ PyZMQ et les websockets sont les principales technologies qui ont rendu le noteb
 
 Au cours des années suivantes, l'équipe a reçu des prix, tels que l'Advancement of Free Software pour Fernando Pérez le 23 mars 2013 et le Jolt Productivity Award, ainsi que des financements de la Alfred P. Sloan Foundations, entre autres.
 
-## Notebooks multilangage
+</aside>
 
--> Jupyter
+## Le petit dernier !
 
--> Rstudio
-    - Rmarkdown
-    - ...
-    - ...
-    
-    - Quarto !!
 
-Meme humanum si met ! Callisto !
+<img src="figure/quarto.png" style="margin-top:40px;" width="600"/>
+
+Python, R , Julia, Javascript (observable !)....
+
 
 
 <!-- ## Carnet Jupypter -->
@@ -448,28 +467,22 @@ R Markdown et Jupyter Notebook ont en commun la livraison d'un flux de travail r
 Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks R et sur les différences exactes entre les notebooks Jupyter et R Markdown en termes de partage de notebooks, de gestion de projet, de contrôle de version et plus encore, consultez le post Jupyter et R de DataCamp : Notebooks with R.
 
   </aside>
-  
-## Un format... plein de solutions
 
 
-<img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/>
+<!-- ## Pour plein d'usage -->
 
-<p style="font-size:40%;color:grey;">S. Lau, I. Drosos, J. M. Markel and P. J. Guo, "The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry," 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020<p>
-
-## Pour plein d'usage
-
-- support de cours
-- Diaporama
-- Livre
-- Exercice
-- tutoriel
-- Annexe d'article
-- billet de blog
-- CV
-- lettre
-- article scientifique
-- rapport statistique (automatisé)
-- site web...
+<!-- - support de cours -->
+<!-- - Diaporama -->
+<!-- - Livre -->
+<!-- - Exercice -->
+<!-- - tutoriel -->
+<!-- - Annexe d'article -->
+<!-- - billet de blog -->
+<!-- - CV -->
+<!-- - lettre -->
+<!-- - article scientifique -->
+<!-- - rapport statistique (automatisé) -->
+<!-- - site web... -->
 
 
 ## LP, Notebook & reproductibility
@@ -494,10 +507,14 @@ https://neocarto.github.io/Quarto/
 # Conclusion
 
 
-Notebook -> un futur format de publication de Ref ?
+Notebook -> un futur format de publication de Ref ? Rzine
+
+Callisto de Humanum
+
+GT Notebook
 
 
-Pouyr les quali --> le markdown.... ex de stylo  de CHRIN et humanum
+
 
 
 
@@ -649,10 +666,10 @@ Pouyr les quali --> le markdown.... ex de stylo  de CHRIN et humanum
 <!-- </aside> -->
   
   
-## RÉFÉRENCE  
+<!-- ## RÉFÉRENCE   -->
 
-  
-https://www.datacamp.com/blog/ipython-or-jupyter
+
+<!-- https://www.datacamp.com/blog/ipython-or-jupyter -->
 
 
 
