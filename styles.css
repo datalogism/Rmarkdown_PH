@@ -51,6 +51,7 @@
 .reveal .slides h2 { 
   font-size: 130%; 
   text-transform : none;
+  color: #f7a41f;
 }
 
 .reveal .slides h3 {
@@ -589,7 +590,7 @@ text-align: center;
 
 #codehtml2 {
   float: right;
-  width:55%;
+  width:50%;
 }
 
 #codehtml {

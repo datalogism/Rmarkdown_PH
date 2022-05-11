@@ -524,8 +524,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h1 class="title"><h1 class="first">
 Le notebook<br><span style="font-size:70%;text-transform:lowercase">et la programmation lettrée<span>
 </h1></h1>
-    <h2 class="author"><h2 class="place">
-Outil et méthode pour le partage et la reproductibilité
+    <h2 class="author"><h2>
+<span style="color:#ffffff;font-size:60%;">Outil et méthode pour le partage et la reproductibilité</span>
 </h2></h2>
     <h3 class="date"><img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/>
 <h2 class="place2">
@@ -570,8 +570,8 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </aside>
 </section>
 <section>
-<section id="section" class="title-slide slide level1" data-background="figure/logo_notebook_o.png" data-background-size="800px">
-<h1 data-background="figure/logo_notebook_o.png" data-background-size="800px"></h1>
+<section id="section" class="title-slide slide level1" data-background="figure/logo_notebook2.png" data-background-size="1000px">
+<h1 data-background="figure/logo_notebook2.png" data-background-size="1000px"></h1>
 <h2>
 <strong>Le notebook</strong>
 </h2>
@@ -579,40 +579,47 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </section>
 <section id="définition" class="slide level2">
 <h2>Définition</h2>
-<p class="medpcenter" style="margin-top:40px;">
-<span style="color:#f7a41f;"><strong>Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique</strong>.</span>
+<p class="medpcenter" style="margin-top:40px;font-size:75%;">
+<strong>Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique</strong>.
 </p>
-<p class="smallpcenter" style="margin-top:40px;">
-Plusieurs dénominations (et types) existent :
+<p class="smallpcenter" style="margin-top:30px;font-size:60%;">
+<span style="color:grey;"><b>De nombreuses dénominations existent :</span></b>
 </p>
-<ul class="pucsmall2" style="margin-top:10px;">
+<ul class="pucsmall2" style="margin-top:0px;font-size:60%;">
 <ul>
-<li><em>Calepin électronique</em></li>
-<li><strong><em>Notebook</em></strong> (Jupyter, Observable, Pluto)</li>
-<li><em>Rmarkdown</em></li>
-<li><em>Quarto</em>…</li>
+<li><span style="color:grey;"><em>Article exécutable</em></span></li>
+<li><span style="color:grey;"><em>Document computationnel</em></span></li>
+<li><span style="color:grey;"><em>Document électronique interactif</em></span></li>
+<li><span style="color:grey;"><em>Bloc-note</em></span></li>
+<li><span style="color:grey;"><em>Cahiers de programmation</em></span></li>
+<li><span style="color:grey;"><em>Cahier électronique d’analyse</em></span></li>
+<li><span style="color:grey;"><em>Calepin électronique</em></span></li>
+<li><span style="color:grey;"><em>Carnet de code</em></span></li>
+<li><span style="color:grey;"><em>Manifeste algorithmique</em></span></li>
+<li><span style="color:grey;"><strong>Notebook !</strong></span></li>
+<li><span style="color:grey;"><em>…</em></span></li>
 </ul>
 </ul>
-<p class="medpcenter" style="margin-top:40px;">
-<span style="color:#f7a41f;"><strong>Un notebook permet d’appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité</strong>.</span>
+<p class="medpcenter" style="margin-top:30px;font-size:75%;">
+<strong>Un notebook permet d’appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité</strong>.
 </p>
 </section>
 <section id="une-logique-des-pratiques" class="slide level2">
 <h2>Une logique… des pratiques</h2>
 <p><img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/></p>
 <p style="font-size:60%;">
-<span style="color:#f7a41f;">La mise en forme du texte se fait à l’aide d’un langage de balisage (Markdown, html…)<span>
+La mise en forme du texte se fait à l’aide d’un langage de balisage (Markdown, html…)
 </p>
 </section>
 <section id="anatomie-dun-notebook" class="slide level2">
 <h2>Anatomie d’un notebook</h2>
-<p><img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/></p>
+<p><img src="figure/notebook_2.png" style="margin-top:120px;" width="1000"/></p>
 </section>
 <section id="le-markdown" class="slide level2">
 <h2>Le Markdown</h2>
 <div id="codermd">
 <p class="smallpcenter">
-<span style="color:#f7a41f;">Fichier Markdown (.md)<span>
+Fichier Markdown (.md)
 </p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mon premier Markdown</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -643,7 +650,7 @@ Plusieurs dénominations (et types) existent :
 </div>
 <div id="codehtml">
 <p class="smallpcenter">
-<span style="color:#f7a41f;">Texte mis en forme (sortie html)<span>
+Texte mis en forme (sortie html)
 </p>
 <p><img data-src="figure/hackmd.png" /></p>
 </div>
@@ -667,11 +674,14 @@ Plusieurs dénominations (et types) existent :
 <!-- ![](figure/jupyter4.png) -->
 <!-- </div> -->
 </section>
-<section id="ex-notebook-rmarkdown" class="slide level2">
-<h2>Ex : Notebook Rmarkdown</h2>
+<section id="exemple" class="slide level2">
+<h2>Exemple</h2>
+</section>
+<section id="le-rmarkdown" class="slide level2">
+<h2>Le Rmarkdown</h2>
 <div id="codermd">
 <p class="smallpcenter">
-<span style="color:#f7a41f;">Fichier source (.rmd)<span>
+Fichier source (.rmd)
 </p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;Rmarkdown - Notebook R&quot;</span></span>
@@ -705,13 +715,17 @@ Plusieurs dénominations (et types) existent :
 </div>
 <div id="codehtml">
 <p class="smallpcenter">
-<span style="color:#f7a41f;">Fichier en sortie (.html)<span>
+Fichier en sortie (.html)
 </p>
 <p><img data-src="figure/markdown.png" /></p>
 </div>
 </section>
-<section id="ex-rmarkdown-avec-rstudio" class="slide level2">
-<h2>Ex : Rmarkdown avec Rstudio</h2>
+<section id="le-rmarkdown-1" class="slide level2">
+<h2>Le Rmarkdown</h2>
+<p><img src="figure/knitr_process.png" style="margin-top:30px;" width="800"/></p>
+</section>
+<section id="rmarkdown-avec-rstudio" class="slide level2">
+<h2>Rmarkdown avec Rstudio</h2>
 <p><img src="figure/markdown2.png" style="margin-top:0px;" width="800"/></p>
 <!-- ## Exemple Rmarkdown 2 -->
 <!-- <div id="codermd"> -->
@@ -751,16 +765,16 @@ Plusieurs dénominations (et types) existent :
 <p class="medpcenter">
 <span style="color:#f7a41f;"><strong>1er mise en oeuvre remarqué :</strong></span>
 </p>
-<p style="font-size:60%;">
+<p style="font-size:50%;margin-top:30px;">
 En 1976, le sismologue <strong>Jon Claerbout</strong> publie la première version de son ouvrage : <br> <a href="http://sep.stanford.edu/data/media/public/sep/prof/toc_html/toc_html/fgdp3/fgdp_00.pdf"><em>Fundamentals of Geophysical Data Processing</em></a>
 </p>
-<p style="font-size:57%;">
+<p style="font-size:50%;">
 Ce livre électronique, devenu un classique, propose des calculs et graphiques recalculables à la volée (interactif), accessibles et modifiables.
 </p>
-<p style="margin-top:55px;font-size:70%;">
+<p style="margin-top:80px;font-size:65%;">
 <span style="color:#f7a41f;">Au coeur du développement des notebooks, l’émergence d’un concept pensé et mise en oeuvre (1977-78) par <strong>Donald Knuth</strong>…</span>
 </p>
-<p style="margin-top:30px;font-size:80%;">
+<p style="margin-top:40px;font-size:70%;">
 <span style="color:#f7a41f;"><strong>The Literate Programming (LP)</strong><br><em>La programmation lettrée</em></span>
 </p>
 </div>
@@ -773,7 +787,7 @@ Logiciel De jon clarbout ? Historiquement, une des premières mises en œuvre d�
 <section id="programmation-lettrée" class="slide level2">
 <h2>Programmation lettrée</h2>
 <p class="smallpcenter" style="margin-top:40px;">
-<span style="color:#f7a41f;">La <strong>programmation lettrée</strong> est une approche de la programmation qui se veut différente du paradigme de programmation structurée.
+La <strong>programmation lettrée</strong> est une approche de la programmation qui se veut différente du paradigme de programmation structurée.
 </p>
 <blockquote>
 <p style="font-size:50%;">
@@ -786,7 +800,7 @@ The practitioner of literate programming can be regarded as an essayist, whose m
 </p>
 </blockquote>
 <p class="smallpcenter">
-<span style="color:#f7a41f;"><strong>Le paradigme de la programmation lettrée</strong>, tel qu’il a été conçu par <strong>Knuth</strong>, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place <strong>autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée</strong>.
+<strong>Le paradigme de la programmation lettrée</strong>, tel qu’il a été conçu par <strong>Knuth</strong>, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place <strong>autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée</strong>.
 </p>
 <aside class="notes">
 <p>(ou programmation littéraire) Le paradigme de la programmation lettrée, tel qu’il a été conçu par Knuth, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée. Les programmes lettrés sont écrits, dans un langage naturel, comme une exposition ininterrompue de la logique, à la manière d’un essai, dans lequel sont incluses des macros qui masquent les abstractions et la complexité.</p>
@@ -797,22 +811,14 @@ The practitioner of literate programming can be regarded as an essayist, whose m
 Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l’édition scientifique.
 </aside>
 </section>
-<section id="un-format-plein-de-solutions" class="slide level2">
-<h2>Un format… plein de solutions</h2>
-<p><img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/></p>
-<p style="font-size:40%;color:grey;">
-S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020
-<p>
-</section>
-<section id="revolution" class="slide level2">
-<h2>Revolution</h2>
-<h3 id="ipython">Ipython</h3>
-<h3 id="jupyter">JupyteR</h3>
-<h3 id="rmarkdown">Rmarkdown</h3>
-<h3 id="quarto">Quarto</h3>
-</section>
-<section id="les-notebook-actuel" class="slide level2">
-<h2>Les notebook actuel</h2>
+<section id="revolution-open-source" class="slide level2">
+<h2>Revolution Open source</h2>
+<p>Ipython</p>
+<p>Puis jupyter</p>
+<p>puis Rstudio</p>
+<p>Puis Quarto</p>
+<p>Plusieurs langage et Open source !</p>
+<aside class="notes">
 <p>Les origines d’IPython / Jupyter</p>
 <p>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il diffère d’IPython, il peut être intéressant de lire d’abord un peu plus sur la façon dont ces deux outils s’inscrivent dans l’histoire et l’avenir des ordinateurs portables. Les débuts des ordinateurs portables : MATLAB, Mathematica et Maple</p>
 <p>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé par Jack Little, Steve Bangert et Cleve Moler.</p>
@@ -849,26 +855,15 @@ S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computatio
 <p>Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks R et sur les différences exactes entre les notebooks Jupyter et R Markdown en termes de partage de notebooks, de gestion de projet, de contrôle de version et plus encore, consultez le post Jupyter et R de DataCamp : Notebooks with R.</p>
 </aside>
 </section>
-<section id="callisto" class="slide level2">
-<h2>Callisto</h2>
-<p>pruve de concept</p>
+<section id="un-format-plein-de-solutions" class="slide level2">
+<h2>Un format… plein de solutions</h2>
+<p><img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/></p>
+<p style="font-size:40%;color:grey;">
+S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020
+<p>
 </section>
-<section id="lp-notebook-reproductibility" class="slide level2">
-<h2>LP, Notebook &amp; reproductibility</h2>
-<p><img src="figure/LP1.png" style="margin-top:60px;" width="800"/></p>
-</section>
-<section id="lp-notebook-reproductibility-1" class="slide level2">
-<h2>LP, Notebook &amp; reproductibility</h2>
-<p>Juste markdown : stylo de CHRIN et humanum</p>
-<p><img src="figure/LP2.png" style="margin-top:60px;" width="800"/></p>
-</section></section>
-<section>
-<section id="les-différents-types-dusage" class="title-slide slide level1">
-<h1>Les différents types d’usage</h1>
-<p>AUtent de type de notebook que de pratique, et d’usage</p>
-</section>
-<section id="les-usages" class="slide level2">
-<h2>Les usages</h2>
+<section id="pour-plein-dusage" class="slide level2">
+<h2>Pour plein d’usage</h2>
 <ul>
 <li class="fragment">support de cours</li>
 <li class="fragment">Diaporama</li>
@@ -884,115 +879,117 @@ S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computatio
 <li class="fragment">site web…</li>
 </ul>
 </section>
-<section id="exemple" class="slide level2">
-<h2>Exemple</h2>
+<section id="lp-notebook-reproductibility" class="slide level2">
+<h2>LP, Notebook &amp; reproductibility</h2>
+<p><img src="figure/LP1.png" style="margin-top:60px;" width="800"/></p>
 </section>
-<section id="pour-les-quali" class="slide level2">
-<h2>Pour les quali</h2>
-<section>
-<center>
-<video autoplay="true" loop="true" muted="true" width="640">
-<source src="https://s3.amazonaws.com/orm-atlas-media/atlas-jupyter/edit-with-atlas.mp4" type="video/mp4">
-Your browser does not support the video tag. </video>
-</center>
-</section>
-</section>
-<section id="programamtion-lettré" class="slide level2">
-<h2>Programamtion lettré ?</h2>
-<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
-</video>
-<p>Notebook != reproductibilité Notebook != programmation lettré</p>
-<p>Notebook != reproductibilité Notebook != programmation lettré</p>
-<p>Usage est multiple :</p>
-<ul>
-<li class="fragment">Exploration et analyse des données</li>
-<li class="fragment">Travail collaboratif</li>
-<li class="fragment">Support de cours (CM/TD)</li>
-<li class="fragment">Partage de méthode</li>
-</ul>
-<aside class="notes">
-<p>Notebook != reproductibilité Notebook != programmation lettré</p>
-mais le notebbok de répondre au paradigme de permet la prog lettré et de la repro
-</aside>
-<aside class="notes">
-<p>En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C’est un exemple de programmation lettrée.</p>
-L’usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1.
-</aside>
-</section>
-<section id="les-différents-notebook" class="slide level2">
-<h2>Les différents notebook</h2>
-<aside class="notes">
-<p>Quelques implémentations connues, outre celle de Mathmematica, sont :</p>
-Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de “Julia”, “Python” et “R”). Très rapidement, la frontalisation par Jupyter a intégré d’autres langages de programmation, et de fait potentiellement tout langage gérant une boucle “REPL” (en). Un notebook Jupyter combine des sections en langage naturel mises en forme avec la syntaxe “Markdown” et des sections en code Python, Julia, R ou autres langages. Ces documents peuvent être sauvegardés au format JSON avec l’extension “.ipynb”. Ils peuvent être convertis en page web ou en “présentation HTML5” grâce à des utilitaires comme “nbconvert” ; L’environnement de développement intégré RStudio permet aussi d’utiliser des notebooks. Les notebooks RStudio sont enregistrés au format “Rmarkdown”5 ; Apache Zeppelin propose également une interface de type notebook afin d’analyser et mettre en forme simplement, de manière visuelle et interactive, de gros volumes de données avant de les traiter par d’autres logiciels ; Mathcad, logiciel propriétaire, est essentiellement un système de calcul formel doté d’une interface de type “calepin électronique”.
-</aside>
-</section>
-<section id="quelques-exemple" class="slide level2">
-<h2>Quelques Exemple</h2>
-<h3 id="rmarkdown-notebook-r">Rmarkdown (notebook R)</h3>
-<aside class="notes">
-<p>PDF, HTML ou Word.</p>
-<p>knitr : 2012 (xie Yihui) The idea was to embed code chunks (of R or other languages) in Markdown documents.</p>
-<p>Ne supporte pas que le markdown mais aussi : LaTeX, HTML, AsciiDoc, reStructuredText, and Textile</p>
-<p>Mais Markdown has become the most popular document format</p>
-<p>En un mot, R Markdown s’appuie sur les épaules de knitr et de Pandoc. Le premier exécute le code informatique intégré dans Markdown, et convertit R Markdown en Markdown. Le second rend le Markdown dans le format de sortie que vous souhaitez (PDF, HTML, Word, etc.).</p>
-<dl>
-<dt class="fragment">rmardkown ne permet pas seulement la création de document (présentation, livre, tutoriel, article…) Mais aussi notebook interactif, application, blogs et website.</dt>
-<dd class="fragment"><p>“La richesse ne consiste pas à avoir de grands biens, mais à avoir peu de besoins.”</p>
-</dd>
-</dl>
-<p>Si vous parvenez à maîtriser votre préoccupation pour la recherche de fonctionnalités de composition, vous devriez être beaucoup plus efficace dans la rédaction du contenu et vous pouvez devenir un auteur prolifique</p>
-<p>Élément du Rmarkdown : - paragraphes - en-têtes (de section)citations en bloc - blocs de code - listes (numérotées et non numérotées) - règles horizontales - tableaux - mise en forme en ligne (mise en évidence - biffure - exposant superscripts - exposant subscripts - texte mot à mot et petites capitales) - expressions mathématiques LaTeX - équations - liens - images - notes de bas de page - citations - théorèmes - preuves et exemples.</p>
-<p>mais a ne pas sous-estimer … css Pandoc !</p>
-<p>Les documents R Markdown sont souvent portables, dans le sens où ils peuvent être compilés dans plusieurs types de formats de sortie. Encore une fois, cela est principalement dû à la syntaxe simplifiée du langage de création, Markdown. Plus les éléments de votre document sont simples, plus le document a de chances d’être converti en différents formats. De même, si vous adaptez fortement R Markdown à un format de sortie spécifique (par exemple, LaTeX), vous risquez de perdre la portabilité, car toutes les fonctionnalités d’un format ne fonctionnent pas dans un autre format.</p>
-</aside>
-<h3 id="notebook-jupyter-jupyterlab">Notebook jupyter / JupyterLab</h3>
-<aside class="notes">
-<p>En outre, Jupyter Notebook est aussi utilisé comme outil pédagogique. Selon la plateforme de dépôt de code GitHub, plus de 2,5 millions de notebooks Jupyter ont été partagés en septembre 2018.</p>
-<p>Cet outil présente l’avantage de supporter de nombreux langages. En outre, il est compatible avec les cellules Markdown permettant des écritures plus détaillées et un formatage facile.</p>
-<p>JupyterLab est la prochaine génération du Jupyter Notebook. Il vise à résoudre de nombreux problèmes d’utilisation du Notebook et élargit considérablement sa portée. JupyterLab offre un cadre général pour le calcul interactif et la science des données dans le navigateur, en utilisant Python, Julia, R ou l’un des nombreux autres langages.</p>
-<p>En plus de fournir une interface améliorée aux carnets de notes existants, JupyterLab apporte également dans la même interface un navigateur de fichiers, des consoles, des terminaux, des éditeurs de texte, des éditeurs Markdown, des éditeurs CSV, des éditeurs JSON, des cartes interactives, des widgets, etc. L’architecture est entièrement extensible et ouverte aux développeurs. En un mot, JupyterLab est un environnement de développement intégré (IDE) basé sur le Web et modifiable pour la science des données et l’informatique interactive.</p>
-<p>JupyterLab utilise exactement le même serveur de notebook et le même format de fichier que le Jupyter Notebook classique, de sorte qu’il est entièrement compatible avec les notebooks et noyaux existants. Le Notebook classique et Jupyterlab peuvent fonctionner côte à côte sur le même ordinateur. On peut facilement passer d’une interface à l’autre.</p>
-</aside>
-<h4 id="section-2">—</h4>
-<aside class="notes">
-<p>Jupyter Notebook est un environnement informatique interactif basé sur le web permettant de créer des documents Jupyter notebook. Il prend en charge plusieurs langages comme Python (IPython), Julia, R, etc. et est largement utilisé pour l’analyse et la visualisation de données, ainsi que pour l’informatique interactive et exploratoire.</p>
-<p>JupyterLab est l’interface utilisateur de nouvelle génération incluant les notebooks. Elle a une structure modulaire, où vous pouvez ouvrir plusieurs notebooks ou fichiers (par exemple HTML, Text, Markdowns etc) comme des onglets dans la même fenêtre. Il offre une expérience plus proche de celle d’un IDE.</p>
-<p>Pour un débutant, je suggérerais de commencer avec Jupyter Notebook, car il se compose simplement d’un navigateur de fichiers et d’une vue d’éditeur (notebook). Il est peut-être plus facile à utiliser. Si vous voulez plus de fonctionnalités, passez à JupyterLab. JupyterLab offre beaucoup plus de fonctionnalités et une interface améliorée, qui peut être étendue grâce à des extensions : Extensions JupyterLab (GitHub)</p>
-Traduit avec www.DeepL.com/Translator (version gratuite)
-</aside>
-</section>
-<section id="jupyterlab" class="slide level2">
-<h2>JupyterLab</h2>
-<aside class="notes">
-<p>Depuis 2018, l’interface utilisateur JupyterLab est disponible pour tous et prête pour un usage en production. Il s’agit d’une version plus flexible et malléable que le Jupyter Notebook classique. Les utilisateurs peuvent effectuer des glisser-déposer de cellules entre les notebooks et organiser l’espace de travail en différents ongles et sous-sections.</p>
-<p>Le code peut être exécuté directement à partir de fichiers texte et de fichiers Jupyter Notebook, et de nombreux formats de fichiers communs pour le code et les données peuvent être rendus en prévisualisations live.</p>
-<p>En outre, JupyterLab peut être personnalisé à l’aide d’extensions pour ajouter la prise en charge de nouveaux formats de fichiers. Ceci permet d’enrichir l’interface, ou d’ajouter des fonctionnalités additionnelles. Les applications sont donc étendues par rapport au Jupyter Notebook.</p>
-<p>À terme, l’ambition est de remplacer l’interface Jupyter Notebook par celle de JupyterLab. Il faudra toutefois patienter jusqu’à ce que JupyterLab soit suffisamment stable.</p>
-En conclusion, Jupyter Notebook est un formidable outil pour créer une histoire à partir des données. Au fil du temps, il est devenu un écosystème complet regroupant des interfaces alternatives comme JupyterLab et Hydrogen, des bibliothèques de visualisation interactives et une large gamme d’outils.
-</aside>
-<h3 id="notebook-observable">Notebook Observable</h3>
-<h3 id="notebook-pluto">Notebook Pluto</h3>
-<h3 id="autre">AUTRE</h3>
-<h4 id="autres-carnets-de-notes-de-science-des-données">Autres carnets de notes de science des données</h4>
-<p>Bien sûr, il existe encore d’autres notebooks que vous pouvez envisager lorsque vous vous lancez dans la science des données. Ces dernières années, un grand nombre de nouvelles alternatives ont trouvé leur place auprès des scientifiques et des amateurs de science des données : pensez non seulement à Beaker Notebook, Apache Zeppelin, Spark Notebook, DataBricks Cloud, etc., mais aussi à d’autres outils tels que Rodeo IDE ou nteract qui rendent vos analyses de science des données interactives et reproductibles. Il convient de noter que nteract diffère des autres outils mentionnés ici car il utilise l’architecture Jupyter, notamment les protocoles et les formats.</p>
-<h4 id="lavenir-des-carnets-de-notes">L’avenir des carnets de notes</h4>
-<p>Les notebooks semblent être là pour rester. Récemment, la prochaine génération de Jupyter Notebook a été présentée à la communauté : JupyterLab. L’application Notebook comprend non seulement la prise en charge des Notebooks, mais aussi un gestionnaire de fichiers, un éditeur de texte, un émulateur de terminal, un moniteur pour l’exécution des processus Jupyter, un gestionnaire de cluster IPython et un pager pour afficher l’aide.</p>
-<p>Vous pouvez penser maintenant que ce n’est rien de nouveau ; le Jupyter Notebook a également toutes ces choses. JupyterLab, cependant, vous permet d’utiliser tous ces éléments constitutifs de l’informatique interactive de manière novatrice.</p>
-<p>Pour en savoir plus, cliquez ici.</p>
-</section>
-<section id="type-dutilisation" class="slide level2">
-<h2>Type d’utilisation ?</h2>
+<section id="lp-notebook-reproductibility-1" class="slide level2">
+<h2>LP, Notebook &amp; reproductibility</h2>
+<p><img src="figure/LP2.png" style="margin-top:60px;" width="800"/></p>
 </section></section>
 <section>
-<section id="ecriture-numérique" class="title-slide slide level1">
-<h1>Ecriture numérique</h1>
+<section id="notebook-git" class="title-slide slide level1">
+<h1>Notebook + Git</h1>
 
 </section>
-<section id="markdown" class="slide level2">
-<h2>Markdown</h2>
-<aside class="notes">
-However, the original version of Markdown invented by John Gruber was often found overly simple and not suitable to write highly technical documents. For example, there was no syntax for tables, footnotes, math expressions, or citations. Fortunately, John MacFarlane created a wonderful package named Pandoc (<a href="http://pandoc.org" class="uri">http://pandoc.org</a>) to convert Markdown documents (and many other types of documents) to a large variety of output formats. More importantly, the Markdown syntax was significantly enriched. Now we can write more types of elements with Markdown while still enjoying its simplicity.
-</aside>
+<section id="couple-pour-la-reproductibility" class="slide level2">
+<h2>Couple pour la reproductibility</h2>
+</section>
+<section id="exemple-quarto" class="slide level2">
+<h2>Exemple quarto !</h2>
+<p>R + javascript + Git</p>
+<p><a href="https://neocarto.github.io/Quarto/" class="uri">https://neocarto.github.io/Quarto/</a></p>
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1">
+<h1>Conclusion</h1>
+<p>Notebook -&gt; un futur format de publication de Ref ?</p>
+<p>Pouyr les quali –&gt; le markdown…. ex de stylo de CHRIN et humanum</p>
+<!-- <aside class="notes"> -->
+<!-- En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C'est un exemple de programmation lettrée. -->
+<!-- L'usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1.  -->
+<!-- </aside> -->
+<!--   <aside class="notes"> -->
+<!-- Quelques implémentations connues, outre celle de Mathmematica, sont : -->
+<!-- Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de "Julia", "Python" et "R"). Très rapidement, la frontalisation par Jupyter a intégré d'autres langages de programmation, et de fait potentiellement tout langage gérant une boucle "REPL" (en). -->
+<!--     Un notebook Jupyter combine des sections en langage naturel mises en forme avec la syntaxe "Markdown" et des sections en code Python, Julia, R ou autres langages. Ces documents peuvent être sauvegardés au format JSON avec l'extension ".ipynb". Ils peuvent être convertis en page web ou en "présentation HTML5" grâce à des utilitaires comme "nbconvert" ; -->
+<!-- L'environnement de développement intégré RStudio permet aussi d'utiliser des notebooks. Les notebooks RStudio sont enregistrés au format "Rmarkdown"5 ; -->
+<!--     Apache Zeppelin propose également une interface de type notebook afin d'analyser et mettre en forme simplement, de manière visuelle et interactive, de gros volumes de données avant de les traiter par d'autres logiciels ; -->
+<!--     Mathcad, logiciel propriétaire, est essentiellement un système de calcul formel doté d'une interface de type "calepin électronique". -->
+<!--   </aside> -->
+<!-- ## Quelques Exemple -->
+<!-- ### Rmarkdown (notebook R) -->
+<!--   <aside class="notes"> -->
+<!-- PDF, HTML ou Word. -->
+<!--  knitr : 2012 (xie Yihui) -->
+<!-- The idea was to embed code chunks (of R or other languages) in Markdown documents. -->
+<!-- Ne supporte pas que le markdown mais aussi : LaTeX, HTML, AsciiDoc, reStructuredText, and Textile -->
+<!-- Mais Markdown has become the most popular document format -->
+<!-- En un mot, R Markdown s'appuie sur les épaules de knitr et de Pandoc. Le premier exécute le code informatique intégré dans Markdown, et convertit R Markdown en Markdown. Le second rend le Markdown dans le format de sortie que vous souhaitez (PDF, HTML, Word, etc.). -->
+<!-- rmardkown ne permet pas seulement la création de document (présentation, livre, tutoriel, article...) Mais aussi notebook interactif, application, blogs et website. -->
+<!-- : "La richesse ne consiste pas à avoir de grands biens, mais à avoir peu de besoins." -->
+<!-- Si vous parvenez à maîtriser votre préoccupation pour la recherche de fonctionnalités de composition, vous devriez être beaucoup plus efficace dans la rédaction du contenu et vous pouvez devenir un auteur prolifique -->
+<!-- Élément du Rmarkdown : -->
+<!-- - paragraphes -->
+<!-- - en-têtes (de section)citations en bloc  -->
+<!-- - blocs de code  -->
+<!-- - listes (numérotées et non numérotées)  -->
+<!-- - règles horizontales  -->
+<!-- - tableaux  -->
+<!-- - mise en forme en ligne (mise en évidence  -->
+<!-- - biffure  -->
+<!-- - exposant superscripts -->
+<!-- - exposant subscripts -->
+<!-- - texte mot à mot et petites capitales)  -->
+<!-- - expressions mathématiques LaTeX  -->
+<!-- - équations  -->
+<!-- - liens  -->
+<!-- - images  -->
+<!-- - notes de bas de page  -->
+<!-- - citations  -->
+<!-- - théorèmes  -->
+<!-- - preuves et exemples.  -->
+<!-- mais a ne pas sous-estimer ... css Pandoc ! -->
+<!-- Les documents R Markdown sont souvent portables, dans le sens où ils peuvent être compilés dans plusieurs types de formats de sortie. Encore une fois, cela est principalement dû à la syntaxe simplifiée du langage de création, Markdown. Plus les éléments de votre document sont simples, plus le document a de chances d'être converti en différents formats. De même, si vous adaptez fortement R Markdown à un format de sortie spécifique (par exemple, LaTeX), vous risquez de perdre la portabilité, car toutes les fonctionnalités d'un format ne fonctionnent pas dans un autre format. -->
+<!--   </aside> -->
+<!-- ### Notebook jupyter / JupyterLab -->
+<!--   <aside class="notes"> -->
+<!-- En outre, Jupyter Notebook est aussi utilisé comme outil pédagogique. Selon la plateforme de dépôt de code GitHub, plus de 2,5 millions de notebooks Jupyter ont été partagés en septembre 2018. -->
+<!-- Cet outil présente l’avantage de supporter de nombreux langages. En outre, il est compatible avec les cellules Markdown permettant des écritures plus détaillées et un formatage facile. -->
+<!-- JupyterLab est la prochaine génération du Jupyter Notebook. Il vise à résoudre de nombreux problèmes d'utilisation du Notebook et élargit considérablement sa portée. JupyterLab offre un cadre général pour le calcul interactif et la science des données dans le navigateur, en utilisant Python, Julia, R ou l'un des nombreux autres langages. -->
+<!-- En plus de fournir une interface améliorée aux carnets de notes existants, JupyterLab apporte également dans la même interface un navigateur de fichiers, des consoles, des terminaux, des éditeurs de texte, des éditeurs Markdown, des éditeurs CSV, des éditeurs JSON, des cartes interactives, des widgets, etc. L'architecture est entièrement extensible et ouverte aux développeurs. En un mot, JupyterLab est un environnement de développement intégré (IDE) basé sur le Web et modifiable pour la science des données et l'informatique interactive. -->
+<!-- JupyterLab utilise exactement le même serveur de notebook et le même format de fichier que le Jupyter Notebook classique, de sorte qu'il est entièrement compatible avec les notebooks et noyaux existants. Le Notebook classique et Jupyterlab peuvent fonctionner côte à côte sur le même ordinateur. On peut facilement passer d'une interface à l'autre. -->
+<!--   </aside> -->
+<!-- #### --- -->
+<!--   <aside class="notes"> -->
+<!-- Jupyter Notebook est un environnement informatique interactif basé sur le web permettant de créer des documents Jupyter notebook. Il prend en charge plusieurs langages comme Python (IPython), Julia, R, etc. et est largement utilisé pour l'analyse et la visualisation de données, ainsi que pour l'informatique interactive et exploratoire. -->
+<!-- JupyterLab est l'interface utilisateur de nouvelle génération incluant les notebooks. Elle a une structure modulaire, où vous pouvez ouvrir plusieurs notebooks ou fichiers (par exemple HTML, Text, Markdowns etc) comme des onglets dans la même fenêtre. Il offre une expérience plus proche de celle d'un IDE. -->
+<!-- Pour un débutant, je suggérerais de commencer avec Jupyter Notebook, car il se compose simplement d'un navigateur de fichiers et d'une vue d'éditeur (notebook). Il est peut-être plus facile à utiliser. Si vous voulez plus de fonctionnalités, passez à JupyterLab. JupyterLab offre beaucoup plus de fonctionnalités et une interface améliorée, qui peut être étendue grâce à des extensions : Extensions JupyterLab (GitHub) -->
+<!-- Traduit avec www.DeepL.com/Translator (version gratuite) -->
+<!--   </aside> -->
+<!-- ## JupyterLab -->
+<!--   <aside class="notes"> -->
+<!-- Depuis 2018, l’interface utilisateur JupyterLab est disponible pour tous et prête pour un usage en production. Il s’agit d’une version plus flexible et malléable que le Jupyter Notebook classique. Les utilisateurs peuvent effectuer des glisser-déposer de cellules entre les notebooks et organiser l’espace de travail en différents ongles et sous-sections. -->
+<!-- Le code peut être exécuté directement à partir de fichiers texte et de fichiers Jupyter Notebook, et de nombreux formats de fichiers communs pour le code et les données peuvent être rendus en prévisualisations live. -->
+<!-- En outre, JupyterLab peut être personnalisé à l’aide d’extensions pour ajouter la prise en charge de nouveaux formats de fichiers. Ceci permet d’enrichir l’interface, ou d’ajouter des fonctionnalités additionnelles. Les applications sont donc étendues par rapport au Jupyter Notebook. -->
+<!-- À terme, l’ambition est de remplacer l’interface Jupyter Notebook par celle de JupyterLab. Il faudra toutefois patienter jusqu’à ce que JupyterLab soit suffisamment stable. -->
+<!-- En conclusion, Jupyter Notebook est un formidable outil pour créer une histoire à partir des données. Au fil du temps, il est devenu un écosystème complet regroupant des interfaces alternatives comme JupyterLab et Hydrogen, des bibliothèques de visualisation interactives et une large gamme d’outils. -->
+<!--   </aside> -->
+<!-- ### Notebook Observable -->
+<!-- ### Notebook Pluto -->
+<!-- ### AUTRE -->
+<!-- #### Autres carnets de notes de science des données -->
+<!-- Bien sûr, il existe encore d'autres notebooks que vous pouvez envisager lorsque vous vous lancez dans la science des données. Ces dernières années, un grand nombre de nouvelles alternatives ont trouvé leur place auprès des scientifiques et des amateurs de science des données : pensez non seulement à Beaker Notebook, Apache Zeppelin, Spark Notebook, DataBricks Cloud, etc., mais aussi à d'autres outils tels que Rodeo IDE ou nteract qui rendent vos analyses de science des données interactives et reproductibles. Il convient de noter que nteract diffère des autres outils mentionnés ici car il utilise l'architecture Jupyter, notamment les protocoles et les formats. -->
+<!-- #### L'avenir des carnets de notes -->
+<!-- Les notebooks semblent être là pour rester. Récemment, la prochaine génération de Jupyter Notebook a été présentée à la communauté : JupyterLab. L'application Notebook comprend non seulement la prise en charge des Notebooks, mais aussi un gestionnaire de fichiers, un éditeur de texte, un émulateur de terminal, un moniteur pour l'exécution des processus Jupyter, un gestionnaire de cluster IPython et un pager pour afficher l'aide. -->
+<!-- Vous pouvez penser maintenant que ce n'est rien de nouveau ; le Jupyter Notebook a également toutes ces choses. JupyterLab, cependant, vous permet d'utiliser tous ces éléments constitutifs de l'informatique interactive de manière novatrice. -->
+<!-- Pour en savoir plus, cliquez ici. -->
+<!-- ## Type d'utilisation ? -->
+<!-- # Ecriture numérique -->
+<!-- ## Markdown -->
+<!-- <aside class="notes"> -->
+<!-- However, the original version of Markdown invented by John Gruber was often found overly simple and not suitable to write highly technical documents. For example, there was no syntax for tables, footnotes, math expressions, or citations. Fortunately, John MacFarlane created a wonderful package named Pandoc (http://pandoc.org) to convert Markdown documents (and many other types of documents) to a large variety of output formats. More importantly, the Markdown syntax was significantly enriched. Now we can write more types of elements with Markdown while still enjoying its simplicity. -->
+<!-- </aside> -->
 </section>
 <section id="référence" class="slide level2">
 <h2>RÉFÉRENCE</h2>
