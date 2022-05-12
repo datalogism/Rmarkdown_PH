@@ -84,7 +84,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <br>
 <br>
 <br>
-<br><span style="color:#4178bc;">
+<br>
 <br>
 <br>
 
@@ -230,7 +230,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <br>
 <br>
 <br>
-<br><span style="color:#4178bc;">
+<br>
 <br>
 <br>
 
@@ -497,7 +497,20 @@ Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks
 <img src="figure/LP2.png" style="margin-top:60px;" width="800"/> 
  
 
-# Notebook + Git 
+# {data-background="figure/partie4.png" data-background-size="500px"}
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Couple pour la reproductibility
 
