@@ -534,7 +534,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 Le notebook<br><span style="font-size:70%;text-transform:lowercase">et la programmation lettrée<span>
 </h1></h1>
     <h2 class="author"><h2>
-<span style="color:#ffffff;font-size:60%;">Outil et méthode pour le partage et la reproductibilité</span>
+<span style="color:#ffffff;font-size:60%;">Documenter ses traitements</span>
 </h2></h2>
     <h3 class="date"><img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/>
 <h2 class="place2">
@@ -627,8 +627,8 @@ Simple fichier texte
 <P>
 <p><img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/></p>
 </section>
-<section id="notebook-quali" class="slide level2">
-<h2>Notebook « quali »</h2>
+<section id="notebook-sans-code" class="slide level2">
+<h2>Notebook sans code ?!</h2>
 <p><img src="figure/notebook_3.png" style="margin-top:120px;" width="1000"/></p>
 </section>
 <section id="stylo-crcen-dhuman-num" class="slide level2">
@@ -783,7 +783,7 @@ Fichier en sortie (.html)
 </div>
 <div id="codehtml2">
 <p class="medpcenter">
-<span style="color:#f7a41f;"><strong>1er mise en oeuvre remarqué :</strong></span>
+<span style="color:#f7a41f;"><strong>1ère mise en oeuvre remarqué :</strong></span>
 </p>
 <p style="font-size:50%;margin-top:30px;">
 En 1976, le sismologue <strong>Jon Claerbout</strong> publie la première version de son ouvrage : <br> <a href="http://sep.stanford.edu/data/media/public/sep/prof/toc_html/toc_html/fgdp3/fgdp_00.pdf"><em>Fundamentals of Geophysical Data Processing</em></a>
@@ -792,23 +792,12 @@ En 1976, le sismologue <strong>Jon Claerbout</strong> publie la première versio
 Ce livre électronique, devenu un classique, propose des calculs et graphiques recalculables à la volée (interactif), accessibles et modifiables.
 </p>
 <p style="margin-top:80px;font-size:65%;">
-<span style="color:#f7a41f;">Au coeur du développement des notebooks, l’émergence d’un concept pensé et mise en oeuvre (1977-78) par <strong>Donald Knuth</strong>…</span>
+<span style="color:#f7a41f;">Au coeur du développement des notebooks, l’émergence d’un concept pensé et mis en oeuvre (1977-78) par <strong>Donald Knuth</strong>…</span>
 </p>
 <p style="margin-top:40px;font-size:70%;">
 <span style="color:#f7a41f;"><strong>The Literate Programming (LP)</strong><br><em>La programmation lettrée</em></span>
 </p>
 </div>
-<aside class="notes">
-<p>MATLAB 1985 ???</p>
-<p>SageMath 2005 (repose sur ipython) ?</p>
-<p>Logiciel De jon clarbout ? Historiquement, une des premières mises en œuvre d’un livre électronique dont les exemples de calculs et les graphiques sont recalculables à la volée, interactivement dit-on désormais, via les sources des programmes présents de façon sous-jacente, accessibles et modifiables, remonte à 1976 quand le sismologue Jon Claerbout (en), conscient de cet enjeu de reproductibilité des calculs numériques complexes2, écrit et sort la première version de son ouvrage Fundamentals of Geophysical Data Processing3, livre devenu un grand classique en géophysique et en traitement du signal.</p>
-<p>Les origines d’IPython / Jupyter</p>
-<p>Pour bien comprendre ce qu’est le Jupyter Notebook et en quoi il diffère d’IPython, il peut être intéressant de lire d’abord un peu plus sur la façon dont ces deux outils s’inscrivent dans l’histoire et l’avenir des ordinateurs portables. Les débuts des ordinateurs portables : MATLAB, Mathematica et Maple</p>
-<p>Au milieu des années 80, MATLAB a été lancé par The MathWorks, fondé par Jack Little, Steve Bangert et Cleve Moler.</p>
-<p>Allons à la fin des années 1980, en 1987 pour être exact. Theodore Gray a commencé à travailler sur ce qui allait devenir l’interface graphique du bloc-notes Mathematica et un an plus tard, elle était rendue publique. L’interface graphique permettait la création et l’édition interactives de documents de bloc-notes contenant du code de programme joliment imprimé, du texte formaté et tout un tas de fonctionnalités telles que des mathématiques tapées, des graphiques, des composants d’interface graphique, des tableaux et des sons. Les fonctionnalités standard de traitement de texte étaient présentes, comme la vérification orthographique multilingue en temps réel. Vous pouviez produire les documents dans un environnement de diaporama pour les présentations.</p>
-<p>Lorsque l’on examine la structure de ces carnets, on remarque tout de suite qu’ils reposent sur une hiérarchie de cellules qui permet de décrire les grandes lignes et de diviser les documents en sections, ce que l’on retrouve aujourd’hui dans les carnets Jupyter.</p>
-Toujours à la fin des années 1980, en 1989, Maple a introduit sa première interface graphique de type carnet de notes. Elle était incluse dans la version 4.3 pour le Macintosh. Des versions de la nouvelle interface pour X11 et Windows ont suivi en 1990. Ces premiers carnets de notes ont inspiré et jeté les bases pour que d’autres développent ce que l’on appellera plus tard des “carnets de notes de science des données”.
-</aside>
 </section>
 <section id="programmation-lettrée" class="slide level2">
 <h2>Programmation lettrée</h2>
@@ -828,14 +817,6 @@ The practitioner of literate programming can be regarded as an essayist, whose m
 <p class="smallpcenter">
 <strong>Le paradigme de la programmation lettrée</strong>, tel qu’il a été conçu par <strong>Knuth</strong>, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place <strong>autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée</strong>.
 </p>
-<aside class="notes">
-<p>(ou programmation littéraire) Le paradigme de la programmation lettrée, tel qu’il a été conçu par Knuth, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée. Les programmes lettrés sont écrits, dans un langage naturel, comme une exposition ininterrompue de la logique, à la manière d’un essai, dans lequel sont incluses des macros qui masquent les abstractions et la complexité.</p>
-<p>La programmation lettrée propose des outils pour obtenir, à partir d’un fichier source, deux représentations : l’une utilisée par un compilateur ou un exécutable, le code « emmêlé », et l’autre lue comme une documentation formatée, qui est dite « tissée » à partir de la source lettrée. Alors que les premiers outils de programmation lettrée étaient spécifiques à chaque langage de programmation, la deuxième génération a produit des utilitaires indépendants des langages et existant hors de ceux-ci. Un programme lettré est une explication de la logique du programme en langage naturel, comme l’anglais, entremêlée de fragments de code source traditionnel (éventuellement de macros). Les macros, dans un fichier source lettré, se présentent comme des titres ou des phrases en langue naturelle, qui décrivent les abstractions créées au moment de résoudre le problème et cachent le morceau de code ou la macro bas-niveau[Quoi ?]. Ces macros sont similaires aux algorithmes en pseudo-code souvent utilisés dans l’enseignement des sciences informatiques. Ces phrases explicatives deviennent de nouveaux opérateurs, créés à la volée par le programmeur, formant un méta-langage au-dessus du langage de programmation compréhensible par l’ordinateur.[pas clair]</p>
-<p>Un préprocesseur analyse les hiérarchies arbitraires, ou les « toiles interconnectées de macros »[Quoi ?], pour produire un code source compilable. La commande qui fait cela s’appelle (tangle, emmêler) et la commande associée qui produit la documentation s’appelle (weave, tisser). Le préprocesseur permet aussi d’extraire des macros et d’ajouter du contenu à une macro déjà définie à n’importe quel endroit du texte, permettant ainsi de s’affranchir du besoin de garder à l’esprit les restrictions imposées par les langages de programmation traditionnels et d’éviter d’interrompre le flux de pensée.</p>
-<p>Selon Knuth, la programmation lettrée permet d’écrire des programmes de grande qualité1, car elle force le programmeur à exposer clairement sa pensée cachée derrière le code, rendant les mauvaises décisions de conception plus évidentes. Knuth affirme aussi que la programmation lettrée fournit un système de documentation de premier ordre, qui n’est pas un ajout au code, mais en fait naturellement partie dans un processus d’exposition de la pensée, durant la création du programme1. La documentation, partie intégrante de la programmation lettrée, permet à l’auteur de reprendre le fil de son cheminement intellectuel là où il l’avait arrêté, même longtemps après, de même qu’elle permet aux autres programmeurs de comprendre la structure profonde du programme.</p>
-<p>La programmation lettrée s’affranchit donc de la documentation traditionnelle, dans laquelle un programmeur présente le code source selon une organisation issue des contraintes du compilateur ou doit en déchiffrer l’intention grâce au code et aux commentaires qui y sont associés. Le méta-langage de la programmation lettrée facilite la pensée, en donnant une vue d’ensemble du code et en augmentant le nombre de concepts que l’esprit peut intégrer. Knuth affirme que la programmation lettrée accroît la qualité du code produit1.</p>
-Knuth a appliqué la programmation lettrée à grande échelle à sa présentation de TeX, logiciel très utilisé dans le domaine de l’édition scientifique.
-</aside>
 </section>
 <section id="multiplication-des-notebooks-et-des-plateformes" class="slide level2">
 <h2>Multiplication des notebooks et des plateformes</h2>
@@ -844,70 +825,21 @@ Knuth a appliqué la programmation lettrée à grande échelle à sa présentati
 S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020
 <p>
 </section>
-<section id="dernière-génération" class="slide level2" data-background="#ffffff">
-<h2 data-background="#ffffff">Dernière génération</h2>
+<section id="dernière-génération" class="slide level2">
+<h2>Dernière génération</h2>
 <p><img src="figure/nouveau_notebook.png" style="margin-top:40px;" width="800"/></p>
-<aside class="notes">
-<p>En 2001, Fernando Pérez a repris le concept de notebook pour développer IPython. À la différence de Mathematica, qui est un logiciel propriétaire, IPython permet de programmer de manière interactive en Python, un langage de programmation libre.</p>
-<p>Fin 2001, environ vingt ans après que Guido van Rossum ait commencé à travailler sur Python au National Research Institute for Mathematics and Computer Science aux Pays-Bas, Fernando Pérez a commencé à développer IPython. Le projet a été fortement influencé par les notebooks Mathematica et les feuilles de travail Maple, tout comme le notebook Sage et de nombreux autres projets qui ont suivi.</p>
-<ol type="1">
-<li class="fragment"><p>2005, tentative coonstruction interface graphique (GUI), mùais ca a surtout permis de nettoyer le code</p></li>
-<li class="fragment"><p>Le deuxième prototype d’IPython a été construit durant l’été 2006 par Min Ragan-Kelley et conseillé par Brian Granger. Il était basé sur le Web et disposait d’une base de données SQL, mais les travaux ont été interrompus car sa mise en œuvre s’est avérée trop complexe avec les technologies Web de l’époque….</p></li>
-<li class="fragment"><p>Le troisième prototype du carnet IPython est apparu en octobre 2010 et a été réalisé par un tiers lors d’un hack de quelques jours. Enfin, au printemps-été 2011, Brian Granger travaillait à plein temps sur le prototype du web notebook, sur la base du travail qu’il avait effectué en 2010, où il avait créé l’architecture du noyau IPython et la spécification des messages avec Fernando Pérez et PyZMQ avec Min Ragan Kelley.</p></li>
-</ol>
-<p>PyZMQ est une bibliothèque qui fournit des liaisons Python pour ZeroMQ ; cette bibliothèque était nécessaire pour les fonctions de calcul parallèle d’IPython, la console qt et le notebook.</p>
-<p>PyZMQ et les websockets sont les principales technologies qui ont rendu le notebook possible. À l’automne de la même année, d’autres contributeurs (tels que Matthias Bussonnier, Min et Fernando) y ont également contribué. Le 21 décembre 2011, il a été publié en tant que première version du IPython Notebook (0.12).</p>
-<p>Au cours des années suivantes, l’équipe a reçu des prix, tels que l’Advancement of Free Software pour Fernando Pérez le 23 mars 2013 et le Jolt Productivity Award, ainsi que des financements de la Alfred P. Sloan Foundations, entre autres.</p>
-</aside>
 </section>
 <section id="le-petit-dernier" class="slide level2">
 <h2>Le petit dernier !</h2>
 <p><img src="figure/quarto.png" style="margin-top:40px;" width="600"/></p>
 <p>Python, R , Julia, Javascript (observable !)….</p>
-<!-- ## Carnet Jupypter -->
-<!-- Le projet était vaste, avec des composants qui devenaient de plus en plus des projets distincts qui se trouvaient appartenir au même projet. -->
-<!-- Mais notez que la taille du projet n'était pas la seule raison pour laquelle le projet Jupyter a été lancé : de 2011 à 2014, le notebook IPython a commencé à fonctionner avec d'autres langages de programmation. Le premier à arriver était Julia, puis plus tard R. Le fait qu'IPython notebook, qui impliquait que le notebook était uniquement basé sur Python, travaillait également avec des noyaux d'autres langages de programmation tels que Julia et R, a laissé les gens perplexes. -->
-<!-- Pourquoi le nom "IPython" si d'autres langages de programmation étaient également impliqués ? -->
-<!-- Le nom "Jupyter" a été inspiré par la réflexion sur les principaux langages ouverts pour la science (c'est-à-dire Julia, Python et R), et même s'il peut sembler être n'importe quel autre acronyme, cela n'a jamais signifié que les autres langages n'étaient pas les bienvenus. De plus, ce nom représentait mieux le projet sur lequel les développeurs travaillaient et faisait un clin d'œil aux racines scientifiques du projet ! -->
-<!-- Après le lancement du projet Jupyter, les parties du projet IPython qui ne sont pas liées à un langage, comme le format du notebook, le protocole de messages, la console Qt, l'application web du notebook, etc. ont été intégrées au projet Jupyter. -->
-<!-- Dans les communautés Jupyter et IPython, ceci est appelé "The Big Split". -->
-<!-- IPython n'a plus que deux rôles à remplir : être le backend Python du Jupyter Notebook, qui est aussi connu comme le noyau, et un shell Python interactif. Mais ce n'est pas tout : au sein de l'écosystème IPython, vous trouverez également un cadre de calcul parallèle. Vous en saurez plus à ce sujet un peu plus tard ! -->
-<!-- Et tout comme IPython, le projet Jupyter est en fait un nom pour un tas de projets : les trois applications qu'il abrite sont le Notebook lui-même, une Console et une console Qt, mais il y a aussi des sous-projets tels que JupyterHub pour supporter le déploiement du Notebook, nbgrader à des fins éducatives, etc. Vous pouvez voir un aperçu de l'architecture Jupyter ici. -->
-<aside class="notes">
-<p>Début des années 1990, le développement d’une architecture de type client-serveur, aussi inspirée du système de fenêtrage X-window apparue entre-temps sous Unix, pour organiser le logiciel Mathematica en un frontal de présentation des résultats et un noyau qui réalise les calculs, permet à la société Wolfram Research de proposer une approche du travail en calcul scientifique intégrée, du développement même de la formulation mathématique à la rédaction finale et présentation des résultats notamment sous forme graphique : la concrétisation sous forme de document à l’écran et de fichier de sauvegarde est les notebooks Mathematica. Ces fichiers sont ensuite consultables via une version du seul frontal comme lecteur, mis à disposition par « Wolfram Research ». L’idée et la concrétisation de ce développement, furent de Theodore Gray (en)4.</p>
-<p>L’essor des carnets de notes pour la science des données</p>
-<p>De nombreux notebooks informatiques ont été créés après les notebooks de Maple et Mathematica. Cette section, cependant, se concentrera sur les notebooks qui ont contribué à l’essor des notebooks de science des données. Vous verrez que certains de ces notebooks sont toujours très populaires parmi les data scientists en herbe et plus aguerris. Carnet Sage</p>
-<p>Le bloc-notes Sage, en tant que système basé sur un navigateur, a d’abord été publié au milieu des années 2000, puis en 2007, une nouvelle version plus puissante, dotée de comptes d’utilisateur et permettant de rendre les documents publics, est sortie. Elle ressemblait à la conception de l’interface utilisateur de Google Docs puisque la mise en page du carnet Sage était basée sur celle des carnets Google.</p>
-<p>Les créateurs des carnets Sage ont confirmé qu’ils étaient de fervents utilisateurs des carnets Mathematica et des feuilles de travail Maple. D’autres motivations ou facteurs importants pour le développement des carnets Sage sont les suivants : premièrement, les développeurs ont eu des contacts étroits avec l’équipe responsable d’IPython, notamment parce que la version de Sage basée sur le terminal utilisait IPython. Deuxièmement, il y a eu “une tentative ratée” de deux étudiants de fournir une interface graphique pour IPython, et troisièmement, la montée en puissance des applications web “AJAX” (pseudo-acronyme de “Asynchronous JavaScript And XML”), qui n’obligent pas les utilisateurs à rafraîchir la page entière à chaque fois qu’ils font quelque chose.</p>
-<p>C’est le cas, par exemple, lorsque vous remplissez un formulaire sur un site web : sans AJAX, vous serez redirigé vers une nouvelle page, avec de nouvelles informations provenant du serveur, lorsque vous appuyez sur le bouton d’envoi. Avec AJAX, JavaScript va faire la demande au serveur, obtenir les résultats et mettre à jour l’écran. Vous n’avez pas besoin de rafraîchir la page, et vous n’êtes pas non plus redirigé.</p>
-<p>D’autres applications AJAX que vous connaissez peut-être sont, par exemple, Gmail, Google Maps, Facebook, Twitter,… Comme vous pouvez le voir, presque tout est en AJAX.</p>
-<p>IPython et Jupyter Notebook</p>
-<p>En 2005, il y a eu une première tentative de construction d’un système de notebook avec Wx, une boîte à outils de widgets et une bibliothèque d’outils pour créer des interfaces utilisateur graphiques (GUI) pour des applications multiplateformes. Deux étudiants du Google Summer of Code ont travaillé sur le prototype sous la direction de Robert Kern et Fernando Pérez. Par la suite, Robert a approfondi le problème. Il s’agissait moins d’un prototype de système de notebook que d’un nettoyage du code de base d’IPython dans le but de faciliter l’écriture d’une interface graphique wxPython pour le shell IPython. Ce sont également ces nettoyages qui ont permis de créer un système de notebook propre et certains d’entre eux ont été fusionnés à IPython au fur et à mesure que l’effort en faveur du notebook, finalement couronné de succès, était en cours.</p>
-<p>Le deuxième prototype d’IPython a été construit durant l’été 2006 par Min Ragan-Kelley et conseillé par Brian Granger. Il était basé sur le Web et disposait d’une base de données SQL, mais les travaux ont été interrompus car sa mise en œuvre s’est avérée trop complexe avec les technologies Web de l’époque.</p>
-<p>Le troisième prototype du carnet IPython est apparu en octobre 2010 et a été réalisé par un tiers lors d’un hack de quelques jours. Enfin, au printemps-été 2011, Brian Granger travaillait à plein temps sur le prototype du web notebook, sur la base du travail qu’il avait effectué en 2010, où il avait créé l’architecture du noyau IPython et la spécification des messages avec Fernando Pérez et PyZMQ avec Min Ragan Kelley.</p>
-<p>PyZMQ est une bibliothèque qui fournit des liaisons Python pour ZeroMQ ; cette bibliothèque était nécessaire pour les fonctions de calcul parallèle d’IPython, la console qt et le notebook.</p>
-<p>PyZMQ et les websockets sont les principales technologies qui ont rendu le notebook possible. À l’automne de la même année, d’autres contributeurs (tels que Matthias Bussonnier, Min et Fernando) y ont également contribué. Le 21 décembre 2011, il a été publié en tant que première version du IPython Notebook (0.12).</p>
-<p>Au cours des années suivantes, l’équipe a reçu des prix, tels que l’Advancement of Free Software pour Fernando Pérez le 23 mars 2013 et le Jolt Productivity Award, ainsi que des financements de la Alfred P. Sloan Foundations, entre autres.</p>
-<p>Enfin, en 2014, le projet Jupyter a démarré comme un projet dérivé d’IPython.</p>
-<p>La dernière version d’IPython avant la scission contenait un shell interactif, le serveur de notebook, la console Qt, etc. dans un seul dépôt. Le projet était vaste, avec des composants qui devenaient de plus en plus des projets distincts qui se trouvaient appartenir au même projet.</p>
-<p>Mais notez que la taille du projet n’était pas la seule raison pour laquelle le projet Jupyter a été lancé : de 2011 à 2014, le notebook IPython a commencé à fonctionner avec d’autres langages de programmation. Le premier à arriver était Julia, puis plus tard R. Le fait qu’IPython notebook, qui impliquait que le notebook était uniquement basé sur Python, travaillait également avec des noyaux d’autres langages de programmation tels que Julia et R, a laissé les gens perplexes.</p>
-<p>Pourquoi le nom “IPython” si d’autres langages de programmation étaient également impliqués ?</p>
-<p>Le nom “Jupyter” a été inspiré par la réflexion sur les principaux langages ouverts pour la science (c’est-à-dire Julia, Python et R), et même s’il peut sembler être n’importe quel autre acronyme, cela n’a jamais signifié que les autres langages n’étaient pas les bienvenus. De plus, ce nom représentait mieux le projet sur lequel les développeurs travaillaient et faisait un clin d’œil aux racines scientifiques du projet !</p>
-<p>Après le lancement du projet Jupyter, les parties du projet IPython qui ne sont pas liées à un langage, comme le format du notebook, le protocole de messages, la console Qt, l’application web du notebook, etc. ont été intégrées au projet Jupyter.</p>
-<p>Dans les communautés Jupyter et IPython, ceci est appelé “The Big Split”.</p>
-<p>IPython n’a plus que deux rôles à remplir : être le backend Python du Jupyter Notebook, qui est aussi connu comme le noyau, et un shell Python interactif. Mais ce n’est pas tout : au sein de l’écosystème IPython, vous trouverez également un cadre de calcul parallèle. Vous en saurez plus à ce sujet un peu plus tard !</p>
-<p>Et tout comme IPython, le projet Jupyter est en fait un nom pour un tas de projets : les trois applications qu’il abrite sont le Notebook lui-même, une Console et une console Qt, mais il y a aussi des sous-projets tels que JupyterHub pour supporter le déploiement du Notebook, nbgrader à des fins éducatives, etc. Vous pouvez voir un aperçu de l’architecture Jupyter ici.</p>
-<p>Notez que c’est exactement l’évolution de ce projet qui explique la confusion que beaucoup de Pythonistes ont lorsqu’il s’agit d’IPython et de Jupyter : depuis que l’un est sorti de l’autre (assez récemment), certains ont encore des difficultés à adopter les bons noms pour les concepts. Mais ce qui pourrait être un facteur encore plus compliqué, c’est l’évolution : depuis que l’un est issu de l’autre, il y a un chevauchement considérable entre les fonctionnalités d’IPython et de Jupyter Notebook, qu’il est parfois difficile de distinguer ! La manière de faire la distinction entre les deux sera clarifiée dans les prochaines sections de cet article. Si vous souhaitez obtenir plus de détails sur la façon dont le développement d’IPython a été réalisé, consultez les comptes rendus personnels de Fernando Pérez et William Stein sur l’histoire de leurs notebooks.</p>
-<p>R Markdown et Jupyter Notebook ont en commun la livraison d’un flux de travail reproductible, le tissage du code, de la sortie et du texte dans un seul document, la prise en charge des widgets interactifs et la sortie vers de multiples formats.</p>
-<p>Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks R et sur les différences exactes entre les notebooks Jupyter et R Markdown en termes de partage de notebooks, de gestion de projet, de contrôle de version et plus encore, consultez le post Jupyter et R de DataCamp : Notebooks with R.</p>
-</aside>
 </section>
-<section id="literate-programming-notebook" class="slide level2">
-<h2>Literate programming &amp; Notebook</h2>
+<section id="programmation-lettrée-notebook" class="slide level2">
+<h2>Programmation lettrée &amp; Notebook</h2>
 <p><img src="figure/LP1.png" style="margin-top:60px;" width="800"/></p>
 </section>
-<section id="lp-notebook-reproductibility" class="slide level2">
-<h2>LP, Notebook &amp; Reproductibility</h2>
+<section id="lp-notebook-reproductibilité" class="slide level2">
+<h2>LP, Notebook &amp; Reproductibilité</h2>
 <p><img src="figure/LP2.png" style="margin-top:60px;" width="800"/></p>
 </section></section>
 <section>
@@ -933,96 +865,8 @@ S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computatio
 <section id="exemple-cette-présentation" class="slide level2">
 <h2>Exemple : cette présentation</h2>
 <p>Faire carte interactive de localisation</p>
-<pre><code>## Linking to GEOS 3.8.0, GDAL 3.0.4, PROJ 7.0.0; sf_use_s2() is TRUE</code></pre>
-<div id="htmlwidget-5e9f2fbf2d8c82858c73" style="width:768px;height:576px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5e9f2fbf2d8c82858c73">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886243845,2.36652523515535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886243845,48.9071886243845],"lng":[2.36652523515535,2.36652523515535]}},"evals":[],"jsHooks":[]}</script>
-<!-- <aside class="notes"> -->
-<!-- En programmation informatique, un notebook, aussi fréquemment appelé calepin électronique, voire simplement calepinnote 1,note 2,note 3 est une interface de programmation interactive (en) permettant de combiner des sections en langage naturel et des sections en langage informatique. Les notebooks sont notamment utilisés en science des données pour explorer et analyser des données. Les notebooks peuvent ensuite être enregistrés sous forme de document. C'est un exemple de programmation lettrée. -->
-<!-- L'usage des notebooks en science permet de faciliter le partage et la reproductibilité des résultats1.  -->
-<!-- </aside> -->
-<!--   <aside class="notes"> -->
-<!-- Quelques implémentations connues, outre celle de Mathmematica, sont : -->
-<!-- Le logiciel iPython permet de développer des notebooks. Ce logiciel, initialement uniquement destiné au langage Python, a été étendu aux langages Julia et R avec le développement du logiciel Jupyter (nom issu de la contraction de "Julia", "Python" et "R"). Très rapidement, la frontalisation par Jupyter a intégré d'autres langages de programmation, et de fait potentiellement tout langage gérant une boucle "REPL" (en). -->
-<!--     Un notebook Jupyter combine des sections en langage naturel mises en forme avec la syntaxe "Markdown" et des sections en code Python, Julia, R ou autres langages. Ces documents peuvent être sauvegardés au format JSON avec l'extension ".ipynb". Ils peuvent être convertis en page web ou en "présentation HTML5" grâce à des utilitaires comme "nbconvert" ; -->
-<!-- L'environnement de développement intégré RStudio permet aussi d'utiliser des notebooks. Les notebooks RStudio sont enregistrés au format "Rmarkdown"5 ; -->
-<!--     Apache Zeppelin propose également une interface de type notebook afin d'analyser et mettre en forme simplement, de manière visuelle et interactive, de gros volumes de données avant de les traiter par d'autres logiciels ; -->
-<!--     Mathcad, logiciel propriétaire, est essentiellement un système de calcul formel doté d'une interface de type "calepin électronique". -->
-<!--   </aside> -->
-<!-- ## Quelques Exemple -->
-<!-- ### Rmarkdown (notebook R) -->
-<!--   <aside class="notes"> -->
-<!-- PDF, HTML ou Word. -->
-<!--  knitr : 2012 (xie Yihui) -->
-<!-- The idea was to embed code chunks (of R or other languages) in Markdown documents. -->
-<!-- Ne supporte pas que le markdown mais aussi : LaTeX, HTML, AsciiDoc, reStructuredText, and Textile -->
-<!-- Mais Markdown has become the most popular document format -->
-<!-- En un mot, R Markdown s'appuie sur les épaules de knitr et de Pandoc. Le premier exécute le code informatique intégré dans Markdown, et convertit R Markdown en Markdown. Le second rend le Markdown dans le format de sortie que vous souhaitez (PDF, HTML, Word, etc.). -->
-<!-- rmardkown ne permet pas seulement la création de document (présentation, livre, tutoriel, article...) Mais aussi notebook interactif, application, blogs et website. -->
-<!-- : "La richesse ne consiste pas à avoir de grands biens, mais à avoir peu de besoins." -->
-<!-- Si vous parvenez à maîtriser votre préoccupation pour la recherche de fonctionnalités de composition, vous devriez être beaucoup plus efficace dans la rédaction du contenu et vous pouvez devenir un auteur prolifique -->
-<!-- Élément du Rmarkdown : -->
-<!-- - paragraphes -->
-<!-- - en-têtes (de section)citations en bloc  -->
-<!-- - blocs de code  -->
-<!-- - listes (numérotées et non numérotées)  -->
-<!-- - règles horizontales  -->
-<!-- - tableaux  -->
-<!-- - mise en forme en ligne (mise en évidence  -->
-<!-- - biffure  -->
-<!-- - exposant superscripts -->
-<!-- - exposant subscripts -->
-<!-- - texte mot à mot et petites capitales)  -->
-<!-- - expressions mathématiques LaTeX  -->
-<!-- - équations  -->
-<!-- - liens  -->
-<!-- - images  -->
-<!-- - notes de bas de page  -->
-<!-- - citations  -->
-<!-- - théorèmes  -->
-<!-- - preuves et exemples.  -->
-<!-- mais a ne pas sous-estimer ... css Pandoc ! -->
-<!-- Les documents R Markdown sont souvent portables, dans le sens où ils peuvent être compilés dans plusieurs types de formats de sortie. Encore une fois, cela est principalement dû à la syntaxe simplifiée du langage de création, Markdown. Plus les éléments de votre document sont simples, plus le document a de chances d'être converti en différents formats. De même, si vous adaptez fortement R Markdown à un format de sortie spécifique (par exemple, LaTeX), vous risquez de perdre la portabilité, car toutes les fonctionnalités d'un format ne fonctionnent pas dans un autre format. -->
-<!--   </aside> -->
-<!-- ### Notebook jupyter / JupyterLab -->
-<!--   <aside class="notes"> -->
-<!-- En outre, Jupyter Notebook est aussi utilisé comme outil pédagogique. Selon la plateforme de dépôt de code GitHub, plus de 2,5 millions de notebooks Jupyter ont été partagés en septembre 2018. -->
-<!-- Cet outil présente l’avantage de supporter de nombreux langages. En outre, il est compatible avec les cellules Markdown permettant des écritures plus détaillées et un formatage facile. -->
-<!-- JupyterLab est la prochaine génération du Jupyter Notebook. Il vise à résoudre de nombreux problèmes d'utilisation du Notebook et élargit considérablement sa portée. JupyterLab offre un cadre général pour le calcul interactif et la science des données dans le navigateur, en utilisant Python, Julia, R ou l'un des nombreux autres langages. -->
-<!-- En plus de fournir une interface améliorée aux carnets de notes existants, JupyterLab apporte également dans la même interface un navigateur de fichiers, des consoles, des terminaux, des éditeurs de texte, des éditeurs Markdown, des éditeurs CSV, des éditeurs JSON, des cartes interactives, des widgets, etc. L'architecture est entièrement extensible et ouverte aux développeurs. En un mot, JupyterLab est un environnement de développement intégré (IDE) basé sur le Web et modifiable pour la science des données et l'informatique interactive. -->
-<!-- JupyterLab utilise exactement le même serveur de notebook et le même format de fichier que le Jupyter Notebook classique, de sorte qu'il est entièrement compatible avec les notebooks et noyaux existants. Le Notebook classique et Jupyterlab peuvent fonctionner côte à côte sur le même ordinateur. On peut facilement passer d'une interface à l'autre. -->
-<!--   </aside> -->
-<!-- #### --- -->
-<!--   <aside class="notes"> -->
-<!-- Jupyter Notebook est un environnement informatique interactif basé sur le web permettant de créer des documents Jupyter notebook. Il prend en charge plusieurs langages comme Python (IPython), Julia, R, etc. et est largement utilisé pour l'analyse et la visualisation de données, ainsi que pour l'informatique interactive et exploratoire. -->
-<!-- JupyterLab est l'interface utilisateur de nouvelle génération incluant les notebooks. Elle a une structure modulaire, où vous pouvez ouvrir plusieurs notebooks ou fichiers (par exemple HTML, Text, Markdowns etc) comme des onglets dans la même fenêtre. Il offre une expérience plus proche de celle d'un IDE. -->
-<!-- Pour un débutant, je suggérerais de commencer avec Jupyter Notebook, car il se compose simplement d'un navigateur de fichiers et d'une vue d'éditeur (notebook). Il est peut-être plus facile à utiliser. Si vous voulez plus de fonctionnalités, passez à JupyterLab. JupyterLab offre beaucoup plus de fonctionnalités et une interface améliorée, qui peut être étendue grâce à des extensions : Extensions JupyterLab (GitHub) -->
-<!-- Traduit avec www.DeepL.com/Translator (version gratuite) -->
-<!--   </aside> -->
-<!-- ## JupyterLab -->
-<!--   <aside class="notes"> -->
-<!-- Depuis 2018, l’interface utilisateur JupyterLab est disponible pour tous et prête pour un usage en production. Il s’agit d’une version plus flexible et malléable que le Jupyter Notebook classique. Les utilisateurs peuvent effectuer des glisser-déposer de cellules entre les notebooks et organiser l’espace de travail en différents ongles et sous-sections. -->
-<!-- Le code peut être exécuté directement à partir de fichiers texte et de fichiers Jupyter Notebook, et de nombreux formats de fichiers communs pour le code et les données peuvent être rendus en prévisualisations live. -->
-<!-- En outre, JupyterLab peut être personnalisé à l’aide d’extensions pour ajouter la prise en charge de nouveaux formats de fichiers. Ceci permet d’enrichir l’interface, ou d’ajouter des fonctionnalités additionnelles. Les applications sont donc étendues par rapport au Jupyter Notebook. -->
-<!-- À terme, l’ambition est de remplacer l’interface Jupyter Notebook par celle de JupyterLab. Il faudra toutefois patienter jusqu’à ce que JupyterLab soit suffisamment stable. -->
-<!-- En conclusion, Jupyter Notebook est un formidable outil pour créer une histoire à partir des données. Au fil du temps, il est devenu un écosystème complet regroupant des interfaces alternatives comme JupyterLab et Hydrogen, des bibliothèques de visualisation interactives et une large gamme d’outils. -->
-<!--   </aside> -->
-<!-- ### Notebook Observable -->
-<!-- ### Notebook Pluto -->
-<!-- ### AUTRE -->
-<!-- #### Autres carnets de notes de science des données -->
-<!-- Bien sûr, il existe encore d'autres notebooks que vous pouvez envisager lorsque vous vous lancez dans la science des données. Ces dernières années, un grand nombre de nouvelles alternatives ont trouvé leur place auprès des scientifiques et des amateurs de science des données : pensez non seulement à Beaker Notebook, Apache Zeppelin, Spark Notebook, DataBricks Cloud, etc., mais aussi à d'autres outils tels que Rodeo IDE ou nteract qui rendent vos analyses de science des données interactives et reproductibles. Il convient de noter que nteract diffère des autres outils mentionnés ici car il utilise l'architecture Jupyter, notamment les protocoles et les formats. -->
-<!-- #### L'avenir des carnets de notes -->
-<!-- Les notebooks semblent être là pour rester. Récemment, la prochaine génération de Jupyter Notebook a été présentée à la communauté : JupyterLab. L'application Notebook comprend non seulement la prise en charge des Notebooks, mais aussi un gestionnaire de fichiers, un éditeur de texte, un émulateur de terminal, un moniteur pour l'exécution des processus Jupyter, un gestionnaire de cluster IPython et un pager pour afficher l'aide. -->
-<!-- Vous pouvez penser maintenant que ce n'est rien de nouveau ; le Jupyter Notebook a également toutes ces choses. JupyterLab, cependant, vous permet d'utiliser tous ces éléments constitutifs de l'informatique interactive de manière novatrice. -->
-<!-- Pour en savoir plus, cliquez ici. -->
-<!-- ## Type d'utilisation ? -->
-<!-- # Ecriture numérique -->
-<!-- ## Markdown -->
-<!-- <aside class="notes"> -->
-<!-- However, the original version of Markdown invented by John Gruber was often found overly simple and not suitable to write highly technical documents. For example, there was no syntax for tables, footnotes, math expressions, or citations. Fortunately, John MacFarlane created a wonderful package named Pandoc (http://pandoc.org) to convert Markdown documents (and many other types of documents) to a large variety of output formats. More importantly, the Markdown syntax was significantly enriched. Now we can write more types of elements with Markdown while still enjoying its simplicity. -->
-<!-- </aside> -->
-<!-- ## RÉFÉRENCE   -->
-<!-- https://www.datacamp.com/blog/ipython-or-jupyter -->
+<div id="htmlwidget-d6e663231fc274197fe4" style="width:768px;height:576px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d6e663231fc274197fe4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886243845,2.36652523515535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886243845,48.9071886243845],"lng":[2.36652523515535,2.36652523515535]}},"evals":[],"jsHooks":[]}</script>
 </section>
 <section id="diapositives-libres-cc-by-sa-4.0" class="slide level2">
 <h2>Diapositives libres (CC BY-SA 4.0)</h2>
@@ -1042,6 +886,45 @@ Code source :
 </p>
 <p><br></p>
 <p><a href="https://gitlab.huma-num.fr/rzine/site"><img src="figure/twitter.png" width="45"/ style="margin-top:30px;margin-bottom:-10px;margin-right:10px;"></a><span class="citation" data-cites="rzine_shs">@rzine_shs</span></p>
+</section>
+<section id="info-session" class="slide level2">
+<h2>Info session</h2>
+<p><br></p>
+<pre><code>## R version 4.0.2 (2020-06-22)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 18.04.6 LTS
+## 
+## Matrix products: default
+## BLAS:   /usr/lib/x86_64-linux-gnu/openblas/libblas.so.3
+## LAPACK: /usr/lib/x86_64-linux-gnu/libopenblasp-r0.2.20.so
+## 
+## locale:
+##  [1] LC_CTYPE=fr_FR.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=fr_FR.UTF-8        LC_COLLATE=fr_FR.UTF-8    
+##  [5] LC_MONETARY=fr_FR.UTF-8    LC_MESSAGES=fr_FR.UTF-8   
+##  [7] LC_PAPER=fr_FR.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=fr_FR.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] leaflet_2.0.4.1 sf_1.0-5       
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.7         bslib_0.3.1        compiler_4.0.2     pillar_1.6.4      
+##  [5] jquerylib_0.1.4    class_7.3-17       tools_4.0.2        digest_0.6.29     
+##  [9] tibble_3.1.6       jsonlite_1.7.2     evaluate_0.14      lifecycle_1.0.1   
+## [13] pkgconfig_2.0.3    rlang_0.4.12       DBI_1.1.2          crosstalk_1.2.0   
+## [17] yaml_2.2.1         xfun_0.29          fastmap_1.1.0      e1071_1.7-9       
+## [21] stringr_1.4.0      dplyr_1.0.7        knitr_1.37         htmlwidgets_1.5.4 
+## [25] generics_0.1.1     sass_0.4.0         vctrs_0.3.8        revealjs_0.9      
+## [29] tidyselect_1.1.1   classInt_0.4-3     grid_4.0.2         glue_1.6.0        
+## [33] R6_2.5.1           fansi_0.5.0        rmarkdown_2.11.2   purrr_0.3.4       
+## [37] magrittr_2.0.1     htmltools_0.5.2    ellipsis_0.3.2     units_0.7-2       
+## [41] assertthat_0.2.1   KernSmooth_2.23-17 utf8_1.2.2         stringi_1.7.6     
+## [45] proxy_0.4-26       crayon_1.4.2</code></pre>
 </section></section>
     </div>
   </div>
