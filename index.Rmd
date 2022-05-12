@@ -39,7 +39,7 @@ editor_options:
 
 ## Bonjour à tou·te·s
 
-<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs d'études CNRS en sciences de l'information géographique</p>
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs CNRS en sciences de l'information géographique</p>
 
 <img src="figure/users.png" style="float:left;margin-top:40px;" width="380"/>
 
@@ -48,7 +48,7 @@ editor_options:
 <ul class="pucsmall22" style="margin-top:40px;">
 > - Le langage R comme outil principal
 > - Production régulière de notebook R
-> - Responsables de projet Rzine
+> - Responsables du projet Rzine
 </ul>
 
 
@@ -126,10 +126,10 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 ## Anatomie d'un notebook
 
 
-<p class="smallpcenter">Simple fichier texte PLAIN<P>
+<p class="smallpcenter">Simple fichier texte<P>
 <img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/>
 
-## Notebook "quali"
+## Notebook « quali »
 
 <img src="figure/notebook_3.png" style="margin-top:120px;" width="1000"/>
 
@@ -473,21 +473,6 @@ Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks
   </aside>
 
 
-<!-- ## Pour plein d'usage -->
-
-<!-- - support de cours -->
-<!-- - Diaporama -->
-<!-- - Livre -->
-<!-- - Exercice -->
-<!-- - tutoriel -->
-<!-- - Annexe d'article -->
-<!-- - billet de blog -->
-<!-- - CV -->
-<!-- - lettre -->
-<!-- - article scientifique -->
-<!-- - rapport statistique (automatisé) -->
-<!-- - site web... -->
-
 
 ## Literate programming & Notebook 
  <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
@@ -522,13 +507,36 @@ https://neocarto.github.io/Quarto/
 
 # Conclusion
 
-
 Notebook -> un futur format de publication de Ref ? Rzine
-
 Callisto de Humanum
-
 GT Notebook
 
+Format de sortie multiple, plein d'usage :
+
+
+Support de cours, Diaporama, Livre, Exercice, tutoriel, Annexe d'article, billet de blog, CV, lettre, article scientifique, rapport statistique (automatisé), site web...
+
+## Exemple : cette présentation
+
+Faire carte interactive de localisation
+
+```{r, echo=FALSE, eval=TRUE}
+
+library(sf)
+ptsfg <- st_point(c(2.3665252351553487, 48.90718862438445))
+ptsfc <- st_sfc(ptsfg, crs = (4326))
+ptdf <- data.frame(id= 1, name = "Vous êtes ici !")
+Here <- st_sf(ptdf,geometry = ptsfc)
+
+
+library(leaflet)
+
+leaflet(Here) %>%
+    addTiles() %>%
+    addMarkers(data = Here)
+
+
+```
 
 
 
@@ -706,4 +714,5 @@ GT Notebook
 <p class="moyp222">https://github.com/HuguesPecout/notebook_mateshs</p>
 <br>
 
+[<img src="figure/twitter.png" width="45"/ style="margin-top:30px;margin-bottom:-10px;margin-right:10px;">](https://gitlab.huma-num.fr/rzine/site)@rzine_shs
   
