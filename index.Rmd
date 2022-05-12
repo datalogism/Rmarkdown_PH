@@ -37,7 +37,7 @@ editor_options:
 
 
 
-## Bonjour !
+## Bonjour à tou·te·s
 
 <p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs d'études CNRS en sciences de l'information géographique</p>
 
@@ -489,11 +489,10 @@ Pour en savoir plus sur la façon dont vous pouvez travailler avec les notebooks
 <!-- - site web... -->
 
 
-## LP, Notebook & reproductibility
-
+## Literate programming & Notebook 
  <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
 
-## LP, Notebook & reproductibility
+## LP, Notebook & Reproductibility
 
 <img src="figure/LP2.png" style="margin-top:60px;" width="800"/> 
  
