@@ -72,8 +72,8 @@ editor_options:
 Un groupe de travail inter-disciplinaire travaillant à un portail de ressources, ouvert, dédié à l'observation théorique et pratique des notebooks
 </aside>
 
-# {data-background="figure/logo_notebook2.png" data-background-size="1000px"}
 
+# {data-background="figure/logo_notebook2.png" data-background-size="1000px"}
 
 <h2>**Le notebook**</h2>
 
@@ -125,7 +125,6 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Anatomie d'un notebook
 
-
 <p class="smallpcenter">Simple fichier texte<P>
 <img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/>
 
@@ -137,12 +136,17 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <img src="figure/stylo.png" style="margin-top:40px;" width="650"/>
 
+<p class="smallpcenter">...Et plusieurs d'éditeurs libres comme [CodiMD](https://hackmd.io/#)...</p>
+
 ## Le Markdown
 
 <div id="codermd">
 <p class="smallpcenter">Fichier Markdown (.md)</p>
 ```{r, file = 'figure/hackmd.md', eval=FALSE}
 ```
+
+<p class="smallpcenter">-> Visualiser sur [HackMD](https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A)</p>
+
 </div>
 
 <div id="codehtml">
@@ -150,27 +154,6 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 ![](figure/hackmd.png)
 </div>
 
-
-<!-- ## Ex : Jupyter notebook  -->
-<!-- <div id="codermd"> -->
-<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Fichier source (.ipynb)<span></p> -->
-<!-- ```{python, file = 'figure/covid-19_visualisation.ipynb', eval=FALSE} -->
-<!-- ``` -->
-<!-- </div> -->
-<!-- <div id="codehtml"> -->
-<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Edition du fichier avec Jupyter<span></p> -->
-<!-- ![](figure/jupyter.png) -->
-<!-- </div> -->
-
-<!-- ## Ex : Jupyter notebook  -->
-<!-- <div id="codermd"> -->
-<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Exécution des cellules avec dans jupyter<span></p> -->
-<!-- ![](figure/jupyter3.png) -->
-<!-- </div> -->
-<!-- <div id="codehtml"> -->
-<!-- <p class="smallpcenter"><span style="color:#f7a41f;">Export en format html<span></p> -->
-<!-- ![](figure/jupyter4.png) -->
-<!-- </div> -->
 
 ## Exemple 
 
@@ -192,37 +175,20 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </div>
 
 
-
 ## Le Rmarkdown
 
-
 <img src="figure/knitr_process.png" style="margin-top:30px;" width="800"/>
-
 
 ## Rmarkdown avec Rstudio
 
 <img src="figure/markdown2.png" style="margin-top:0px;" width="800"/>
 
-<!-- ## Exemple Rmarkdown 2 -->
-<!-- <div id="codermd"> -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <p class="medpcenter">[<span style="color:#f7a41f;">Code source (Rmd & data)<span>](https://gitlab.huma-num.fr/rCarto/santelocal)</p> -->
-<!-- </div> -->
-<!-- <div id="codehtml"> -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <p class="medpcenter">[<span style="color:#f7a41f;">Fichier en sortie (.html)<span>](https://rcarto.gitpages.huma-num.fr/santelocal/)</p> -->
-<!-- </div> -->
+## Rmarkdown avec Rstudio
 
-
-
+<img src="figure/markdown3.png" style="margin-top:0px;" width="800"/>
 
 # {data-background="figure/history.jpeg" data-background-size="750px"}
 
-
-
-
 <br>
 <br>
 <br>
@@ -233,7 +199,6 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <br>
 <br>
 <br>
-
 
 
 
@@ -271,16 +236,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <p style="margin-top:40px;font-size:70%;"><span style="color:#f7a41f;">**The Literate Programming (LP)**<br>*La programmation lettrée*</span></p>
 
-
-
 </div>
-
-
-
-
-
-
-
 
 
 ## Programmation lettrée
@@ -296,10 +252,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <p class="smallpcenter">**Le paradigme de la programmation lettrée**, tel qu'il a été conçu par **Knuth**, s'éloigne dans son écriture de l'ordonnancement imposé par l'ordinateur, et à la place **autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée**.</p>
 
 
-
-  
 ## Multiplication des notebooks et des plateformes
-
 
 <img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/>
 
@@ -309,14 +262,11 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Dernière génération
 
-
 <img src="figure/nouveau_notebook.png" style="margin-top:40px;" width="800"/>
 
 
 
-
 ## Le petit dernier !
-
 
 <img src="figure/quarto.png" style="margin-top:40px;" width="600"/>
 
@@ -324,12 +274,9 @@ Python, R , Julia, Javascript (observable !)....
 
 
 
-
-
-
-
 ## Programmation lettrée & Notebook 
- <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
+ 
+<img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
 
 ## LP, Notebook & Reproductibilité
 
@@ -338,18 +285,17 @@ Python, R , Julia, Javascript (observable !)....
 
 # {data-background="figure/partie4.png" data-background-size="500px"}
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ## Git, GitHub, GitLab
 
@@ -421,6 +367,7 @@ Des formats de sortie multiples, nombreux usages :
 
 
 
+
 ## Exemple : cette présentation
 ```{r, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
 library(sf)
@@ -439,6 +386,7 @@ mamap <- leaflet(Here, width = 512, height = 512) %>%
 mamap
 ```
 
+
 ## Diapositives libres (CC BY-SA 4.0)
 
 <br>
@@ -453,8 +401,6 @@ mamap
 <br>
 
 [<img src="figure/twitter.png" width="45"/ style="margin-top:30px;margin-bottom:-10px;margin-right:10px;">](https://gitlab.huma-num.fr/rzine/site)@rzine_shs
-
-
 
 ## Info session
 
