@@ -290,8 +290,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 > <p style="font-size:50%;">Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. <br> Donald Knuth, [LP Website citations page](http://www.literateprogramming.com/)</p>
 
-> <p style="font-size:50%;">The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means.
-He or she strives for **a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding**, using a mixture of formal and informal methods that reinforce each other. <br> Donald Knuth, [LP Website citations page](http://www.literateprogramming.com/)</p>
+> <p style="font-size:50%;">The practitioner of literate programming (...) strives for **a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding** (...). <br> Donald Knuth, [LP Website citations page](http://www.literateprogramming.com/)</p>
 
 
 <p class="smallpcenter">**Le paradigme de la programmation lettrée**, tel qu'il a été conçu par **Knuth**, s'éloigne dans son écriture de l'ordonnancement imposé par l'ordinateur, et à la place **autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée**.</p>
@@ -352,48 +351,93 @@ Python, R , Julia, Javascript (observable !)....
 <br>
 <br>
 
-## Couple pour la reproductibility
+## Git, GitHub, GitLab
 
-## Exemple quarto !
+**Git** est un système de gestion de version distribué pour  
 
-R + javascript + Git
+>* tracker les changement dans les fichiers texte  
+>* gérer l’historique du code source  
+>* partager le code dans des dépots distants  
 
-https://neocarto.github.io/Quarto/
+<br>
+<br>
+
+**GitHub** et **GitLab** hébèrgent des dépots distants et des services pour gérer des projets (issue tracker, collaboration, hébergement web, CI/CD).
+
+
+## Notebook + Git 
+
+>* Les sources des notebooks sont des fichiers texte   
+=> Suivi des modifications (commit, branches, etc.)   
+>* Certains ont besoin d'être compilé   
+=> Continuous Integration  
+>* Certains peuvent être déployés sur le web   
+=> Continuous Deployment  
+  
+
+## Exemple 
+
+quarto + R + Observable + Git
+
+https://rcarto.github.io/Quarto/
+
+
 
 # Conclusion
 
-Notebook -> un futur format de publication de Ref ? Rzine
-Callisto de Humanum
-GT Notebook
 
-Format de sortie multiple, plein d'usage :
+Le notebook, un format efficace pour la recherche reproductible.
 
 
-Support de cours, Diaporama, Livre, Exercice, tutoriel, Annexe d'article, billet de blog, CV, lettre, article scientifique, rapport statistique (automatisé), site web...
+
+
+## Conclusion
+
+
+Le notebook, un format de publication scientifique légitime  
+
+>* [Rzine](rzine.fr), diffusion de ressources R en SHS   
+>* [Computo](https://computo.sfds.asso.fr/) de la SFdS
+>* [Programming Historian](https://programminghistorian.org)
+>* ...
+
+## Conclusion
+
+
+Des formats de sortie multiples, nombreux usages :  
+
+<ul class="pucsmall2" style="margin-top:0px;font-size:50%;">
+> - <span style="color:grey;">*Support de cours*</span>
+> - <span style="color:grey;">*Diaporama*</span>
+> - <span style="color:grey;">*Livre*</span>
+> - <span style="color:grey;">*Exercice*</span>
+> - <span style="color:grey;">*Tutoriel*</span>
+> - <span style="color:grey;">*Annexe d'article*</span>
+> - <span style="color:grey;">*Blog*</span>
+> - <span style="color:grey;">*CV*</span>
+> - <span style="color:grey;">*Site web*</span>
+> - <span style="color:grey;">*Rapports*</span>
+> - <span style="color:grey;">*...*</span>
+
+
 
 ## Exemple : cette présentation
-
-Faire carte interactive de localisation
-
-```{r, echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE}
-
+```{r, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
 library(sf)
-ptsfg <- st_point(c(2.3665252351553487, 48.90718862438445))
+ptsfg <- st_point(c(2.36652, 48.9071886))
 ptsfc <- st_sfc(ptsfg, crs = (4326))
 ptdf <- data.frame(id= 1, name = "Vous êtes ici !")
 Here <- st_sf(ptdf,geometry = ptsfc)
-
-
 library(leaflet)
-
-leaflet(Here) %>%
-    addTiles() %>%
-    addMarkers(data = Here)
-
-
+mamap <- leaflet(Here, width = 512, height = 512) %>%
+  addTiles() %>%
+  addMarkers(data = Here, popup = "❤️❤️mate-shs❤️❤️")
 ```
 
-
+## 
+```{r, echo=FALSE, out.width="512px"}
+mamap
+```
 
 ## Diapositives libres (CC BY-SA 4.0)
 
