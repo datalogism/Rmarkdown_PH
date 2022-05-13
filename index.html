@@ -808,7 +808,7 @@ Instead of imagining that our main task is to instruct a computer what to do, le
 </blockquote>
 <blockquote>
 <p style="font-size:50%;">
-The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means. He or she strives for <strong>a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding</strong>, using a mixture of formal and informal methods that reinforce each other. <br> Donald Knuth, <a href="http://www.literateprogramming.com/">LP Website citations page</a>
+The practitioner of literate programming (…) strives for <strong>a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding</strong> (…). <br> Donald Knuth, <a href="http://www.literateprogramming.com/">LP Website citations page</a>
 </p>
 </blockquote>
 <p class="smallpcenter">
@@ -844,26 +844,87 @@ S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computatio
 <h1 data-background="figure/partie4.png" data-background-size="500px"></h1>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
-<section id="couple-pour-la-reproductibility" class="slide level2">
-<h2>Couple pour la reproductibility</h2>
+<section id="git-github-gitlab" class="slide level2">
+<h2>Git, GitHub, GitLab</h2>
+<p><strong>Git</strong> est un système de gestion de version distribué pour</p>
+<ul>
+<li>tracker les changement dans les fichiers texte<br />
+</li>
+<li>gérer l’historique du code source<br />
+</li>
+<li>partager le code dans des dépots distants</li>
+</ul>
+<p><br> <br></p>
+<p><strong>GitHub</strong> et <strong>GitLab</strong> hébèrgent des dépots distants et des services pour gérer des projets (issue tracker, collaboration, hébergement web, CI/CD).</p>
 </section>
-<section id="exemple-quarto" class="slide level2">
-<h2>Exemple quarto !</h2>
-<p>R + javascript + Git</p>
-<p><a href="https://neocarto.github.io/Quarto/" class="uri">https://neocarto.github.io/Quarto/</a></p>
+<section id="notebook-git" class="slide level2">
+<h2>Notebook + Git</h2>
+<ul>
+<li>Les sources des notebooks sont des fichiers texte<br />
+=&gt; Suivi des modifications (commit, branches, etc.)<br />
+</li>
+<li>Certains ont besoin d’être compilé<br />
+=&gt; Continuous Integration<br />
+</li>
+<li>Certains peuvent être déployés sur le web<br />
+=&gt; Continuous Deployment</li>
+</ul>
+</section>
+<section id="exemple-1" class="slide level2">
+<h2>Exemple</h2>
+<p>quarto + R + Observable + Git</p>
+<p><a href="https://rcarto.github.io/Quarto/" class="uri">https://rcarto.github.io/Quarto/</a></p>
 </section></section>
 <section>
 <section id="conclusion" class="title-slide slide level1">
 <h1>Conclusion</h1>
-<p>Notebook -&gt; un futur format de publication de Ref ? Rzine Callisto de Humanum GT Notebook</p>
-<p>Format de sortie multiple, plein d’usage :</p>
-<p>Support de cours, Diaporama, Livre, Exercice, tutoriel, Annexe d’article, billet de blog, CV, lettre, article scientifique, rapport statistique (automatisé), site web…</p>
+<p>Le notebook, un format efficace pour la recherche reproductible.</p>
+</section>
+<section id="conclusion-1" class="slide level2">
+<h2>Conclusion</h2>
+<p>Le notebook, un format de publication scientifique légitime</p>
+<ul>
+<li><a href="rzine.fr">Rzine</a>, diffusion de ressources R en SHS<br />
+</li>
+<li><a href="https://computo.sfds.asso.fr/">Computo</a> de la SFdS</li>
+<li><a href="https://programminghistorian.org">Programming Historian</a></li>
+<li>…</li>
+</ul>
+</section>
+<section id="conclusion-2" class="slide level2">
+<h2>Conclusion</h2>
+<p>Des formats de sortie multiples, nombreux usages :</p>
+<ul class="pucsmall2" style="margin-top:0px;font-size:50%;">
+<ul>
+<li><span style="color:grey;"><em>Support de cours</em></span></li>
+<li><span style="color:grey;"><em>Diaporama</em></span></li>
+<li><span style="color:grey;"><em>Livre</em></span></li>
+<li><span style="color:grey;"><em>Exercice</em></span></li>
+<li><span style="color:grey;"><em>Tutoriel</em></span></li>
+<li><span style="color:grey;"><em>Annexe d’article</em></span></li>
+<li><span style="color:grey;"><em>Blog</em></span></li>
+<li><span style="color:grey;"><em>CV</em></span></li>
+<li><span style="color:grey;"><em>Site web</em></span></li>
+<li><span style="color:grey;"><em>Rapports</em></span></li>
+<li><span style="color:grey;"><em>…</em></span></li>
+</ul>
 </section>
 <section id="exemple-cette-présentation" class="slide level2">
 <h2>Exemple : cette présentation</h2>
-<p>Faire carte interactive de localisation</p>
-<div id="htmlwidget-57a7b85c3f7d80a71d0a" style="width:768px;height:576px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-57a7b85c3f7d80a71d0a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886243845,2.36652523515535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886243845,48.9071886243845],"lng":[2.36652523515535,2.36652523515535]}},"evals":[],"jsHooks":[]}</script>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ptsfg <span class="ot">&lt;-</span> <span class="fu">st_point</span>(<span class="fu">c</span>(<span class="fl">2.36652</span>, <span class="fl">48.9071886</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ptsfc <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(ptsfg, <span class="at">crs =</span> (<span class="dv">4326</span>))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ptdf <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id=</span> <span class="dv">1</span>, <span class="at">name =</span> <span class="st">&quot;Vous êtes ici !&quot;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Here <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(ptdf,<span class="at">geometry =</span> ptsfc)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>mamap <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(Here, <span class="at">width =</span> <span class="dv">512</span>, <span class="at">height =</span> <span class="dv">512</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">data =</span> Here, <span class="at">popup =</span> <span class="st">&quot;❤️❤️mate-shs❤️❤️&quot;</span>)</span></code></pre></div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div id="htmlwidget-8252927f2f8183a35d04" style="width:512px;height:512px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8252927f2f8183a35d04">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886,2.36652,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"❤️❤️mate-shs❤️❤️",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886,48.9071886],"lng":[2.36652,2.36652]}},"evals":[],"jsHooks":[]}</script>
 </section>
 <section id="diapositives-libres-cc-by-sa-4.0" class="slide level2">
 <h2>Diapositives libres (CC BY-SA 4.0)</h2>
