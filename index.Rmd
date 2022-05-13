@@ -262,15 +262,15 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Dernière génération
 
-<img src="figure/nouveau_notebook.png" style="margin-top:40px;" width="800"/>
+<img src="figure/nouveau_notebook.png" style="margin-bottom:0px;" width="800"/>
 
 
+## Le petit dernier... <img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/> 
 
-## Le petit dernier !
 
-<img src="figure/quarto.png" style="margin-top:40px;" width="600"/>
+<img src="figure/quarto2.png" style="margin-top:20px;" width="800"/>
 
-Python, R , Julia, Javascript (observable !)....
+<p class="smallpcenter">Fonctionne avec **R**, **Python**, **Julia**, **Javascript** (**OJS**)...</p>
 
 
 
@@ -321,11 +321,17 @@ Python, R , Julia, Javascript (observable !)....
 => Continuous Deployment  
   
 
-## Exemple 
+## Exemple notebook Quarto
 
-quarto + R + Observable + Git
+<br>
+<br>
 
-https://rcarto.github.io/Quarto/
+<img src="figure/quarto.png" width="280" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;"/> **+** <img src="figure/R.png" width="110" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/javascript.png" width="80" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/git.png" width="150" style="margin-top:0px;margin-bottom:-10px;margin-left:20px;"/> 
+
+<br>
+<br>
+
+<p style="font-size:115%;">[Cliquez-moi !](https://rcarto.github.io/Quarto/)</p>
 
 
 
