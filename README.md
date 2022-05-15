@@ -1,4 +1,4 @@
-#  Le notebook et la programmation lettrée
+#  Le notebook et la programmation lettrée  [<img src="https://rzine.fr/img/Rzine_logo.png"  align="right" width="120"/>](http://rzine.fr/)
 ## Documenter ses traitements 
 
 *Diaporama utilisé lors des Journées annuelles MATE-SHS 2022*
