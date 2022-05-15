@@ -1,0 +1,26 @@
+---
+title: "CONCLUSION"
+output: html_document
+---
+
+## Pour Conclure...
+
+> **Le notebook**, un format efficace pour la **recherche reproductible**
+
+### un format de publication légitime ?
+
+```{r}
+cat("Un format de publication émergent !")
+```
+
+### un objet pour de nombreux usage 
+
+```{r}
+print(c("Livre, turoriel, manuel, 
+        cours, communication, 
+        exercice, application, 
+        site internet..."))
+```
+
+
+

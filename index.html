@@ -646,19 +646,24 @@ Simple fichier texte
 <p><img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/></p>
 </section>
 <section id="notebook-sans-code" class="slide level2">
-<h2>Notebook sans code ?!</h2>
+<h2>Notebook sans code ?</h2>
 <p><img src="figure/notebook_3.png" style="margin-top:120px;" width="1000"/></p>
 </section>
-<section id="stylo-crcen-dhuman-num" class="slide level2">
-<h2>Stylo (CRCEN) d’Human-Num</h2>
-<p><img src="figure/stylo.png" style="margin-top:40px;" width="650"/></p>
-<p class="smallpcenter">
-…Et plusieurs d’éditeurs libres comme <a
-href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">CodiMD</a>…
+<section id="stylo-dhuman-num" class="slide level2">
+<h2>Stylo d’Human-Num</h2>
+<p class="smallpcenter" style="margin-top:40px;">
+Développé par le <a href="https://ecrituresnumeriques.ca/fr/">CRC-EN</a>
+avec le support <a href="https://www.erudit.org/fr/">Érudit</a> et de la
+<a href="https://www.huma-num.fr/">TGIR Huma-Num</a>
+</p>
+<p><img src="figure/stylo.png" style="margin-top:5px;" width="550"/></p>
+<p class="smallpcenter" style="margin-top:30px;">
+Sinon, il existe beaucoup d’éditeurs libres (<a
+href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">CodiMD</a>…)
 </p>
 </section>
-<section id="le-markdown" class="slide level2">
-<h2>Le Markdown</h2>
+<section id="le-markdown-gruber-2004" class="slide level2">
+<h2>Le Markdown (Gruber, 2004)</h2>
 <div id="codermd">
 <p class="smallpcenter">
 Fichier Markdown (.md)
@@ -697,7 +702,7 @@ Fichier Markdown (.md)
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="er">&gt;</span> Le texte brut balisé en Markdown reste lisible pour l<span class="st">&#39;humain, se stocke dans un simple fichier texte et de nombreux outils libres permettent de l&#39;</span>éditer.</span></code></pre></div>
 <p class="smallpcenter">
 -&gt; Visualiser sur <a
-href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A">HackMD</a>
+href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">HackMD</a>
 </p>
 </div>
 <div id="codehtml">
@@ -764,8 +769,10 @@ Fichier en sortie (.html)
 <p><img data-src="figure/markdown.png" /></p>
 </div>
 </section>
-<section id="le-rmarkdown-1" class="slide level2">
-<h2>Le Rmarkdown</h2>
+<section id="kniter-un-.rmd" class="slide level2">
+<h2>« Kniter »
+<img src="figure/knito.png" width="85" style="margin-top:0px;margin-bottom:-15px;"/>
+un .rmd</h2>
 <p><img src="figure/knitr_process.png" style="margin-top:30px;" width="800"/></p>
 </section>
 <section id="section-1" class="slide level2"
@@ -862,11 +869,11 @@ les développeurs à utiliser un ordre imposé par la logique et le fil de
 leur pensée</strong>.
 </p>
 </section>
-<section id="multiplication-des-notebooks-et-des-plateformes"
+<section id="multiplication-des-nb-et-des-plateformes"
 class="slide level2">
-<h2>Multiplication des notebooks et des plateformes</h2>
-<p><img src="figure/typonotebook.png" style="margin-top:40px;" width="600"/></p>
-<p style="font-size:40%;color:grey;">
+<h2>Multiplication des NB et des plateformes</h2>
+<p><img src="figure/typonotebook.png" style="margin-top:10px;margin-bottom:0px;" width="670"/></p>
+<p style="font-size:40%;color:grey;margin-top:5px;">
 S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of
 Computational Notebooks: An Analysis of 60 Systems in Academia and
 Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric
@@ -882,7 +889,8 @@ Computing (VL/HCC), 2020
 <img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/></h2>
 <p><img src="figure/quarto2.png" style="margin-top:20px;" width="800"/></p>
 <p class="smallpcenter">
-Permet l’utilisation de <strong>R</strong>, <strong>Python</strong>,
+<a href="https://quarto.org/"><strong>Quarto</strong></a> permet
+l’utilisation de <strong>R</strong>, <strong>Python</strong>,
 <strong>Julia</strong>, <strong>Javascript</strong>
 (<strong>OJS</strong>)…
 </p>
@@ -928,30 +936,25 @@ tracker, collaboration, hébergement web, CI/CD).
 </section>
 <section id="notebook-git" class="slide level2">
 <h2>Notebook + Git</h2>
-<ul class="pucsmall22" style="margin-top:70px;font-size:85%;">
+<ul class="pucsmall22" style="margin-top:60px;font-size:85%;">
 <li>
 Les sources des notebooks sont des fichiers texte
 </li>
-<ul class="pucsmall22" style="margin-top:10px;font-size:90%;">
-<li>
-Suivi des modifications (<em>commit</em>, branches, etc.)
-</li>
+<ul class="pucsmall22" style="margin-top:15px;font-size:95%;">
+➡️ Suivi des modifications (<em>commit</em>, branches, etc.)
 </ul>
-<li style="margin-top:45px;">
+<li style="margin-top:70px;">
 Certains ont besoin d’être compilé
 </li>
-<ul class="pucsmall22" style="font-size:90%;">
-<li>
-<em>Continuous Integration</em>
-</li>
+<ul class="pucsmall22" style="font-size:95%;margin-top:15px;">
+➡️ <em>Continuous Integration</em><br />
+
 </ul>
-<li style="margin-top:55px;">
+<li style="margin-top:70px;">
 Certains peuvent être déployés sur le web
 </li>
-<ul class="pucsmall22" style="font-size:90%;">
-<li>
-<em>Continuous Deployment</em>
-</li>
+<ul class="pucsmall22" style="font-size:95%;margin-top:15px;">
+➡️ <em>Continuous Deployment</em>
 </ul>
 </ul>
 </section>
@@ -973,81 +976,121 @@ Certains peuvent être déployés sur le web
 </p>
 </section></section>
 <section>
-<section id="conclusion" class="title-slide slide level1">
-<h1>Conclusion</h1>
-<p>Le notebook, un format efficace pour la recherche reproductible.</p>
+<section id="section-5" class="title-slide slide level1"
+data-background="figure/ccl.png" data-background-size="1000px">
+<h1 data-background="figure/ccl.png" data-background-size="1000px"></h1>
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
-<section id="conclusion-1" class="slide level2">
+<section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
-<p>Le notebook, un format de publication scientifique légitime</p>
+<div id="leftt">
+<p style="margin-top:70px;font-size:90%;">
+Un <strong>format de publication</strong><br> scientifique légitime
+</p>
+<ul class="pucsmall22" style="margin-top:60px;font-size:81%;">
 <ul>
-<li><a href="rzine.fr">Rzine</a>, diffusion de ressources R en SHS<br />
+<li><a href="rzine.fr">Rzine</a>, pour la pratique de R en SHS<br />
 </li>
-<li><a href="https://computo.sfds.asso.fr/">Computo</a> de la SFdS</li>
+<li><a href="https://computo.sfds.asso.fr/">Computo</a> de la SFdS<br />
+</li>
 <li><a href="https://programminghistorian.org">Programming
 Historian</a></li>
 <li>…</li>
 </ul>
-</section>
-<section id="conclusion-2" class="slide level2">
-<h2>Conclusion</h2>
-<p>Des formats de sortie multiples, nombreux usages :</p>
-<ul class="pucsmall2" style="margin-top:0px;font-size:50%;">
+</ul>
+</div>
+<div id="rightt">
+<p style="margin-top:70px;font-size:90%;">
+Nombreux formats,<br><strong>multiples usages</strong>
+</p>
+<ul class="xpucsmall" style="margin-top:23px;font-size:62%;">
 <ul>
-<li><span style="color:grey;"><em>Support de cours</em></span></li>
-<li><span style="color:grey;"><em>Diaporama</em></span></li>
-<li><span style="color:grey;"><em>Livre</em></span></li>
-<li><span style="color:grey;"><em>Exercice</em></span></li>
-<li><span style="color:grey;"><em>Tutoriel</em></span></li>
-<li><span style="color:grey;"><em>Annexe d’article</em></span></li>
-<li><span style="color:grey;"><em>Blog</em></span></li>
-<li><span style="color:grey;"><em>CV</em></span></li>
-<li><span style="color:grey;"><em>Site web</em></span></li>
+<li><span style="color:grey;"><em>Article</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Manuel</em></span></li>
+</ul>
+<ul>
 <li><span style="color:grey;"><em>Rapports</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Livre</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Tutoriel</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Cours - Exercice</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Blog - Site web</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>curriculum vitae</em></span></li>
+</ul>
+<ul>
+<li><span style="color:grey;"><em>Diaporama</em></span></li>
+</ul>
+<ul>
 <li><span style="color:grey;"><em>…</em></span></li>
 </ul>
+</ul>
+</div>
 </section>
-<section id="exemple-cette-présentation" class="slide level2">
-<h2>Exemple : cette présentation</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ptsfg <span class="ot">&lt;-</span> <span class="fu">st_point</span>(<span class="fu">c</span>(<span class="fl">2.36652</span>, <span class="fl">48.9071886</span>))</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ptsfc <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(ptsfg, <span class="at">crs =</span> (<span class="dv">4326</span>))</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ptdf <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id=</span> <span class="dv">1</span>, <span class="at">name =</span> <span class="st">&quot;Vous êtes ici !&quot;</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Here <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(ptdf,<span class="at">geometry =</span> ptsfc)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<section id="ceci-est-un-notebook" class="slide level2">
+<h2>Ceci est un notebook…</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Chargement des librairies</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Création d&#39;un point (localisation centre des colloques)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>ptsfg <span class="ot">&lt;-</span> <span class="fu">st_point</span>(<span class="fu">c</span>(<span class="fl">2.36652</span>, <span class="fl">48.9071886</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ptsfc <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(ptsfg, <span class="at">crs =</span> (<span class="dv">4326</span>))</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>ptdf <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id=</span> <span class="dv">1</span>, <span class="at">name =</span> <span class="st">&quot;Vous êtes ici !&quot;</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Here <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(ptdf,<span class="at">geometry =</span> ptsfc)</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>mamap <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(Here, <span class="at">width =</span> <span class="dv">950</span>, <span class="at">height =</span> <span class="dv">550</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">data =</span> Here, <span class="at">popup =</span> <span class="st">&quot;❤️mate-shs❤️&quot;</span>)</span></code></pre></div>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Affichage du point - carte interactive</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>mamap <span class="ot">&lt;-</span> <span class="fu">leaflet</span>(Here, <span class="at">width =</span> <span class="dv">950</span>, <span class="at">height =</span> <span class="dv">550</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">data =</span> Here, <span class="at">popup =</span> <span class="st">&quot;❤️mate-shs❤️&quot;</span>)</span></code></pre></div>
 </section>
-<section id="section-5" class="slide level2">
+<section id="vous-êtes-ici" class="slide level2">
+<h2>Vous êtes ici !</h2>
+<div id="htmlwidget-4b3b38d2f3c84daed26e" style="width:950px;height:550px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4b3b38d2f3c84daed26e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886,2.36652,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"❤️mate-shs❤️",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886,48.9071886],"lng":[2.36652,2.36652]}},"evals":[],"jsHooks":[]}</script>
+</section>
+<section id="section-6" class="slide level2">
 <h2></h2>
-<div id="htmlwidget-c7fe615a2ea5dd53a3e0" style="width:950px;height:550px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c7fe615a2ea5dd53a3e0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886,2.36652,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"❤️mate-shs❤️",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886,48.9071886],"lng":[2.36652,2.36652]}},"evals":[],"jsHooks":[]}</script>
-</section>
-<section id="diapositives-libres-cc-by-sa-4.0" class="slide level2">
-<h2>Diapositives libres (CC BY-SA 4.0)</h2>
 <br>
-<p class="moyp">
-Diaporama :
+<p style="margin-top:0px;margin-bottom:30px;font-size:100%;">
+<strong>Diapositives libres</strong> (CC BY-SA 4.0)
 </p>
-<p class="moyp222">
-<a href="https://huguespecout.github.io/notebook_mateshs/#/"
+<p style="margin-top:20px;margin-bottom:0px;font-size:65%;">
+Slides : <a href="https://huguespecout.github.io/notebook_mateshs/#/"
 class="uri">https://huguespecout.github.io/notebook_mateshs/#/</a>
 </p>
-<br>
-<p class="moyp">
-Code source :
-</p>
-<p class="moyp222">
-<a href="https://github.com/HuguesPecout/notebook_mateshs"
+<p style="margin-top:10pxmargin-bottom:0px;font-size:65%;">
+Code source : <a href="https://github.com/HuguesPecout/notebook_mateshs"
 class="uri">https://github.com/HuguesPecout/notebook_mateshs</a>
 </p>
-<p><br></p>
-<p><a
+<br>
+<p style="margin-top:20px;margin-bottom:15px;font-size:100%;">
+<strong>Contact</strong>
+</p>
+<p style="margin-top:20px;margin-bottom:0px;font-size:70%;">
+<a href="mailto:hugues.pecout@cnrs.fr"
+class="email">hugues.pecout@cnrs.fr</a>
+</p>
+<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">
+<a href="mailto:timothee.giraud@cnrs.fr"
+class="email">timothee.giraud@cnrs.fr</a>
+</p>
+<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">
+<a href="mailto:sebastien.rey-coyrehourcq@univ-rouen.fr"
+class="email">sebastien.rey-coyrehourcq@univ-rouen.fr</a> (GT Notebook)
+</p>
+<p><br> <a
 href="https://gitlab.huma-num.fr/rzine/site"><img src="figure/twitter.png" width="45"/ style="margin-top:30px;margin-bottom:-10px;margin-right:10px;"></a><span
 class="citation" data-cites="rzine_shs">@rzine_shs</span></p>
 </section>
