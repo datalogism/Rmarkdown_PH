@@ -433,22 +433,22 @@ mamap <- leaflet(Here, width = 950, height = 550) %>%
 mamap
 ```
 
-## 
+## Merci de votre attention
 
 <br>
-<p style="margin-top:0px;margin-bottom:30px;font-size:100%;">**Diapositives libres** (CC BY-SA 4.0)</p>
-<p style="margin-top:20px;margin-bottom:0px;font-size:65%;">Slides : https://huguespecout.github.io/notebook_mateshs/#/</p>
-<p style="margin-top:10pxmargin-bottom:0px;font-size:65%;">Code source : https://github.com/HuguesPecout/notebook_mateshs</p>
+<p style="margin-top:0px;margin-bottom:0px;font-size:100%;">**Diapositives libres** (CC BY-SA 4.0)</p>
+<p style="margin-top:10px;margin-bottom:0px;font-size:65%;">Slides : https://huguespecout.github.io/notebook_mateshs/#/</p>
+<p style="margin-top:5px;margin-bottom:0px;font-size:65%;">Code source : https://github.com/HuguesPecout/notebook_mateshs</p>
 
 
 <br>
-<p style="margin-top:20px;margin-bottom:15px;font-size:100%;">**Contact**</p>
-<p style="margin-top:20px;margin-bottom:0px;font-size:70%;">hugues.pecout@cnrs.fr</p>
-<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">timothee.giraud@cnrs.fr</p>
-<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">sebastien.rey-coyrehourcq@univ-rouen.fr (GT Notebook)</p>
+<p style="margin-top:30px;margin-bottom:10px;font-size:100%;">**Contact**</p>
+<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">hugues.pecout@cnrs.fr</p>
+<p style="margin-top:5px;margin-bottom:0px;font-size:70%;">timothee.giraud@cnrs.fr</p>
+<p style="margin-top:5px;margin-bottom:0px;font-size:70%;">sebastien.rey-coyrehourcq@univ-rouen.fr (GT Notebook)</p>
 
 <br>
-[<img src="figure/twitter.png" width="45"/ style="margin-top:30px;margin-bottom:-10px;margin-right:10px;">](https://gitlab.huma-num.fr/rzine/site)@rzine_shs
+[<img src="figure/twitter.png" width="45"/ style="margin-top:15px;margin-bottom:-10px;margin-right:10px;">](https://gitlab.huma-num.fr/rzine/site)@rzine_shs
 
 
 ## Info session
