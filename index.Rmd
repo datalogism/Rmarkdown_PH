@@ -125,7 +125,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Anatomie d'un notebook
 
-<p class="smallpcenter">Simple fichier texte<P>
+<p class="smallpcenter" style="margin-top:70px;">Simple fichier texte<P>
 <img src="figure/notebook_2.png" style="margin-top:80px;" width="1000"/>
 
 ## Notebook sans code ?!
@@ -136,7 +136,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <img src="figure/stylo.png" style="margin-top:40px;" width="650"/>
 
-<p class="smallpcenter">...Et plusieurs d'éditeurs libres comme [CodiMD](https://hackmd.io/#)...</p>
+<p class="smallpcenter">...Et plusieurs d'éditeurs libres comme [CodiMD](https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both)...</p>
 
 ## Le Markdown
 
@@ -155,7 +155,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </div>
 
 
-## Exemple 
+## Exemple de Rmarkdown
 
 ## Le Rmarkdown
 
@@ -179,13 +179,11 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <img src="figure/knitr_process.png" style="margin-top:30px;" width="800"/>
 
-## Rmarkdown avec Rstudio
+##  {data-background="figure/markdown2.png" data-background-size="1400px"}
 
-<img src="figure/markdown2.png" style="margin-top:0px;" width="800"/>
 
-## Rmarkdown avec Rstudio
+##  {data-background="figure/markdown3.png" data-background-size="1400px"}
 
-<img src="figure/markdown3.png" style="margin-top:0px;" width="800"/>
 
 # {data-background="figure/history.jpeg" data-background-size="750px"}
 
@@ -265,16 +263,18 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 <img src="figure/nouveau_notebook.png" style="margin-bottom:0px;" width="800"/>
 
 
-## Le petit dernier... <img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/> 
+## 2022, l'année <img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/> 
 
 
 <img src="figure/quarto2.png" style="margin-top:20px;" width="800"/>
 
-<p class="smallpcenter">Fonctionne avec **R**, **Python**, **Julia**, **Javascript** (**OJS**)...</p>
+<p class="smallpcenter">Permet l'utilisation de **R**, **Python**, **Julia**, **Javascript** (**OJS**)...</p>
 
 
 
 ## Programmation lettrée & Notebook 
+
+<br>
  
 <img src="figure/LP1.png" style="margin-top:60px;" width="800"/>
 
@@ -299,39 +299,59 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 ## Git, GitHub, GitLab
 
-**Git** est un système de gestion de version distribué pour  
 
->* tracker les changement dans les fichiers texte  
->* gérer l’historique du code source  
->* partager le code dans des dépots distants  
+<p class=smallpcenter" style="margin-top:80px;font-size:85%;">[**Git**](https://git-scm.com/) est un système de gestion de version distribué pour :</p>  
+
+<ul class="pucsmall22"style="margin-top:10px;font-size:77%;">
+> - tracker les changement dans les fichiers texte         
+> - gérer l’historique du code source       
+> - partager le code dans des dépots distants       
+</ul>
 
 <br>
 <br>
-
-**GitHub** et **GitLab** hébèrgent des dépots distants et des services pour gérer des projets (issue tracker, collaboration, hébergement web, CI/CD).
+<p class=smallpcenter" style="margin-top:40px;font-size:83%;">[**GitHub**](https://github.com/) et [**GitLab**](https://about.gitlab.com/) hébèrgent des dépots distants et des services pour gérer des projets (issue tracker, collaboration, hébergement web, CI/CD).</p>  
 
 
 ## Notebook + Git 
 
->* Les sources des notebooks sont des fichiers texte   
-=> Suivi des modifications (commit, branches, etc.)   
->* Certains ont besoin d'être compilé   
-=> Continuous Integration  
->* Certains peuvent être déployés sur le web   
-=> Continuous Deployment  
+
+
+<ul class="pucsmall22"style="margin-top:70px;font-size:85%;">
+
+<li>Les sources des notebooks sont des fichiers texte</li> 
+
+  <ul class="pucsmall22"style="margin-top:10px;font-size:90%;">
+        <li>Suivi des modifications (*commit*, branches, etc.)</li> 
+   </ul>  
   
+<li style="margin-top:45px;">Certains ont besoin d'être compilé</li>   
+
+  <ul class="pucsmall22"style="font-size:90%;">
+        <li>*Continuous Integration*</li>  
+  </ul>      
+    
+<li  style="margin-top:55px;">Certains peuvent être déployés sur le web</li>   
+
+  <ul class="pucsmall22"style="font-size:90%;">
+        <li>*Continuous Deployment*</li> 
+  </ul>  
+    
+</ul>  
 
 ## Exemple notebook Quarto
 
 <br>
 <br>
+<br>
 
-<img src="figure/quarto.png" width="280" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;"/> **+** <img src="figure/R.png" width="110" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/javascript.png" width="80" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/git.png" width="150" style="margin-top:0px;margin-bottom:-10px;margin-left:20px;"/> 
+<img src="figure/quarto.png" width="240" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;"/> **+** <img src="figure/R.png" width="80" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/javascript.png" width="50" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> **+** <img src="figure/git.png" width="120" style="margin-top:0px;margin-bottom:-10px;margin-left:20px;margin-right:20px;"/> **+** <img src="figure/github_blanc.png" width="170" style="margin-top:0px;margin-bottom:0px;margin-left:20px;"/> 
 
 <br>
 <br>
+<br>
 
-<p style="font-size:115%;">[Cliquez-moi !](https://rcarto.github.io/Quarto/)</p>
+<p style="font-size:115%;">[Cliquez-ici !](https://rcarto.github.io/Quarto/)</p>
 
 
 
@@ -375,20 +395,31 @@ Des formats de sortie multiples, nombreux usages :
 
 
 ## Exemple : cette présentation
+
+
+
 ```{r, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
 library(sf)
+
 ptsfg <- st_point(c(2.36652, 48.9071886))
 ptsfc <- st_sfc(ptsfg, crs = (4326))
 ptdf <- data.frame(id= 1, name = "Vous êtes ici !")
 Here <- st_sf(ptdf,geometry = ptsfc)
+
+
 library(leaflet)
-mamap <- leaflet(Here, width = 512, height = 512) %>%
+
+mamap <- leaflet(Here, width = 950, height = 550) %>%
   addTiles() %>%
-  addMarkers(data = Here, popup = "❤️❤️mate-shs❤️❤️")
+  addMarkers(data = Here, popup = "❤️mate-shs❤️")
 ```
 
+
+
+
 ## 
-```{r, echo=FALSE, out.width="512px"}
+
+```{r, echo=FALSE}
 mamap
 ```
 
