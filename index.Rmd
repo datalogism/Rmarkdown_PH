@@ -206,7 +206,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <div id="codermd2">
 
-<p class="medpcenter"><span style="color:#f7a41f;">**Ancêtres du notebook :**</span></p>
+<p class="medpcenter" style="margin-top:30px;"><span style="color:#f7a41f;">**Ancêtres du notebook :**</span></p>
 
 <ul class="pucsmall22" style="margin-top:20px;">
 > - 1970 : Scratchpad (Axiom)
@@ -223,17 +223,18 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <div id="codehtml2">
 
-<p class="medpcenter"><span style="color:#f7a41f;">**1ère mise en oeuvre remarqué :**</span></p>
+<p class="medpcenter" style="margin-top:30px;"><span style="color:#f7a41f;">**Émergence de la recherche reproductible.** Exemple :</span></p>
 
-<p style="font-size:50%;margin-top:30px;">En 1976, le sismologue **Jon Claerbout** publie la première version de son ouvrage : <br>
-[*Fundamentals of Geophysical Data Processing*](http://sep.stanford.edu/data/media/public/sep/prof/toc_html/toc_html/fgdp3/fgdp_00.pdf)</p>
+<p style="font-size:60%;margin-top:30px;">En 1976, **Jon Claerbout** publie l'ouvrage : <br>
+[*Fundamentals of Geophysical Data Processing*](http://sepwww.stanford.edu/sep/prof/fgdp5.pdf)</p>
 
-<p style="font-size:50%;">Ce livre électronique, devenu un classique, propose des calculs et graphiques recalculables à la volée (interactif), accessibles et modifiables.</p>
+<p style="font-size:56%;">Cette 1ère version, non-reproductible, sera le début d'un long travail de recherche sur la reproductibilité de ses travaux... Via des notebooks.</p>
 
 
-<p style="margin-top:80px;font-size:65%;"><span style="color:#f7a41f;">Au coeur du développement des notebooks, l'émergence d'un concept pensé et mis en oeuvre (1977-78) par **Donald Knuth**...</span></p> 
+<p class="medpcenter" style="margin-top:90px;"><span style="color:#f7a41f;">**Émergence du Literate Programming**</span></p>
 
-<p style="margin-top:40px;font-size:70%;"><span style="color:#f7a41f;">**The Literate Programming (LP)**<br>*La programmation lettrée*</span></p>
+<p style="margin-top:20px;font-size:60%;">Le concept de **programmation lettrée** pensé et mis en oeuvre (1977-78) par **Donald Knuth** est lié à l'histoire des notebooks.</span></p> 
+
 
 </div>
 
@@ -386,7 +387,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
   
   
 <div id="rightt"> 
-<p style="margin-top:70px;font-size:90%;">Nombreux formats,<br>**multiples usages**</p> 
+<p style="margin-top:70px;font-size:90%;">Nombreux templates,<br>**multiples usages**</p> 
 
 <ul class="xpucsmall" style="margin-top:23px;font-size:62%;">
       > - <span style="color:grey;">*Article*</span>  
