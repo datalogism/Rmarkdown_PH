@@ -1,3 +1,6 @@
-# notebook_mateshs
+#  Le notebook et la programmation lettrée
+## Documenter ses traitements 
 
-[Consulter](https://huguespecout.github.io/notebook_mateshs/)
+*Diaporama utilisé lors des Journées annuelles MATE-SHS 2022*
+
+[Afficher les slides](https://huguespecout.github.io/notebook_mateshs/)
