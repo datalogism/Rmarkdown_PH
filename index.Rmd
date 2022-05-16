@@ -156,9 +156,9 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 </div>
 
 
-## Exemple de Rmarkdown
+## Exemple de Notebook
 
-## Le Rmarkdown
+## Le Notebook Rmarkdown
 
 <div id="codermd">
 
@@ -223,7 +223,7 @@ Un groupe de travail inter-disciplinaire travaillant à un portail de ressources
 
 <div id="codehtml2">
 
-<p class="medpcenter" style="margin-top:30px;"><span style="color:#f7a41f;">**Émergence de la recherche reproductible.** Exemple :</span></p>
+<p class="medpcenter" style="margin-top:30px;"><span style="color:#f7a41f;">**Émergence de la recherche reproductible**</span></p>
 
 <p style="font-size:60%;margin-top:30px;">En 1976, **Jon Claerbout** publie l'ouvrage : <br>
 [*Fundamentals of Geophysical Data Processing*](http://sepwww.stanford.edu/sep/prof/fgdp5.pdf)</p>
