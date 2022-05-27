@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this slides or figures, please cite it as below."
+authors:
+  - family-names: Pecout
+    given-names: Hugues
+    orcid: 0000-0002-0246-0954
+    affiliation: "CNRS - FR CIST"
+    email: "hugues.pecout@cnrs.fr"
+  - family-names: Giraud
+    given-names: Timothée
+    orcid: 0000-0002-1932-3323
+    affiliation: "CNRS - UAR RIATE"
+    email: "timothee.giraud@cnrs.fr"
+  - family-names: Rey-Coyrehourcq
+    given-names: Sébastien
+    orcid: 0000-0001-7296-9695
+    affiliation: "Université Rouen Normandie - UMR IDEES"
+    email: "sebastien.rey-coyrehourcq@univ-rouen.fr"
+title: "Le notebook et la programmation lettrée : documenter ses traitements"
+version: 1.0
+date-released: 2022-05-17
+
