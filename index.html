@@ -75,13 +75,8 @@ code span.vs { color: #cc9393; } /* VerbatimString */
 code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
 </style>
 
-<link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
+<link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
 
-<style type="text/css">
-.reveal section img {
-  background: rgba(255, 255, 255, 0.85);
-}
-</style>
 
   <!-- some tweaks to reveal css -->
   <style type="text/css">
@@ -531,24 +526,22 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section>
     <h1 class="title"><h1 class="first">
-Le notebook<br><span style="font-size:70%;text-transform:lowercase">et
-la programmation lettrée<span>
+Programming Historian<br><span style="font-size:50%;text-transform:lowercase"> un lieu de collaborations et d’interactions multiples<span>
 </h1></h1>
-    <h2 class="author"><h2>
-<span style="color:#ffffff;font-size:60%;">Documenter ses
-traitements</span>
-</h2></h2>
-    <h3 class="date"><img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/>
+    <h2 class="author"><p class="name">
+Matthias Gille Levenson (ENS Lyon), Sofia Papastamkou (CNRS/Université de Lille - C2DH) &amp; Célian Ringwald (Inria)
+</p></h2>
+    <h3 class="date"><img src="images/about.png" style="margin-top:20px;margin-bottom:0px;" width="250"/><br><img src="images/ph-fr.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-en.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-es.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-pt.svg" width="70" style="float:center;margin-top:30px;"/>
 <h2 class="place2">
-<i>Journées annuelles du réseau Mate-SHS, 17 mai 2022</i>
-</h2>
-<p class="name">
-Hugues Pecout (CIST, CNRS) - Timothée Giraud (RIATE, CNRS)</br>Sébastien
-Rey (IDEES, Université Rouen-Normandie)
-</p>
-<img src="figure/riate.png" width="115" style="float:left;margin-top:60px;"/><img src="figure/cnrs.png" width="70" style="float:center;margin-top:30px;"/><img src="figure/cist-logo-bleu_sur_blanc.png" style="float:right;margin-top:30px;" width="70"/></h3>
+<i>#DHNord 2022</i>
+</h2></h3>
 </section>
 
+<section id="test-viz" class="slide level2">
+<h2>TEST viz</h2>
+<iframe src="https://datalogism.github.io/viz/chord_diagram_role/index.html" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+</section>
 <section id="bonjour-à-toutes" class="slide level2">
 <h2>Bonjour à tou·te·s</h2>
 <p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
@@ -578,17 +571,12 @@ Ingénieurs CNRS en sciences de l’information géographique
 </div>
 </div>
 <aside class="notes">
-Un groupe de travail inter-disciplinaire travaillant à un portail de
-ressources, ouvert, dédié à l’observation théorique et pratique des
-notebooks
+Un groupe de travail inter-disciplinaire travaillant à un portail de ressources, ouvert, dédié à l’observation théorique et pratique des notebooks
 </aside>
 </section>
 <section>
-<section id="section" class="title-slide slide level1"
-data-background="figure/logo_notebook2.png"
-data-background-size="1000px">
-<h1 data-background="figure/logo_notebook2.png"
-data-background-size="1000px"></h1>
+<section id="section" class="title-slide slide level1" data-background="figure/logo_notebook2.png" data-background-size="1000px">
+<h1 data-background="figure/logo_notebook2.png" data-background-size="1000px"></h1>
 <h2>
 <strong>Le notebook</strong>
 </h2>
@@ -597,45 +585,35 @@ data-background-size="1000px"></h1>
 <section id="définition" class="slide level2">
 <h2>Définition</h2>
 <p class="medpcenter" style="margin-top:40px;font-size:75%;">
-<strong>Interface de programmation qui permet de combiner des sections
-en langage naturel et des sections en langage informatique</strong>
+<strong>Interface de programmation qui permet de combiner des sections en langage naturel et des sections en langage informatique</strong>
 </p>
 <p class="smallpcenter" style="margin-top:30px;font-size:55%;">
-<span style="color:grey;"><b>De nombreuses dénominations existent
-:</span></b>
+<span style="color:grey;"><b>De nombreuses dénominations existent :</span></b>
 </p>
 <ul class="pucsmall2" style="margin-top:0px;font-size:50%;">
 <ul>
 <li><span style="color:grey;"><em>Article exécutable</em></span></li>
-<li><span style="color:grey;"><em>Document
-computationnel</em></span></li>
-<li><span style="color:grey;"><em>Document électronique
-interactif</em></span></li>
+<li><span style="color:grey;"><em>Document computationnel</em></span></li>
+<li><span style="color:grey;"><em>Document électronique interactif</em></span></li>
 <li><span style="color:grey;"><em>Bloc-note</em></span></li>
-<li><span style="color:grey;"><em>Cahiers de
-programmation</em></span></li>
-<li><span style="color:grey;"><em>Cahier électronique
-d’analyse</em></span></li>
+<li><span style="color:grey;"><em>Cahiers de programmation</em></span></li>
+<li><span style="color:grey;"><em>Cahier électronique d’analyse</em></span></li>
 <li><span style="color:grey;"><em>Calepin électronique</em></span></li>
 <li><span style="color:grey;"><em>Carnet de code</em></span></li>
-<li><span style="color:grey;"><em>Manifeste
-algorithmique</em></span></li>
+<li><span style="color:grey;"><em>Manifeste algorithmique</em></span></li>
 <li><span style="color:grey;"><strong>Notebook !</strong></span></li>
 <li><span style="color:grey;"><em>…</em></span></li>
 </ul>
 </ul>
 <p class="medpcenter" style="margin-top:30px;font-size:75%;">
-<strong>Un notebook permet d’appliquer le paradigme de programmation
-lettrée, qui facilite le partage, le travail collaboratif et la
-reproductibilité</strong>
+<strong>Un notebook permet d’appliquer le paradigme de programmation lettrée, qui facilite le partage, le travail collaboratif et la reproductibilité</strong>
 </p>
 </section>
 <section id="une-logique-des-pratiques" class="slide level2">
 <h2>Une logique… des pratiques</h2>
 <p><img src="figure/notebook_1.png" style="margin-top:40px;" width="1000"/></p>
 <p style="font-size:60%;">
-La mise en forme du texte se fait à l’aide d’un langage de balisage
-(Markdown, html…)
+La mise en forme du texte se fait à l’aide d’un langage de balisage (Markdown, html…)
 </p>
 </section>
 <section id="anatomie-dun-notebook" class="slide level2">
@@ -652,14 +630,11 @@ Simple fichier texte
 <section id="stylo-dhuman-num" class="slide level2">
 <h2>Stylo d’Human-Num</h2>
 <p class="smallpcenter" style="margin-top:40px;">
-Développé par le <a href="https://ecrituresnumeriques.ca/fr/">CRC-EN</a>
-avec le support <a href="https://www.erudit.org/fr/">Érudit</a> et de la
-<a href="https://www.huma-num.fr/">TGIR Huma-Num</a>
+Développé par le <a href="https://ecrituresnumeriques.ca/fr/">CRC-EN</a> avec le support <a href="https://www.erudit.org/fr/">Érudit</a> et de la <a href="https://www.huma-num.fr/">TGIR Huma-Num</a>
 </p>
 <p><img src="figure/stylo.png" style="margin-top:5px;" width="550"/></p>
 <p class="smallpcenter" style="margin-top:30px;">
-Sinon, il existe beaucoup d’éditeurs libres (<a
-href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">CodiMD</a>…)
+Sinon, il existe beaucoup d’éditeurs libres (<a href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">CodiMD</a>…)
 </p>
 </section>
 <section id="le-markdown-gruber-2004" class="slide level2">
@@ -701,8 +676,7 @@ Fichier Markdown (.md)
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="er">&gt;</span> Le texte brut balisé en Markdown reste lisible pour l<span class="st">&#39;humain, se stocke dans un simple fichier texte et de nombreux outils libres permettent de l&#39;</span>éditer.</span></code></pre></div>
 <p class="smallpcenter">
--&gt; Visualiser sur <a
-href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">HackMD</a>
+-&gt; Visualiser sur <a href="https://hackmd.io/MVFMDJaVTkKM-s4IUz_q7A?both">HackMD</a>
 </p>
 </div>
 <div id="codehtml">
@@ -770,34 +744,25 @@ Fichier en sortie (.html)
 </div>
 </section>
 <section id="kniter-un-.rmd" class="slide level2">
-<h2>« Kniter »
-<img src="figure/knito.png" width="85" style="margin-top:0px;margin-bottom:-15px;"/>
-un .rmd</h2>
+<h2>« Kniter » <img src="figure/knito.png" width="85" style="margin-top:0px;margin-bottom:-15px;"/> un .rmd</h2>
 <p><img src="figure/knitr_process.png" style="margin-top:30px;" width="800"/></p>
 </section>
-<section id="section-1" class="slide level2"
-data-background="figure/markdown2.png" data-background-size="1400px">
-<h2 data-background="figure/markdown2.png"
-data-background-size="1400px"></h2>
+<section id="section-1" class="slide level2" data-background="figure/markdown2.png" data-background-size="1400px">
+<h2 data-background="figure/markdown2.png" data-background-size="1400px"></h2>
 </section>
-<section id="section-2" class="slide level2"
-data-background="figure/markdown3.png" data-background-size="1400px">
-<h2 data-background="figure/markdown3.png"
-data-background-size="1400px"></h2>
+<section id="section-2" class="slide level2" data-background="figure/markdown3.png" data-background-size="1400px">
+<h2 data-background="figure/markdown3.png" data-background-size="1400px"></h2>
 </section></section>
 <section>
-<section id="section-3" class="title-slide slide level1"
-data-background="figure/history.jpeg" data-background-size="750px">
-<h1 data-background="figure/history.jpeg"
-data-background-size="750px"></h1>
+<section id="section-3" class="title-slide slide level1" data-background="figure/history.jpeg" data-background-size="750px">
+<h1 data-background="figure/history.jpeg" data-background-size="750px"></h1>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
 <section id="les-prémices" class="slide level2">
 <h2>Les prémices</h2>
 <div id="codermd2">
 <p class="medpcenter" style="margin-top:30px;">
-<span style="color:#f7a41f;"><strong>Ancêtres du notebook
-:</strong></span>
+<span style="color:#f7a41f;"><strong>Ancêtres du notebook :</strong></span>
 </p>
 <ul class="pucsmall22" style="margin-top:20px;">
 <ul>
@@ -812,70 +777,46 @@ data-background-size="750px"></h1>
 </div>
 <div id="codehtml2">
 <p class="medpcenter" style="margin-top:30px;">
-<span style="color:#f7a41f;"><strong>Émergence de la recherche
-reproductible</strong></span>
+<span style="color:#f7a41f;"><strong>Émergence de la recherche reproductible</strong></span>
 </p>
 <p style="font-size:60%;margin-top:30px;">
-En 1976, <strong>Jon Claerbout</strong> publie l’ouvrage : <br> <a
-href="http://sepwww.stanford.edu/sep/prof/fgdp5.pdf"><em>Fundamentals of
-Geophysical Data Processing</em></a>
+En 1976, <strong>Jon Claerbout</strong> publie l’ouvrage : <br> <a href="http://sepwww.stanford.edu/sep/prof/fgdp5.pdf"><em>Fundamentals of Geophysical Data Processing</em></a>
 </p>
 <p style="font-size:56%;">
-Cette 1ère version, non-reproductible, sera le début d’un long travail
-de recherche sur la reproductibilité de ses travaux… Via des notebooks.
+Cette 1ère version, non-reproductible, sera le début d’un long travail de recherche sur la reproductibilité de ses travaux… Via des notebooks.
 </p>
 <p class="medpcenter" style="margin-top:90px;">
-<span style="color:#f7a41f;"><strong>Émergence du Literate
-Programming</strong></span>
+<span style="color:#f7a41f;"><strong>Émergence du Literate Programming</strong></span>
 </p>
 <p style="margin-top:20px;font-size:60%;">
-Le concept de <strong>programmation lettrée</strong> pensé et mis en
-oeuvre (1977-78) par <strong>Donald Knuth</strong> est lié à l’histoire
-des notebooks.</span>
+Le concept de <strong>programmation lettrée</strong> pensé et mis en oeuvre (1977-78) par <strong>Donald Knuth</strong> est lié à l’histoire des notebooks.</span>
 </p>
 </div>
 </section>
 <section id="programmation-lettrée" class="slide level2">
 <h2>Programmation lettrée</h2>
 <p class="smallpcenter" style="margin-top:40px;">
-La <strong>programmation lettrée</strong> est une approche de la
-programmation qui se veut différente du paradigme de programmation
-structurée.
+La <strong>programmation lettrée</strong> est une approche de la programmation qui se veut différente du paradigme de programmation structurée.
 </p>
 <blockquote>
 <p style="font-size:50%;">
-Instead of imagining that our main task is to instruct a computer what
-to do, let us concentrate rather on explaining to human beings what we
-want a computer to do. <br> Donald Knuth, <a
-href="http://www.literateprogramming.com/">LP Website citations page</a>
+Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. <br> Donald Knuth, <a href="http://www.literateprogramming.com/">LP Website citations page</a>
 </p>
 </blockquote>
 <blockquote>
 <p style="font-size:50%;">
-The practitioner of literate programming (…) strives for <strong>a
-program that is comprehensible because its concepts have been introduced
-in an order that is best for human understanding</strong> (…). <br>
-Donald Knuth, <a href="http://www.literateprogramming.com/">LP Website
-citations page</a>
+The practitioner of literate programming (…) strives for <strong>a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding</strong> (…). <br> Donald Knuth, <a href="http://www.literateprogramming.com/">LP Website citations page</a>
 </p>
 </blockquote>
 <p class="smallpcenter">
-<strong>Le paradigme de la programmation lettrée</strong>, tel qu’il a
-été conçu par <strong>Knuth</strong>, s’éloigne dans son écriture de
-l’ordonnancement imposé par l’ordinateur, et à la place <strong>autorise
-les développeurs à utiliser un ordre imposé par la logique et le fil de
-leur pensée</strong>.
+<strong>Le paradigme de la programmation lettrée</strong>, tel qu’il a été conçu par <strong>Knuth</strong>, s’éloigne dans son écriture de l’ordonnancement imposé par l’ordinateur, et à la place <strong>autorise les développeurs à utiliser un ordre imposé par la logique et le fil de leur pensée</strong>.
 </p>
 </section>
-<section id="multiplication-des-nb-et-des-plateformes"
-class="slide level2">
+<section id="multiplication-des-nb-et-des-plateformes" class="slide level2">
 <h2>Multiplication des NB et des plateformes</h2>
 <p><img src="figure/typonotebook.png" style="margin-top:10px;margin-bottom:0px;" width="670"/></p>
 <p style="font-size:40%;color:grey;margin-top:5px;">
-S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of
-Computational Notebooks: An Analysis of 60 Systems in Academia and
-Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric
-Computing (VL/HCC), 2020
+S. Lau, I. Drosos, J. M. Markel and P. J. Guo, “The Design Space of Computational Notebooks: An Analysis of 60 Systems in Academia and Industry,” 2020 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2020
 <p>
 </section>
 <section id="dernière-génération" class="slide level2">
@@ -883,14 +824,10 @@ Computing (VL/HCC), 2020
 <p><img src="figure/nouveau_notebook.png" style="margin-bottom:0px;" width="800"/></p>
 </section>
 <section id="lannée" class="slide level2">
-<h2>2022, l’année
-<img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/></h2>
+<h2>2022, l’année <img src="figure/quarto.png" width="230" style="margin-top:0px;margin-bottom:-10px;"/></h2>
 <p><img src="figure/quarto2.png" style="margin-top:20px;" width="800"/></p>
 <p class="smallpcenter">
-<a href="https://quarto.org/"><strong>Quarto</strong></a> permet
-l’utilisation de <strong>R</strong>, <strong>Python</strong>,
-<strong>Julia</strong>, <strong>Javascript</strong>
-(<strong>OJS</strong>)…
+<a href="https://quarto.org/"><strong>Quarto</strong></a> permet l’utilisation de <strong>R</strong>, <strong>Python</strong>, <strong>Julia</strong>, <strong>Javascript</strong> (<strong>OJS</strong>)…
 </p>
 </section>
 <section id="programmation-lettrée-notebook" class="slide level2">
@@ -903,17 +840,14 @@ l’utilisation de <strong>R</strong>, <strong>Python</strong>,
 <p><img src="figure/LP2.png" style="margin-top:60px;" width="800"/></p>
 </section></section>
 <section>
-<section id="section-4" class="title-slide slide level1"
-data-background="figure/partie4.png" data-background-size="500px">
-<h1 data-background="figure/partie4.png"
-data-background-size="500px"></h1>
+<section id="section-4" class="title-slide slide level1" data-background="figure/partie4.png" data-background-size="500px">
+<h1 data-background="figure/partie4.png" data-background-size="500px"></h1>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
 <section id="git-github-gitlab" class="slide level2">
 <h2>Git, GitHub, GitLab</h2>
 <p class="smallpcenter&quot;" style="margin-top:80px;font-size:85%;">
-<a href="https://git-scm.com/"><strong>Git</strong></a> est un système
-de gestion de version distribué pour :
+<a href="https://git-scm.com/"><strong>Git</strong></a> est un système de gestion de version distribué pour :
 </p>
 <ul class="pucsmall22" style="margin-top:10px;font-size:77%;">
 <ul>
@@ -926,10 +860,7 @@ de gestion de version distribué pour :
 </ul>
 <br> <br>
 <p class="smallpcenter&quot;" style="margin-top:40px;font-size:83%;">
-<a href="https://github.com/"><strong>GitHub</strong></a> et <a
-href="https://about.gitlab.com/"><strong>GitLab</strong></a> hébèrgent
-des dépots distants et des services pour gérer des projets (issue
-tracker, collaboration, hébergement web, CI/CD).
+<a href="https://github.com/"><strong>GitHub</strong></a> et <a href="https://about.gitlab.com/"><strong>GitLab</strong></a> hébèrgent des dépots distants et des services pour gérer des projets (issue tracker, collaboration, hébergement web, CI/CD).
 </p>
 </section>
 <section id="notebook-git" class="slide level2">
@@ -959,23 +890,14 @@ Certains peuvent être déployés sur le web
 <section id="exemple-notebook-quarto" class="slide level2">
 <h2>Exemple notebook Quarto</h2>
 <p><br> <br> <br></p>
-<p><img src="figure/quarto.png" width="240" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;"/>
-<strong>+</strong>
-<img src="figure/R.png" width="80" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/>
-<strong>+</strong>
-<img src="figure/javascript.png" width="50" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/>
-<strong>+</strong>
-<img src="figure/git.png" width="120" style="margin-top:0px;margin-bottom:-10px;margin-left:20px;margin-right:20px;"/>
-<strong>+</strong>
-<img src="figure/github_blanc.png" width="170" style="margin-top:0px;margin-bottom:0px;margin-left:20px;"/></p>
+<p><img src="figure/quarto.png" width="240" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;"/> <strong>+</strong> <img src="figure/R.png" width="80" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> <strong>+</strong> <img src="figure/javascript.png" width="50" style="margin-top:0px;margin-bottom:-10px;margin-right:20px;margin-left:20px;"/> <strong>+</strong> <img src="figure/git.png" width="120" style="margin-top:0px;margin-bottom:-10px;margin-left:20px;margin-right:20px;"/> <strong>+</strong> <img src="figure/github_blanc.png" width="170" style="margin-top:0px;margin-bottom:0px;margin-left:20px;"/></p>
 <p><br> <br> <br></p>
 <p style="font-size:115%;">
 <a href="https://rcarto.github.io/Quarto/">Cliquez-ici !</a>
 </p>
 </section></section>
 <section>
-<section id="section-5" class="title-slide slide level1"
-data-background="figure/ccl.png" data-background-size="1000px">
+<section id="section-5" class="title-slide slide level1" data-background="figure/ccl.png" data-background-size="1000px">
 <h1 data-background="figure/ccl.png" data-background-size="1000px"></h1>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
@@ -991,8 +913,7 @@ Un <strong>format de publication</strong><br> scientifique légitime
 </li>
 <li><a href="https://computo.sfds.asso.fr/">Computo</a> de la SFdS<br />
 </li>
-<li><a href="https://programminghistorian.org">Programming
-Historian</a></li>
+<li><a href="https://programminghistorian.org">Programming Historian</a></li>
 <li>…</li>
 </ul>
 </ul>
@@ -1055,8 +976,8 @@ Nombreux templates,<br><strong>multiples usages</strong>
 </section>
 <section id="vous-êtes-ici" class="slide level2">
 <h2>Vous êtes ici !</h2>
-<div id="htmlwidget-7b01de428cd91337e738" style="width:950px;height:550px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7b01de428cd91337e738">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886,2.36652,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"❤️mate-shs❤️",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886,48.9071886],"lng":[2.36652,2.36652]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-77781ecfacbc174ffe07" style="width:950px;height:550px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-77781ecfacbc174ffe07">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[48.9071886,2.36652,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"<U+2764><U+FE0F>mate-shs<U+2764><U+FE0F>",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[48.9071886,48.9071886],"lng":[2.36652,2.36652]}},"evals":[],"jsHooks":[]}</script>
 </section>
 <section id="merci-de-votre-attention" class="slide level2">
 <h2>Merci de votre attention</h2>
@@ -1065,46 +986,39 @@ Nombreux templates,<br><strong>multiples usages</strong>
 <strong>Diapositives libres</strong> (CC BY-SA 4.0)
 </p>
 <p style="margin-top:10px;margin-bottom:0px;font-size:65%;">
-Slides : <a href="https://huguespecout.github.io/notebook_mateshs/#/"
-class="uri">https://huguespecout.github.io/notebook_mateshs/#/</a>
+Slides : <a href="https://huguespecout.github.io/notebook_mateshs/#/" class="uri">https://huguespecout.github.io/notebook_mateshs/#/</a>
 </p>
 <p style="margin-top:5px;margin-bottom:0px;font-size:65%;">
-Code source : <a href="https://github.com/HuguesPecout/notebook_mateshs"
-class="uri">https://github.com/HuguesPecout/notebook_mateshs</a>
+Code source : <a href="https://github.com/HuguesPecout/notebook_mateshs" class="uri">https://github.com/HuguesPecout/notebook_mateshs</a>
 </p>
 <br>
 <p style="margin-top:30px;margin-bottom:10px;font-size:100%;">
 <strong>Contact</strong>
 </p>
 <p style="margin-top:10px;margin-bottom:0px;font-size:70%;">
-<a href="mailto:hugues.pecout@cnrs.fr"
-class="email">hugues.pecout@cnrs.fr</a>
+<a href="mailto:hugues.pecout@cnrs.fr" class="email">hugues.pecout@cnrs.fr</a>
 </p>
 <p style="margin-top:5px;margin-bottom:0px;font-size:70%;">
-<a href="mailto:timothee.giraud@cnrs.fr"
-class="email">timothee.giraud@cnrs.fr</a>
+<a href="mailto:timothee.giraud@cnrs.fr" class="email">timothee.giraud@cnrs.fr</a>
 </p>
 <p style="margin-top:5px;margin-bottom:0px;font-size:70%;">
-<a href="mailto:sebastien.rey-coyrehourcq@univ-rouen.fr"
-class="email">sebastien.rey-coyrehourcq@univ-rouen.fr</a> (GT Notebook)
+<a href="mailto:sebastien.rey-coyrehourcq@univ-rouen.fr" class="email">sebastien.rey-coyrehourcq@univ-rouen.fr</a> (GT Notebook)
 </p>
-<p><br> <a
-href="https://gitlab.huma-num.fr/rzine/site"><img src="figure/twitter.png" width="45"/ style="margin-top:15px;margin-bottom:-10px;margin-right:10px;"></a><span
-class="citation" data-cites="rzine_shs">@rzine_shs</span></p>
+<p><br> <a href="https://gitlab.huma-num.fr/rzine/site"><img src="figure/twitter.png" width="45"/ style="margin-top:15px;margin-bottom:-10px;margin-right:10px;"></a><span class="citation" data-cites="rzine_shs">@rzine_shs</span></p>
 </section>
 <section id="info-session" class="slide level2">
 <h2>Info session</h2>
 <p><br></p>
-<pre><code>## R version 4.2.0 (2022-04-22 ucrt)
+<pre><code>## R version 4.1.2 (2021-11-01)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 25115)
+## Running under: Windows 10 x64 (build 19044)
 ## 
 ## Matrix products: default
 ## 
 ## locale:
-## [1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8   
-## [3] LC_MONETARY=French_France.utf8 LC_NUMERIC=C                  
-## [5] LC_TIME=French_France.utf8    
+## [1] LC_COLLATE=French_France.1252  LC_CTYPE=French_France.1252   
+## [3] LC_MONETARY=French_France.1252 LC_NUMERIC=C                  
+## [5] LC_TIME=French_France.1252    
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
@@ -1113,15 +1027,18 @@ class="citation" data-cites="rzine_shs">@rzine_shs</span></p>
 ## [1] leaflet_2.1.1 sf_1.0-7     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.8.3       rstudioapi_0.13    knitr_1.39         magrittr_2.0.3    
-##  [5] units_0.8-0        R6_2.5.1           rlang_1.0.2        fastmap_1.1.0     
-##  [9] stringr_1.4.0      tools_4.2.0        revealjs_0.9       grid_4.2.0        
-## [13] xfun_0.30          KernSmooth_2.23-20 cli_3.3.0          e1071_1.7-9       
-## [17] DBI_1.1.2          jquerylib_0.1.4    crosstalk_1.2.0    htmltools_0.5.2   
-## [21] class_7.3-20       yaml_2.3.5         digest_0.6.29      htmlwidgets_1.5.4 
-## [25] sass_0.4.1         evaluate_0.15      rmarkdown_2.14     proxy_0.4-26      
-## [29] stringi_1.7.6      compiler_4.2.0     bslib_0.3.1        classInt_0.4-3    
-## [33] jsonlite_1.8.0</code></pre>
+##  [1] Rcpp_1.0.7         bslib_0.3.1        compiler_4.1.2     pillar_1.7.0      
+##  [5] jquerylib_0.1.4    class_7.3-19       tools_4.1.2        digest_0.6.29     
+##  [9] tibble_3.1.7       jsonlite_1.7.2     evaluate_0.14      lifecycle_1.0.1   
+## [13] pkgconfig_2.0.3    rlang_1.0.2        DBI_1.1.2          cli_3.3.0         
+## [17] rstudioapi_0.13    crosstalk_1.2.0    yaml_2.2.1         xfun_0.31         
+## [21] fastmap_1.1.0      e1071_1.7-11       stringr_1.4.0      dplyr_1.0.9       
+## [25] knitr_1.37         htmlwidgets_1.5.4  generics_0.1.2     sass_0.4.1        
+## [29] vctrs_0.4.1        revealjs_0.9       tidyselect_1.1.2   classInt_0.4-7    
+## [33] grid_4.1.2         glue_1.6.0         R6_2.5.1           fansi_1.0.3       
+## [37] rmarkdown_2.14     purrr_0.3.4        magrittr_2.0.1     htmltools_0.5.2   
+## [41] ellipsis_0.3.2     units_0.8-0        utf8_1.2.2         KernSmooth_2.23-20
+## [45] stringi_1.7.6      proxy_0.4-26       crayon_1.5.1</code></pre>
 </section></section>
     </div>
   </div>

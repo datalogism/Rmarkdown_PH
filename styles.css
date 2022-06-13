@@ -1,6 +1,6 @@
 
 .reveal .slides .title { 
-  font-size: 180%; 
+  /*font-size: 180%; */
 }
 
 .reveal .slides .place { 
@@ -15,7 +15,7 @@
      font-size: 70%; 
      margin-top:0px;
      margin-bottom:0px;
-     color: #f7a41e; 
+     color: #C90019; 
 
 }
 
@@ -33,25 +33,34 @@
 
 
 .reveal .slides .name { 
-  font-size: 45%; 
+  font-size: 60%; 
+  color: black; 
   margin-top:15px;
 }
 
 .reveal .slides .first { 
   font-size: 130%; 
-  color: #f7a41e; 
+  color: #3D7C81; 
   line-height: 0.9;
 
 }
 
+.slide-background:first-child {
+  /*background-color: #3D7C81;*/
+  color:black;
 
+}
 
+/*.reveal h1{
+	font-family:'Crete Round' !important;
+	text-transform:none !important;
+}*/
 
 
 .reveal .slides h2 { 
   font-size: 130%; 
   text-transform : none;
-  color: #f7a41f;
+  color: #3D7C81;
 }
 
 .reveal .slides h3 {
@@ -533,9 +542,9 @@ text-align: center;
 
 
 .reveal section img { 
-    background: rgba(0, 0, 0, 0); 
-    border: 0px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) 
+    background: none !important; 
+    border: none !important; 
+    box-shadow: none !important; ;
 }
 
 

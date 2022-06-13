@@ -1,12 +1,14 @@
 ---
-title: <h1 class="first">Le notebook<br><span style="font-size:70%;text-transform:lowercase">et la programmation lettrée<span></h1>
-author: <h2><span style="color:#ffffff;font-size:60%;">Documenter ses traitements</span></h2>
-date: <img src="figure/logo_notebook_o.png" style="margin-top:20px;margin-bottom:0px;" width="600"/><h2 class="place2"><i>Journées annuelles du réseau Mate-SHS, 17 mai 2022</i></h2><p class="name">Hugues Pecout (CIST, CNRS) - Timothée Giraud (RIATE, CNRS)</br>Sébastien Rey (IDEES, Université Rouen-Normandie)</p><img src="figure/riate.png" width="115" style="float:left;margin-top:60px;"/><img src="figure/cnrs.png" width="70" style="float:center;margin-top:30px;"/><img src="figure/cist-logo-bleu_sur_blanc.png" style="float:right;margin-top:30px;" width="70"/>
+title: <h1 class="first">Programming Historian<br><span style="font-size:50%;text-transform:lowercase"> un lieu de collaborations et d'interactions multiples<span></h1>
+author: <p class="name">Matthias Gille Levenson (ENS Lyon), Sofia Papastamkou (CNRS/Université de Lille - C2DH) & Célian Ringwald (Inria)</p>
+date: <img src="images/about.png" style="margin-top:20px;margin-bottom:0px;" width="250"/><br><img src="images/ph-fr.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-en.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-es.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-pt.svg" width="70" style="float:center;margin-top:30px;"/> <h2 class="place2"><i>&#x23;DHNord 2022</i></h2>
+
+# {data-background-color="#6371a1"}
 output: 
   revealjs::revealjs_presentation:
     self_contained: FALSE
     reveal_plugins: ["notes","zoom","menu"]
-    theme: "black"
+    theme: "white"
     highlight: "zenburn"
     css: styles.css
     incremental: TRUE
@@ -33,7 +35,11 @@ output:
       previewLinks: false
 editor_options: 
   chunk_output_type: console
+
+#mainfont: Quattrocento
 ---
+
+## TEST viz
 
 
 
@@ -444,9 +450,8 @@ mamap
 
 <br>
 <p style="margin-top:30px;margin-bottom:10px;font-size:100%;">**Contact**</p>
-<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">hugues.pecout@cnrs.fr</p>
-<p style="margin-top:5px;margin-bottom:0px;font-size:70%;">timothee.giraud@cnrs.fr</p>
-<p style="margin-top:5px;margin-bottom:0px;font-size:70%;">sebastien.rey-coyrehourcq@univ-rouen.fr (GT Notebook)</p>
+<p style="margin-top:10px;margin-bottom:0px;font-size:70%;">https://programminghistorian.org/</p>
+<p style="margin-top:5px;margin-bottom:0px;font-size:70%;">@ProgHist</p>
 
 <br>
 [<img src="figure/twitter.png" width="45"/ style="margin-top:15px;margin-bottom:-10px;margin-right:10px;">](https://gitlab.huma-num.fr/rzine/site)@rzine_shs
