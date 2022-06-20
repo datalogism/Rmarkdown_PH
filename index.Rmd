@@ -1,9 +1,7 @@
 ---
 title: <h1 class="first">Programming Historian<br><span style="font-size:50%;text-transform:lowercase"> un lieu de collaborations et d'interactions multiples<span></h1>
-author: <p class="name">Matthias Gille Levenson (ENS Lyon), Sofia Papastamkou (CNRS/Université de Lille - C2DH) & Célian Ringwald (Inria)</p>
-date: <img src="images/about.png" style="margin-top:20px;margin-bottom:0px;" width="250"/><br><img src="images/ph-fr.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-en.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-es.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-pt.svg" width="70" style="float:center;margin-top:30px;"/> <h2 class="place2"><i>&#x23;DHNord 2022</i></h2>
-
-# {data-background-color="#6371a1"}
+author: <p class="name">Matthias Gille Levenson (ENS Lyon), Sofia Papastamkou (CNRS/UniversitÃ© de Lille - C2DH) & CÃ©lian Ringwald (Inria - Equipe Wimmics)</p>
+date: <img src="images/about2.png" style="margin-top:20px;margin-bottom:0px;" width="250"/><br><img src="images/ph-fr.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-en.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-es.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-pt.svg" width="70" style="float:center;margin-top:30px;"/> <h2 class="place2"><i>&#x23;DHNord 2022</i></h2>
 output: 
   revealjs::revealjs_presentation:
     self_contained: FALSE
@@ -35,70 +33,65 @@ output:
       previewLinks: false
 editor_options: 
   chunk_output_type: console
-
-#mainfont: Quattrocento
 ---
 
-## TEST viz
+
+# Le programming historian { data-background-size="1000px" data-background-color="white"}
+
+
+<p class=smallpcenter" style="margin-top:80px;font-size:85%;"> Une collection évolutive de tutoriels appliqués à l'histoire et aux Shs </p>  
 
 
 
-## Bonjour à tou·te·s
+## Une revue ouverte et libre
 
-<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">Ingénieurs CNRS en sciences de l'information géographique</p>
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
+<ul>
+<li> **Accès ouvert Diamand** (CC BY licence) </li>
+<li> Revue par les pairs </li>
+<li> Cycle d'édition ouvert </li>
+</ul></p>
 
-<img src="figure/users.png" style="float:left;margin-top:40px;" width="380"/>
+## Histoire 
+<img src="images/PH_timeline.PNG" style="float:center;margin-top:40px;" width="800"/>
+
+## Une encyclopdie technique mutli-lingues
+
+* 4 chapitres : EN / ES / FR / PT
+* 188 leçons 141 originales
+* aujourd'hui NB leçons : 89 en anglais / 55 espagnoles / 21 leçons en français / 23 leçons en portugais
+* Apprendre à utiliser python, R, à manipuler des données, les publier <br>& Analyse : de réseaux, de cartes
+<img src="figure/nb_lecon_theme.png" style="float:center;margin-top:40px;" width="650"/>
+
+## Une revue contributive
+
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
+<ul>
+<li> 300 contributeurs depuis 2008 </li>
+<li> Basée sur le volontariat </li>
+<li> Ecritures pluridisciplinaires </li>
+<li> Fabrique d'outils pédagogiques mise à disposition du commun </li>
+</ul></p>
+
+## Valeurs d'ouvertures 
+
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;"> Construit par des ensembles de communautés : 
+<ul>
+<li> Linguistique </li>
+<li> Culturelle </li>
+<li> Disciplinaire </li>
+</ul></p>
+
+# Cycle d'édition
 
 
-<div id="rightls">
-<ul class="pucsmall22" style="margin-top:40px;">
-> - Le langage R comme outil principal
-> - Production régulière de notebook R
-> - Responsables du projet Rzine
-</ul>
+# Des contributions
 
-
-<div class="fragment">
-<img src="figure/users2.png" style="float:left;margin-top:10px;margin-left:60px;" width="186"/>
-
-
-<div id="rightseb">
-<ul class="xpucsmall" style="margin-top:50px;">
-> - <span style="color:#f7a41f;">Ingénieur de recherche</span>
-> - <span style="color:#f7a41f;">Geomatique/Informatique</span>
-> - <span style="color:#f7a41f;">Coord. du GT Notebook</span>
-> - <span style="color:#f7a41f;">Membre du projet Rzine</span>
-</ul>
-</div>
-</div>
-
-</div>
-
-<aside class="notes">
-Un groupe de travail inter-disciplinaire travaillant à un portail de ressources, ouvert, dédié à l'observation théorique et pratique des notebooks
-</aside>
-
-
-# {data-background="figure/logo_notebook2.png" data-background-size="1000px"}
-
-<h2>**Le notebook**</h2>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+## Contributions éditoriales
 
 
 
 ```{r, echo=FALSE, eval=TRUE}
-
-sessionInfo()
 
 
 ```  
