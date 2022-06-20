@@ -38,58 +38,274 @@ editor_options:
 
 # Le programming historian { data-background-size="1000px" data-background-color="white"}
 
+<p class="medpcenter"  style="margin-top:60px;margin-bottom:0px;">Revue méthodes en ligne <br> https://programminghistorian.org/</p>
 
-<p class=smallpcenter" style="margin-top:80px;font-size:85%;"> Une collection évolutive de tutoriels appliqués à l'histoire et aux Shs </p>  
+<p class="medpcenter"  style="margin-top:60px;margin-bottom:0px;">Tutoriels pour l’appropriation des méthodes et outils numériques appliqués à l’histoire et autres SHS</p>
 
+## Identité
 
+<img src="images/about.png" style="margin-top:20px;margin-bottom:0px;" width="200"/><br>
 
-## Une revue ouverte et libre
 
 <p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
 <ul>
-<li> **Accès ouvert Diamand** (CC BY licence) </li>
-<li> Revue par les pairs </li>
-<li> Cycle d'édition ouvert </li>
+<li> 4 versions langangières à l’heure actuelle: EN, ES, FR, PT </li>
+<li> Libre accès (modèle économique: diamond open access) </li>
+<li> Licences libres CC-BY 4.0 </li>
+<li> Evaluation ouverte par les pairs </li>
+<li> Logiciels et technologies libres </li>
+<li> Données ouvertes </li>
 </ul></p>
 
-## Histoire 
-<img src="images/PH_timeline.PNG" style="float:center;margin-top:40px;" width="800"/>
+## Leçons
 
-## Une encyclopdie technique mutli-lingues
+### Chapitres linguistiques
 
-* 4 chapitres : EN / ES / FR / PT
-* 188 leçons 141 originales
-* aujourd'hui NB leçons : 89 en anglais / 55 espagnoles / 21 leçons en français / 23 leçons en portugais
-* Apprendre à utiliser python, R, à manipuler des données, les publier <br>& Analyse : de réseaux, de cartes
-<img src="figure/nb_lecon_theme.png" style="float:center;margin-top:40px;" width="650"/>
-
-## Une revue contributive
+<p class="medpcenter"  style="margin-top:60px;margin-bottom:0px;">181 Leçons -> 141 originales (toutes langues confondues)</p>
+<img src="images/ph-en.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-es.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-fr.svg" width="70" style="float:center;margin-top:30px;"/><img src="images/ph-pt.svg" width="70" style="float:center;margin-top:30px;"/>
 
 <p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
 <ul>
-<li> 300 contributeurs depuis 2008 </li>
-<li> Basée sur le volontariat </li>
-<li> Ecritures pluridisciplinaires </li>
-<li> Fabrique d'outils pédagogiques mise à disposition du commun </li>
+<li> EN : 89 leçons depuis 2012 (toutes originales) </li>
+<li> ES : 55 leçons depuis 2017 (traductions + 11 originales)  </li>
+<li> ES : 21 leçons depuis 2019 (traductions + 2 originales)</li>
+<li> FR : 23 leçons depuis 2021 (traductions) </li>
 </ul></p>
 
-## Valeurs d'ouvertures 
+## Leçons
 
-<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;"> Construit par des ensembles de communautés : 
-<ul>
-<li> Linguistique </li>
-<li> Culturelle </li>
-<li> Disciplinaire </li>
-</ul></p>
+### Organisation et indexation thématique
 
-# Cycle d'édition
+<img src="figure/index.png" style="margin-top:20px;margin-bottom:0px;" width="100%"/><br>
 
+* Organisées pour intégrer l’une des phases de recherche: <br>Acquérir
+    / Transformer / Analyser / Présenter / Préserver
+* Indexation thématiques : <br> languages (R / Python) / données (gestion/manipulation) / Logiciels libres / Publications...
+</p>
 
-# Des contributions
-
-## Contributions éditoriales
+## Histoire
 
 
+<img src="images/turkel.png" style="margin-top:20px;margin-bottom:0px;" width="200"/><br>
+
+Programming Historian 1: 2007-2011 <br> William J. Turkel, Alan MacEachern
+
+<p> “an open-access introduction to programming in Python, aimed at working historians (and other humanists) with little previous experience”
+
+* William J. Turkel and Alan MacEachern, The Programming Historian 1st edition (Network in Canadian History & Environment: 2007-2008).
+
+</p>
+
+## Histoire
+
+### Intertionalisation
+
+<img src="images/PH_timeline.PNG" style="margin-top:20px;margin-bottom:0px;" width="100%"/><br>
+<p>Programming Historian (EN) à partir de 2012 avec comité éditorial (revue)
+<br>Internationalisation progressive (et rapide)
+<br>
+59 rédacteurs/rédactrices de 2012 à juin 2022 => comité editorial composé de volontaires & 
+39 rédacteurs/rédactrices actuellement
+</p>
+
+## Evolutions et perspectives
+
+<img src="images/present.png" style="margin-top:20px;margin-bottom:0px;" width="150"/><br>
+
+<p class="medpcenter" style="margin-top:60px;margin-bottom:0px;">
+* 2019: ProgHist Ltd. - association à but non lucratif<br/>=>
+Partenariats institutionnels,<br/>=> soutiens individuels<br/>
+* Depuis 2021: professionnalisation partielle avec embauche d’une assistante éditoriale <br> => vers un modèle mixte volontariat/externalisation</p>
+
+
+## Une démarche 
+<p>
+<img src="images/open.png" width="100" style="float:center;margin-top:30px;"/>
+<img src="images/coop.png" width="100" style="float:center;margin-top:30px;"/>
+<img src="images/lang.png" width="100" style="float:center;margin-top:30px;"/>
+</p>
+* qui s’inscrit dans le libre et l’ouverture
+* qui s’appuie sur une communauté
+* qui promeut la diversité culturelle via le multilinguisme
+
+# Lieu d'interactions et de collaborations { data-background-size="1000px" data-background-color="white"}
+
+=> Travailler en humanités numériques : collaborations, complémentarités et tensions <br>
+
+<img src="figure/ph_q.png" width="400" style="float:center;margin-top:30px;"/>
+
+<p>
+* infrastructure
+* le PH comme communauté de pratique
+* multilinguisme
+* évaluation ouverte par les pairs
+    
+</p>
+
+## Infrastructure - présentation
+
+<p>[Programming Historian 1](http://niche-canada.org/wp-content/uploads/2013/09/programming-historian-1.pdf) (2007-2011): un simple document PDF en ligne </br>=> écriture linéaire, celle d’un livre imprimé mis en ligne
+</p>
+<p>
+Programing Historian aujourd'hui:
+
+* 2012-2015: WordPress
+* 2015 --> GitHub
+
+
+
+</p>
+
+<img src="figure/github-piratager.png" width="100" style="float:center;margin-top:30px;"/>
+
+<br>
+https://github.com/programminghistorian
+
+
+## Infrastructure - Pourquoi github ?
+
+* Répondre aux besoins de l’équipe éditoriale: travail à distance, travail volontaire <br>==> temps individuels, différents fuseaux horaires… (cf. Blevins 2015)
+* Gérer le volet international du PH et l’ajout de nouvelles équipes langagières <br>(cf. Lincoln 2020)
+* Gérer le processus éditorial d’un nombre accru de leçons
+* Gérer le côté social/technique du PH de manière transparente, ouverte et documentée :
+tickets (issues) avec labels d’intérêt spécifique (selon équipe langagière et autres domaines ) 
+
+<br>
+
+<img src="figure/github-piratager.png" width="100" style="float:center;margin-top:30px;"/>
+
+## Github - Outil de gestion éditoriale 
+
+<img src="figure/github_desk.PNG" width="80%" style="float:center;margin-top:30px;"/><br>
+<p>
+* Gérer le processus éditorial d’un nombre accru de leçons (versions et statuts des leçons) : 
+
+  * dépôt ph-submissions pour la préparation des leçons: gestion des propositions acceptées, communication avec les auteur(e)s, organisation de l’évaluation ouverte par les pairs via des tickets (issues) publics (signalés dans les métadonnées yaml des leçons) à la place d’emails (sauf en cas d’évaluation fermée)
+  * dépôt jekyll: publication et maintenance des leçons
+</p>
+
+## Github - Outil de gestion éditoriale
+
+<img src="figure/github3.PNG" width="80%" style="float:center;margin-top:30px;"/><br>
+<p>
+* Gérer le côté social/technique du PH de manière transparente, ouverte et documentée :
+  * tickets (issues) avec labels d’intérêt spécifique (selon équipe langagière et autres domaines: finance, lesson maintenance, technical…)
+  * wiki avec documentation
+</p>
+
+## Communauté de pratique
+
+
+<img src="images/transform.png" width="200" style="float:center;margin-top:30px;"/><br>
+
+Lire le PH en tant que communauté de pratique selon (Wenger 1998)
+
+* Domaine d’intérêt partagé
+⇒ appropriation des méthodes numériques en SHS via l’autoformation
+
+* Pratique de partage de ressources
+⇒ tutoriels (connaissances, pratiques, données, expérience…)
+
+* Engagement d’une communauté
+⇒ équipe éditoriale (principes d’inclusivité, de parité)
+⇒ contributeurs / contributrices: auteur(e)s, évaluateurs/évaluatrices, traducteurs/traductrices
+⇒ soutiens, partenaires (==> évolution vers un modèle mixte avec externalisation/rémunération de certains services)
+
+
+
+## Communauté de pratique
+### Programming Historian en français
+
+* 43 contributeurs
+* Une concentration géographique autour de centre universitaire : 
+  * Paris (Ecole des Chartes / Sorbonne / Versailles) / Lyon (ENS & ENSIB) / Lille / Bordeaux
+  * Plusieurs institutions de recherches  (ENS / LARHRA / CNRS / INRIA )
+[AJOUTER ROLE]
+
+
+## Communauté de pratique
+### Fréquentation géographique du site
+
+<p> GAnalytics pour juin 2021-juin 2022 
+- 875 451 utilisateurs uniques (1 137 093 sessions)</p>
+  
+|       Pays         |   Nombre d'utilisateurs uniques     |
+| -------------- | ------ |
+| USA  | 140621 |
+| Inde          | 102387 |
+| Espagne          | 63993  |
+| Mexique         | 52057  |
+| Colombie       | 46692  |
+| France         | 36445  |
+| UK | 36350  |
+| Allemagne        | 27057  |
+| Argentine      | 25462  |
+| Chili          | 25377  |
+
+## Multilinguisme - traduction
+
+Travail éditorial considérable autour de:
+- ressources bibliographique reliées (hyperliens, références bibliographiques, notes) 
+- données
+- traduction du code (question éternelle: jusqu'où doit/peut-on aller?)
+
+Problème envisagé jusqu'à maintenant depuis l'angle EN=> vers les autres langues
+MAIS: 2022, traductions ES=>EN, FR=>EN, ES=>PT - début d'une tendance inverse? 
+
+[Commentaire aussi: Objectif de la partie: démontrer comment on fait au PH pour "travailler en humanités numériques" au sein d'une équipe internationale]
+
+## Evaluation ouverte par les pairs
+
+[Décrire les éléments clés de la procédure d'évaluation par les pairs, cf. consignes aux rédacteurs et s'inspirer de l'expérience de chacun: Matthias pourrait ajouter/évoquer la possibilité de l'évaluation fermée très somairement sans plus je mentionne mais très rapidement]
+
+PH est attaché aux principes de l'évaluation ouverte par les pairs, un modèle de validation du savoir scientifique qui se répand de plus en plus dans le monde académique. 
+
+Excepté demande du ou de l'autrice de la leçon de passer par une évaluation non publique (demande très rare et que PH n'encourage pas), l'intégralité du processus de révision du texte de la future leçon est disponible en accès libre via une issue github, qui est la meilleure solution technique trouvée par PH, comme vu plus haut. (DIAPO, capture).
+
+## Evaluation -interet de la démarche
+
+Plusieurs intérêts à ce processus:
+- garantir un processus d'évaluation correct et courtois pour toutes les parties
+- valoriser le travail de toutes les parties ayant pris part à la production de la leçon: auteur/ice, mais aussi éditeur/ices et évaluateur/ices. [diapo]
+- éventuellement d'un point de vue interne, servir de base pour les futures leçons et construire une identité scientifique et éditoriale au fur-et-à-mesure de la création de nouvelles leçons.
+
+
+## Processus: 
+- soumission à comité qui accepte ou pas (ensemble des éditeur/ices)
+- acceptation avec conseils de modification
+- allers-retours entre évaluateurs/ices et auteur/ice
+- l'éditeur a tendance à synthétiser les retours des evaluateurs pour faciliter la correction de la leçon
+- publication finale
+
+# Retour d'experience { data-background-size="1000px" data-background-color="white"}
+<img src="figure/datalogism.PNG" width="80%" style="float:center;margin-top:30px;"/><br>
+
+## Célian Ringwald - janvier 2021
+
+* 1 revue (Beautifull soup)
+* 2 éditions (Passim / tf-idf)
+* 1 traduction en cours (Open Linked Data)
+* 3 traductions en attentes (tutoriel bases)
+<br>
+* Remarques :
+  * De la difficulté à traduire les termes techniques
+  * Concilier les acceptations linguistiques
+* Demande de se libérer du temps (activité bénévole)
+<br><br>
+
+# Contribuez !
+
+* Si vous souhaitez rejoindre la communauté vous êtes les bienvenus !
+https://programminghistorian.com
+@ProgHist
+
+
+# { data-background-size="1000px" }
+
+Thank you!
+¡Gracias!
+Merci!
+Obrigada!
 
 ```{r, echo=FALSE, eval=TRUE}
 

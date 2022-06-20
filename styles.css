@@ -20,7 +20,9 @@
 }
 
 
-
+.uri{
+  font-size: 50% !important;
+}
 .reveal .slides .author { 
   font-size: 70%; 
 }
@@ -84,9 +86,13 @@
 
 p,ul,li,td {
     color: black; 
-   font-size: 70%;
+   font-size: 80% !important;
  }
  
+ .reveal p {
+  margin: 20px 0;
+  line-height: 1 !important;
+}
 
 .reveal .slides .pucsmall {
 	font-size: 0.8em;
